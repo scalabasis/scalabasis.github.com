@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>basis.algebra</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a name="basis" class="extype" href="../package.html">basis</a></p>
+        <h1>algebra</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">algebra</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains algebraic structures. Includes implicit conversions for some structures.</p><h4>Mathematical spaces</h4><p>Mathematical spaces are modelled by singleton types with type members
+defined by type refinements. For example, here's the definition of an
+abstract vector space:</p><pre>
+type VectorSpace = Singleton {
+  type Vector &lt;: basis.algebra.Vector[Vector, Scalar]
+  type Scalar &lt;: basis.algebra.Field[Scalar]
+}
+</pre><p>This definition &quot;bundles up&quot; multiple bounded types into a single new type.
+Follow the same pattern using type equality instead of type bounds to define
+a concrete space. Here's a definition of a concrete vector space:</p><pre>
+type R2 = Singleton {
+  type Vector = VectorR2
+  type Scalar = Real
+}
+</pre><p>To use a space, parameterize a class or function with a type variable
+bounded by the abstract space. Then access the type members of the space
+with type projections. Here's a generic linear combination function:</p><pre>
+scala&gt; def combine[V &lt;: VectorSpace](
+           a: V#Scalar, x: V#Vector,
+           b: V#Scalar, y: V#Vector): V#Vector =
+     |   a *: x + b *: y
+combine: [V &lt;: basis.algebra.package.VectorSpace](a: V#Scalar, x: V#Vector, b: V#Scalar, y: V#Vector)V#Vector
+
+scala&gt; combine[R1](2, 3, 4, 5)
+res0: basis.algebra.package.R1#Vector = 26.0
+
+scala&gt; combine[R2](1, VectorR2(3, 4), 2, VectorR2(5, 6))
+res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
+</pre></div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="basis.algebra.AffinePoint" data-isabs="true">
+      <a id="AffinePoint:AffinePoint[AffinePoint, Vector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="AffinePoint.html"><span class="name">AffinePoint</span></a>
+        <span class="tparams">[<span name="AffinePoint">AffinePoint</span>, <span name="Vector">Vector</span>, <span name="Scalar">-Scalar</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A point in an affine space.</p>
+    </li><li visbl="pub" name="basis.algebra.package#AffineSpace" data-isabs="false">
+      <a id="AffineSpace:AffineSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">AffineSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract affine space over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.CompleteField" data-isabs="true">
+      <a id="CompleteField:CompleteField[CompleteField]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="CompleteField.html"><span class="name">CompleteField</span></a>
+        <span class="tparams">[<span name="CompleteField">CompleteField</span>]</span>
+        <span class="result"> extends Field[CompleteField]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An element of a complete field.</p>
+    </li><li visbl="pub" name="basis.algebra.package#CompleteOrderedVectorSpace" data-isabs="false">
+      <a id="CompleteOrderedVectorSpace:CompleteOrderedVectorSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">CompleteOrderedVectorSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over a complete ordered field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a complete ordered field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#CompleteVectorSpace" data-isabs="false">
+      <a id="CompleteVectorSpace:CompleteVectorSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">CompleteVectorSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over a complete field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a complete field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#EuclideanSpace" data-isabs="false">
+      <a id="EuclideanSpace:EuclideanSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">EuclideanSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.EuclideanVector" data-isabs="true">
+      <a id="EuclideanVector:EuclideanVector[EuclideanVector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="EuclideanVector.html"><span class="name">EuclideanVector</span></a>
+        <span class="tparams">[<span name="EuclideanVector">EuclideanVector</span>, <span name="Scalar">Scalar</span>]</span>
+        <span class="result"> extends Vector[EuclideanVector, Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a euclidean space.</p>
+    </li><li visbl="pub" name="basis.algebra.Field" data-isabs="true">
+      <a id="Field:Field[Field]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Field.html"><span class="name">Field</span></a>
+        <span class="tparams">[<span name="Field">Field</span>]</span>
+        <span class="result"> extends Ring[Field]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An element of a field.</p>
+    </li><li visbl="pub" name="basis.algebra.Matrix" data-isabs="true">
+      <a id="Matrix:Matrix[Matrix, Transpose, ColumnVector, RowVector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Matrix.html"><span class="name">Matrix</span></a>
+        <span class="tparams">[<span name="Matrix">Matrix</span>, <span name="Transpose">Transpose</span>, <span name="ColumnVector">ColumnVector</span>, <span name="RowVector">RowVector</span>, <span name="Scalar">-Scalar</span>]</span>
+        <span class="result"> extends Vector[Matrix, Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A matrix in a matrix space.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixR2x2" data-isabs="false">
+      <a id="MatrixR2x2:MatrixR2x2"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="MatrixR2x2.html"><span class="name">MatrixR2x2</span></a>
+        
+        <span class="result"> extends SquareMatrix[MatrixR2x2, VectorR2, Real] with RealVector[MatrixR2x2]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A 2x2 matrix of <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixR3x3" data-isabs="false">
+      <a id="MatrixR3x3:MatrixR3x3"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="MatrixR3x3.html"><span class="name">MatrixR3x3</span></a>
+        
+        <span class="result"> extends SquareMatrix[MatrixR3x3, VectorR3, Real] with RealVector[MatrixR3x3]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A 3x3 matrix of <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixR4x4" data-isabs="false">
+      <a id="MatrixR4x4:MatrixR4x4"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="MatrixR4x4.html"><span class="name">MatrixR4x4</span></a>
+        
+        <span class="result"> extends SquareMatrix[MatrixR4x4, VectorR4, Real] with RealVector[MatrixR4x4]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A 4x4 matrix of <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.package#MatrixSpace" data-isabs="false">
+      <a id="MatrixSpace:MatrixSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">MatrixSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 6 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space of matrices over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space of matrices over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#Module" data-isabs="false">
+      <a id="Module:Module"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Module</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over a ring.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a ring.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Ordered" data-isabs="true">
+      <a id="Ordered:Ordered[Ordered]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Ordered.html"><span class="name">Ordered</span></a>
+        <span class="tparams">[<span name="Ordered">Ordered</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An element of a totally ordered set.</p>
+    </li><li visbl="pub" name="basis.algebra.OrderedRing" data-isabs="true">
+      <a id="OrderedRing:OrderedRing[OrderedRing]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="OrderedRing.html"><span class="name">OrderedRing</span></a>
+        <span class="tparams">[<span name="OrderedRing">OrderedRing</span>]</span>
+        <span class="result"> extends Ordered[OrderedRing] with Ring[OrderedRing]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An element of a commutative ring with a total order.</p>
+    </li><li visbl="pub" name="basis.algebra.package#OrderedVectorSpace" data-isabs="false">
+      <a id="OrderedVectorSpace:OrderedVectorSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">OrderedVectorSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over an ordered field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over an ordered field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.PointR2" data-isabs="false">
+      <a id="PointR2:PointR2"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="PointR2.html"><span class="name">PointR2</span></a>
+        
+        <span class="result"> extends AffinePoint[PointR2, VectorR2, Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A point in a 2-dimensional <code>Real</code> affine space.</p>
+    </li><li visbl="pub" name="basis.algebra.PointR3" data-isabs="false">
+      <a id="PointR3:PointR3"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="PointR3.html"><span class="name">PointR3</span></a>
+        
+        <span class="result"> extends AffinePoint[PointR3, VectorR3, Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A point in a 3-dimensional <code>Real</code> affine space.</p>
+    </li><li visbl="pub" name="basis.algebra.package#R1" data-isabs="false">
+      <a id="R1:R1"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R1</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 1-dimensional <code>Real</code> euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 1-dimensional <code>Real</code> euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R2" data-isabs="false">
+      <a id="R2:R2"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R2</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 2-dimensional <code>Real</code> euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 2-dimensional <code>Real</code> euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R2x2" data-isabs="false">
+      <a id="R2x2:R2x2"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R2x2</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 7 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 2x2 <code>Real</code> matrix space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 2x2 <code>Real</code> matrix space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R3" data-isabs="false">
+      <a id="R3:R3"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R3</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 3-dimensional <code>Real</code> euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 3-dimensional <code>Real</code> euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R3x3" data-isabs="false">
+      <a id="R3x3:R3x3"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R3x3</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 7 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 3x3 <code>Real</code> matrix space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 3x3 <code>Real</code> matrix space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R4" data-isabs="false">
+      <a id="R4:R4"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R4</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 4-dimensional <code>Real</code> euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 4-dimensional <code>Real</code> euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#R4x4" data-isabs="false">
+      <a id="R4x4:R4x4"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">R4x4</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 7 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 4x4 <code>Real</code> matrix space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 4x4 <code>Real</code> matrix space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Real" data-isabs="false">
+      <a id="Real:Real"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Real.html"><span class="name">Real</span></a>
+        
+        <span class="result"> extends EuclideanVector[Real, Real] with OrderedRing[Real] with CompleteField[Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An approximation of a real number by a <code>Double</code> value.</p>
+    </li><li visbl="pub" name="basis.algebra.package#RealAffineSpace" data-isabs="false">
+      <a id="RealAffineSpace:RealAffineSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RealAffineSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract affine space over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#RealEuclideanSpace" data-isabs="false">
+      <a id="RealEuclideanSpace:RealEuclideanSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RealEuclideanSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract euclidean space over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract euclidean space over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#RealMatrixSpace" data-isabs="false">
+      <a id="RealMatrixSpace:RealMatrixSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RealMatrixSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 6 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space of matrices over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space of matrices over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#RealSquareMatrixSpace" data-isabs="false">
+      <a id="RealSquareMatrixSpace:RealSquareMatrixSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RealSquareMatrixSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 6 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space of square matrices over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space of square matrices over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.RealVector" data-isabs="true">
+      <a id="RealVector:RealVector[RealVector]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="RealVector.html"><span class="name">RealVector</span></a>
+        <span class="tparams">[<span name="RealVector">RealVector</span>]</span>
+        <span class="result"> extends Vector[RealVector, Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a <code>Real</code> vector space.</p>
+    </li><li visbl="pub" name="basis.algebra.package#RealVectorSpace" data-isabs="false">
+      <a id="RealVectorSpace:RealVectorSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RealVectorSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Ring" data-isabs="true">
+      <a id="Ring:Ring[Ring]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Ring.html"><span class="name">Ring</span></a>
+        <span class="tparams">[<span name="Ring">Ring</span>]</span>
+        <span class="result"> extends Vector[Ring, Ring]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An element of a commutative ring.</p>
+    </li><li visbl="pub" name="basis.algebra.SquareMatrix" data-isabs="true">
+      <a id="SquareMatrix:SquareMatrix[SquareMatrix, Vector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="SquareMatrix.html"><span class="name">SquareMatrix</span></a>
+        <span class="tparams">[<span name="SquareMatrix">SquareMatrix</span>, <span name="Vector">Vector</span>, <span name="Scalar">Scalar</span>]</span>
+        <span class="result"> extends Matrix[SquareMatrix, SquareMatrix, Vector, Vector, Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A matrix in a square matrix space.</p>
+    </li><li visbl="pub" name="basis.algebra.package#SquareMatrixSpace" data-isabs="false">
+      <a id="SquareMatrixSpace:SquareMatrixSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SquareMatrixSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 6 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space of square matrices over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space of square matrices over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Vector" data-isabs="true">
+      <a id="Vector:Vector[Vector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Vector.html"><span class="name">Vector</span></a>
+        <span class="tparams">[<span name="Vector">Vector</span>, <span name="Scalar">-Scalar</span>]</span>
+        <span class="result"> extends AffinePoint[Vector, Vector, Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a module.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorR2" data-isabs="false">
+      <a id="VectorR2:VectorR2"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorR2.html"><span class="name">VectorR2</span></a>
+        
+        <span class="result"> extends EuclideanVector[VectorR2, Real] with RealVector[VectorR2]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a 2-dimensional <code>Real</code> vector space.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorR3" data-isabs="false">
+      <a id="VectorR3:VectorR3"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorR3.html"><span class="name">VectorR3</span></a>
+        
+        <span class="result"> extends EuclideanVector[VectorR3, Real] with RealVector[VectorR3]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a 3-dimensional <code>Real</code> vector space.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorR4" data-isabs="false">
+      <a id="VectorR4:VectorR4"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorR4.html"><span class="name">VectorR4</span></a>
+        
+        <span class="result"> extends EuclideanVector[VectorR4, Real] with RealVector[VectorR4]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a 4-dimensional <code>Real</code> vector space.</p>
+    </li><li visbl="pub" name="basis.algebra.package#VectorSpace" data-isabs="false">
+      <a id="VectorSpace:VectorSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">VectorSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract linear space over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="basis.algebra.package#DoubleToReal" data-isabs="false">
+      <a id="DoubleToReal(Double):Real"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">DoubleToReal</span>
+        
+        <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.MatrixR2x2" data-isabs="false">
+      <a id="MatrixR2x2:MatrixR2x2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="MatrixR2x2$.html"><span class="name">MatrixR2x2</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for matrices in <code>R2x2</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixR3x3" data-isabs="false">
+      <a id="MatrixR3x3:MatrixR3x3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="MatrixR3x3$.html"><span class="name">MatrixR3x3</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for matrices in <code>R3x3</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixR4x4" data-isabs="false">
+      <a id="MatrixR4x4:MatrixR4x4"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="MatrixR4x4$.html"><span class="name">MatrixR4x4</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for matrices in <code>R4x4</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.PointR2" data-isabs="false">
+      <a id="PointR2:PointR2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="PointR2$.html"><span class="name">PointR2</span></a>
+        
+        <span class="result"> extends Struct2[Double, Double, PointR2]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for points in <code>R2</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.PointR3" data-isabs="false">
+      <a id="PointR3:PointR3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="PointR3$.html"><span class="name">PointR3</span></a>
+        
+        <span class="result"> extends Struct3[Double, Double, Double, PointR3]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for points in <code>R3</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.Real" data-isabs="false">
+      <a id="Real:Real"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Real$.html"><span class="name">Real</span></a>
+        
+        <span class="result"> extends Struct1[Double, Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.package#RealToDouble" data-isabs="false">
+      <a id="RealToDouble(Real):Double"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">RealToDouble</span>
+        
+        <span class="params">(<span name="real">real: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>)</span><span class="result">: <span name="scala.Double" class="extype">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.VectorR2" data-isabs="false">
+      <a id="VectorR2:VectorR2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorR2$.html"><span class="name">VectorR2</span></a>
+        
+        <span class="result"> extends Struct2[Double, Double, VectorR2]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R2</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorR3" data-isabs="false">
+      <a id="VectorR3:VectorR3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorR3$.html"><span class="name">VectorR3</span></a>
+        
+        <span class="result"> extends Struct3[Double, Double, Double, VectorR3]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R3</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorR4" data-isabs="false">
+      <a id="VectorR4:VectorR4"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorR4$.html"><span class="name">VectorR4</span></a>
+        
+        <span class="result"> extends Struct4[Double, Double, Double, Double, VectorR4]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R4</code>.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+
+      <div id="tooltip"></div>
+
+    </body>
+      </html>
