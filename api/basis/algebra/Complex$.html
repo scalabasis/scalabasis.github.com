@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>basis.algebra.VectorR3</title>
+          <title>basis.algebra.Complex</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
@@ -14,23 +14,24 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a title="Go to companion" href="VectorR3.html"><img src="../../lib/object_to_class_big.png" /></a>
+        <a title="Go to companion" href="Complex.html"><img src="../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a name="basis" class="extype" href="../package.html">basis</a>.<a name="basis.algebra" class="extype" href="package.html">algebra</a></p>
-        <h1><a title="Go to companion" href="VectorR3.html">VectorR3</a></h1>
+        <h1><a title="Go to companion" href="Complex.html">Complex</a></h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">VectorR3</span>
+        <span class="name">Complex</span>
         
-        <span class="result"> extends <a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>]</span>
+        <span class="result"> extends <a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods for vectors in <code>R3</code>. Serves as a struct for vectors in <code>R3</code>.</p></div><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods for <code>Complex</code> values. Serves as a struct for <code>Complex</code> values.
+Contains an implicit conversion from <code>Double</code> values to <code>Complex</code> values.</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>], <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>], <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -46,7 +47,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.VectorR3" class="in"><span>VectorR3</span></li><li name="basis.memory.Struct3" class="in"><span>Struct3</span></li><li name="basis.memory.Struct" class="in"><span>Struct</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.Complex" class="in"><span>Complex</span></li><li name="basis.memory.Struct2" class="in"><span>Struct2</span></li><li name="basis.memory.Struct" class="in"><span>Struct</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -58,14 +59,14 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="prt" name="basis.memory.Struct3.Frame" data-isabs="false">
+              <ol><li visbl="prt" name="basis.memory.Struct2.Frame" data-isabs="false">
       <a id="Frame:Frame"></a>
       <h4 class="signature">
       <span class="kind">class</span>
       <span class="symbol">
-        <a href="../memory/Struct3$Frame.html"><span class="name">Frame</span></a>
+        <a href="../memory/Struct2$Frame.html"><span class="name">Frame</span></a>
         
-        <span class="result"> extends Struct3[T1, T2, T3, T]</span>
+        <span class="result"> extends Struct2[T1, T2, T]</span>
       </span>
       </h4>
       <p class="comment cmt">A projection of the outer struct into a different frame.</p>
@@ -131,18 +132,29 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#Zero" data-isabs="false">
-      <a id="Zero:VectorR3"></a>
+    </li><li visbl="pub" name="basis.algebra.Complex#One" data-isabs="false">
+      <a id="One:Complex"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">One</span>
+        
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The multiplicative identity of the <code>Complex</code> field.</p>
+    </li><li visbl="pub" name="basis.algebra.Complex#Zero" data-isabs="false">
+      <a id="Zero:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
       <span class="symbol">
         <span class="name">Zero</span>
         
-        <span class="result">: <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a></span>
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The zero vector of <code>R3</code>.</p>
-    </li><li visbl="pub" name="basis.memory.Struct3#alignment" data-isabs="false">
+      <p class="shortcomment cmt">The additive identity of the <code>Complex</code> field.</p>
+    </li><li visbl="pub" name="basis.memory.Struct2#alignment" data-isabs="false">
       <a id="alignment:Long"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -153,15 +165,26 @@
       </span>
       </h4>
       <p class="shortcomment cmt">The power-of-two alignment of this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The power-of-two alignment of this struct's frame. Storage addresses must
-be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#apply" data-isabs="false">
-      <a id="apply(Double,Double,Double):VectorR3"></a>
+be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#apply" data-isabs="false">
+      <a id="apply(Double):Complex"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="real">real: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#apply" data-isabs="false">
+      <a id="apply(Double,Double):Complex"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">apply</span>
         
-        <span class="params">(<span name="x">x: <span name="scala.Double" class="extype">Double</span></span>, <span name="y">y: <span name="scala.Double" class="extype">Double</span></span>, <span name="z">z: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a></span>
+        <span class="params">(<span name="real">real: <span name="scala.Double" class="extype">Double</span></span>, <span name="imaginary">imaginary: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
       </span>
       </h4>
       
@@ -190,7 +213,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#column1" data-isabs="false">
+    </li><li visbl="prt" name="basis.memory.Struct2#column1" data-isabs="false">
       <a id="column1:Struct[Double]"></a>
       <h4 class="signature">
       <span class="kind">implicit val</span>
@@ -200,8 +223,8 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#column2" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
+    </li><li visbl="prt" name="basis.memory.Struct2#column2" data-isabs="false">
       <a id="column2:Struct[Double]"></a>
       <h4 class="signature">
       <span class="kind">implicit val</span>
@@ -211,18 +234,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#column3" data-isabs="false">
-      <a id="column3:Struct[Double]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit val</span>
-      <span class="symbol">
-        <span class="name">column3</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -245,7 +257,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#field1" data-isabs="false">
+    </li><li visbl="prt" name="basis.memory.Struct2#field1" data-isabs="false">
       <a id="field1:Struct[Double]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -255,8 +267,8 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The projection of the first column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the first column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#field2" data-isabs="false">
+      <p class="shortcomment cmt">The projection of the first column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the first column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
+    </li><li visbl="prt" name="basis.memory.Struct2#field2" data-isabs="false">
       <a id="field2:Struct[Double]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -266,18 +278,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The projection of the second column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the second column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#field3" data-isabs="false">
-      <a id="field3:Struct[Double]"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">field3</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The projection of the third column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the third column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
+      <p class="shortcomment cmt">The projection of the second column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the second column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -314,6 +315,28 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#i" data-isabs="false">
+      <a id="i:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">i</span>
+        
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The imaginary unit of the <code>Complex</code> field.</p>
+    </li><li visbl="pub" name="basis.algebra.Complex#imaginary" data-isabs="false">
+      <a id="imaginary:Struct[Double]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">imaginary</span>
+        
+        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The projection of the <code>imaginary</code> field of the <code>Complex</code> struct.</p>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -325,19 +348,19 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#load" data-isabs="false">
-      <a id="load(Data,Long):VectorR3"></a>
+    </li><li visbl="pub" name="basis.algebra.Complex#load" data-isabs="false">
+      <a id="load(Data,Long):Complex"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">load</span>
         
-        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a></span>
+        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads an instance of a data value.</p><div class="fullcomment"><div class="comment cmt"><p>Loads an instance of a data value.
 </p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the <code>Data</code> to load from.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load from.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.VectorR3" class="extype" href="">VectorR3</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Complex" class="extype" href="">Complex</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -371,7 +394,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#offset1" data-isabs="false">
+    </li><li visbl="prt" name="basis.memory.Struct2#offset1" data-isabs="false">
       <a id="offset1:Long"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -381,8 +404,8 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The offset of the first column in this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the first column in this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#offset2" data-isabs="false">
+      <p class="shortcomment cmt">The offset of the first column in this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the first column in this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
+    </li><li visbl="prt" name="basis.memory.Struct2#offset2" data-isabs="false">
       <a id="offset2:Long"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -392,32 +415,45 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The offset of the second column in this struct'ss frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the second column in this struct'ss frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct3#offset3" data-isabs="false">
-      <a id="offset3:Long"></a>
+      <p class="shortcomment cmt">The offset of the second column in this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the second column in this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#polar" data-isabs="false">
+      <a id="polar(Double,Double):Complex"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
+      <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">offset3</span>
+        <span class="name">polar</span>
         
-        <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+        <span class="params">(<span name="r">r: <span name="scala.Double" class="extype">Double</span></span>, <span name="φ">φ: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The offset of the third column in this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the third column in this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.memory.Struct3#project" data-isabs="false">
-      <a id="project(Long,Long,Long):Struct3[Double, Double, Double, VectorR3]"></a>
+      <p class="shortcomment cmt">Constructs a <code>Complex</code> value with polar coordinates.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a <code>Complex</code> value with polar coordinates.
+</p></div><dl class="paramcmts block"><dt class="param">r</dt><dd class="cmt"><p>the modulus of the complex number.</p></dd><dt class="param">φ</dt><dd class="cmt"><p>the argument of the complex number.</p></dd><dt>returns</dt><dd class="cmt"><p>a new <code>Complex</code> value.
+</p></dd></dl></div>
+    </li><li visbl="pub" name="basis.memory.Struct2#project" data-isabs="false">
+      <a id="project(Long,Long,Long):Struct2[Double, Double, Complex]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">project</span>
         
-        <span class="params">(<span name="offset">offset: <span name="scala.Long" class="extype">Long</span></span>, <span name="size">size: <span name="scala.Long" class="extype">Long</span></span>, <span name="alignment">alignment: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>]</span>
+        <span class="params">(<span name="offset">offset: <span name="scala.Long" class="extype">Long</span></span>, <span name="size">size: <span name="scala.Long" class="extype">Long</span></span>, <span name="alignment">alignment: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Projects this struct into a different frame.</p><div class="fullcomment"><div class="comment cmt"><p>Projects this struct into a different frame.
 </p></div><dl class="paramcmts block"><dt class="param">offset</dt><dd class="cmt"><p>the incremental offset into the new frame.</p></dd><dt class="param">size</dt><dd class="cmt"><p>the preferred size of the new frame.</p></dd><dt class="param">alignment</dt><dd class="cmt"><p>the preferred alignment of the new frame.</p></dd><dt>returns</dt><dd class="cmt"><p>this struct embedded into a new frame.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.memory.Struct3#size" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#real" data-isabs="false">
+      <a id="real:Struct[Double]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">real</span>
+        
+        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The projection of the <code>real</code> field of the <code>Complex</code> struct.</p>
+    </li><li visbl="pub" name="basis.memory.Struct2#size" data-isabs="false">
       <a id="size:Long"></a>
       <h4 class="signature">
       <span class="kind">val</span>
@@ -427,27 +463,27 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The size in bytes of this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The size in bytes of this struct's frame. Must be a multiple of <code>alignment</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#store" data-isabs="false">
-      <a id="store(Data,Long,VectorR3):Unit"></a>
+      <p class="shortcomment cmt">The size in bytes of this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The size in bytes of this struct's frame. Must be a multiple of <code>alignment</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#store" data-isabs="false">
+      <a id="store(Data,Long,Complex):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">store</span>
         
-        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>, <span name="vector">vector: <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>, <span name="complex">complex: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Stores an instance as a data value.</p><div class="fullcomment"><div class="comment cmt"><p>Stores an instance as a data value.
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the <code>Data</code> to store to.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to store to.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.VectorR3" class="extype" href="">VectorR3</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#struct" data-isabs="false">
-      <a id="struct:basis.algebra.VectorR3.type"></a>
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the <code>Data</code> to store to.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to store to.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Complex" class="extype" href="">Complex</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#struct" data-isabs="false">
+      <a id="struct:basis.algebra.Complex.type"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol">
         <span class="name">struct</span>
         
-        <span class="result">: basis.algebra.VectorR3.type</span>
+        <span class="result">: basis.algebra.Complex.type</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
@@ -462,7 +498,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#toString" data-isabs="false">
+    </li><li visbl="pub" name="basis.algebra.Complex#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -472,15 +508,15 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
         <span class="params">()</span><span class="result">: String</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.VectorR3" class="extype" href="">VectorR3</a> → AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#unapply" data-isabs="false">
-      <a id="unapply(VectorR3):Some[(Double, Double, Double)]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Complex" class="extype" href="">Complex</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#unapply" data-isabs="false">
+      <a id="unapply(Complex):Some[(Double, Double)]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">unapply</span>
         
-        <span class="params">(<span name="vector">vector: <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a></span>)</span><span class="result">: <span name="scala.Some" class="extype">Some</span>[(<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>)]</span>
+        <span class="params">(<span name="complex">complex: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>)</span><span class="result">: <span name="scala.Some" class="extype">Some</span>[(<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>)]</span>
       </span>
       </h4>
       
@@ -526,48 +562,15 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#x" data-isabs="false">
-      <a id="x:Struct[Double]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">x</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The projection of the <code>x</code> field of the <code>VectorR3</code> struct.</p>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#y" data-isabs="false">
-      <a id="y:Struct[Double]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">y</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The projection of the <code>y</code> field of the <code>VectorR3</code> struct.</p>
-    </li><li visbl="pub" name="basis.algebra.VectorR3#z" data-isabs="false">
-      <a id="z:Struct[Double]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">z</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Double" class="extype">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The projection of the <code>z</code> field of the <code>VectorR3</code> struct.</p>
     </li></ol>
             </div>
 
         
 
-        <div name="basis.memory.Struct3" class="parent">
-              <h3>Inherited from <a name="basis.memory.Struct3" class="extype" href="../memory/Struct3.html">Struct3</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>]</h3>
+        <div name="basis.memory.Struct2" class="parent">
+              <h3>Inherited from <a name="basis.memory.Struct2" class="extype" href="../memory/Struct2.html">Struct2</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</h3>
             </div><div name="basis.memory.Struct" class="parent">
-              <h3>Inherited from <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>]</h3>
+              <h3>Inherited from <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

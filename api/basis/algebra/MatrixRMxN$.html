@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>basis.algebra.EuclideanVector</title>
+          <title>basis.algebra.MatrixRMxN</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
@@ -12,30 +12,25 @@
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <img src="../../lib/trait_big.png" />
+        <a title="Go to companion" href="MatrixRMxN.html"><img src="../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a name="basis" class="extype" href="../package.html">basis</a>.<a name="basis.algebra" class="extype" href="package.html">algebra</a></p>
-        <h1>EuclideanVector</h1>
+        <h1><a title="Go to companion" href="MatrixRMxN.html">MatrixRMxN</a></h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">trait</span>
+      <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">EuclideanVector</span>
-        <span class="tparams">[<span name="EuclideanVector">EuclideanVector</span>, <span name="Scalar">Scalar</span>]</span>
-        <span class="result"> extends <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[EuclideanVector, Scalar]</span>
+        <span class="name">MatrixRMxN</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>A vector in a euclidean space.
-</p></div><dl class="paramcmts block"><dt class="tparam">EuclideanVector</dt><dd class="cmt"><p>the vector type of the euclidean space.</p></dd><dt class="tparam">Scalar</dt><dd class="cmt"><p>the scalar type of the euclidean space.
-</p></dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods for <i>M</i>x<i>N</i>-dimensional <code>Real</code> matrices.</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[EuclideanVector, Scalar], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[EuclideanVector, EuclideanVector, Scalar], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
-        </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>, <a name="basis.algebra.VectorR2" class="extype" href="VectorR2.html">VectorR2</a>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>, <a name="basis.algebra.VectorR4" class="extype" href="VectorR4.html">VectorR4</a>, <a name="basis.algebra.VectorRN" class="extype" href="VectorRN.html">VectorRN</a></div>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -51,7 +46,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.EuclideanVector" class="in"><span>EuclideanVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.MatrixRMxN" class="in"><span>MatrixRMxN</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -63,116 +58,10 @@
 
         
 
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="basis.algebra.Vector#*:" data-isabs="true">
-      <a id="*:(Scalar):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">*:</span>
         
-        <span class="params">(<span name="scalar">scalar: Scalar</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Multiplies this vector by a scalar on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this vector by a scalar on the left.
-</p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#+" data-isabs="true">
-      <a id="+(EuclideanVector):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">+</span>
-        
-        <span class="params">(<span name="that">that: EuclideanVector</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a vector to this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a vector to this vector.
-</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the vector to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector sum of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#-" data-isabs="true">
-      <a id="-(EuclideanVector):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">-</span>
-        
-        <span class="params">(<span name="that">that: EuclideanVector</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
-</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the vector to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.EuclideanVector#/" data-isabs="true">
-      <a id="/(Scalar):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">/</span>
-        
-        <span class="params">(<span name="scalar">scalar: Scalar</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Divides this vector by a scalar.</p><div class="fullcomment"><div class="comment cmt"><p>Divides this vector by a scalar.
-</p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to divide by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:*" data-isabs="true">
-      <a id=":*(Scalar):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:*</span>
-        
-        <span class="params">(<span name="scalar">scalar: Scalar</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Multiples this vector by a scalar on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this vector by a scalar on the right.
-</p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.EuclideanVector#norm" data-isabs="true">
-      <a id="norm:Scalar"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">norm</span>
-        
-        <span class="result">: Scalar</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns the euclidean norm of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the euclidean norm of this vector.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#unary_-" data-isabs="true">
-      <a id="unary_-:EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">unary_-</span>
-        
-        <span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Negates this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Negates this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the vector opposite of this vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.EuclideanVector#⋅" data-isabs="true">
-      <a id="⋅(EuclideanVector):Scalar"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">⋅</span>
-        
-        <span class="params">(<span name="that">that: EuclideanVector</span>)</span><span class="result">: Scalar</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns the dot product of this vector and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the dot product of this vector and another vector. The name of
-this method uses the unicode dot operator U+22C5.
-</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the other vector.</p></dd><dt>returns</dt><dd class="cmt"><p>the scalar product of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -206,32 +95,6 @@ this method uses the unicode dot operator U+22C5.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
-      <a id=":+(EuclideanVector):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:+</span>
-        
-        <span class="params">(<span name="that">that: EuclideanVector</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a vector to this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a vector to this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine sum of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:-" data-isabs="false">
-      <a id=":-(EuclideanVector):EuclideanVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:-</span>
-        
-        <span class="params">(<span name="that">that: EuclideanVector</span>)</span><span class="result">: EuclideanVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -254,6 +117,28 @@ this method uses the unicode dot operator U+22C5.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN#apply" data-isabs="false">
+      <a id="apply(Int,Int)(Double*):MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="M">M: <span name="scala.Int" class="extype">Int</span></span>, <span name="N">N: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="params">(<span name="entries">entries: <span name="scala.Double" class="extype">Double</span>*</span>)</span><span class="result">: <a name="basis.algebra.MatrixRMxN" class="extype" href="MatrixRMxN.html">MatrixRMxN</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN#apply" data-isabs="false">
+      <a id="apply(Int,Int,Array[Double]):MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="M">M: <span name="scala.Int" class="extype">Int</span></span>, <span name="N">N: <span name="scala.Int" class="extype">Int</span></span>, <span name="entries">entries: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Double" class="extype">Double</span>]</span>)</span><span class="result">: <a name="basis.algebra.MatrixRMxN" class="extype" href="MatrixRMxN.html">MatrixRMxN</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -279,6 +164,17 @@ this method uses the unicode dot operator U+22C5.
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN#columns" data-isabs="false">
+      <a id="columns(VectorRN*):MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">columns</span>
+        
+        <span class="params">(<span name="columns">columns: <a name="basis.algebra.VectorRN" class="extype" href="VectorRN.html">VectorRN</a>*</span>)</span><span class="result">: <a name="basis.algebra.MatrixRMxN" class="extype" href="MatrixRMxN.html">MatrixRMxN</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -381,6 +277,17 @@ this method uses the unicode dot operator U+22C5.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN#rows" data-isabs="false">
+      <a id="rows(VectorRN*):MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">rows</span>
+        
+        <span class="params">(<span name="rows">rows: <a name="basis.algebra.VectorRN" class="extype" href="VectorRN.html">VectorRN</a>*</span>)</span><span class="result">: <a name="basis.algebra.MatrixRMxN" class="extype" href="MatrixRMxN.html">MatrixRMxN</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -450,11 +357,7 @@ this method uses the unicode dot operator U+22C5.
 
         
 
-        <div name="basis.algebra.Vector" class="parent">
-              <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[EuclideanVector, Scalar]</h3>
-            </div><div name="basis.algebra.AffinePoint" class="parent">
-              <h3>Inherited from <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[EuclideanVector, EuclideanVector, Scalar]</h3>
-            </div><div name="scala.AnyRef" class="parent">
+        <div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>

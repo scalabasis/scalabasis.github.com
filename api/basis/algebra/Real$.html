@@ -28,7 +28,8 @@
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods and serves as a struct for <code>Real</code> values.</p></div><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods for <code>Real</code> values. Serves as a struct for <code>Real</code> values.
+Contains implicit conversions between <code>Double</code> values and <code>Real</code> values.</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a>[<span name="scala.Double" class="extype">Double</span>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
@@ -141,7 +142,7 @@
         <span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The multiplicative identity of <code>Real</code>.</p>
+      <p class="shortcomment cmt">The multiplicative identity of the <code>Real</code> field.</p>
     </li><li visbl="pub" name="basis.algebra.Real#Zero" data-isabs="false">
       <a id="Zero:Real"></a>
       <h4 class="signature">
@@ -152,7 +153,7 @@
         <span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The additive identity of <code>Real</code>.</p>
+      <p class="shortcomment cmt">The additive identity of the <code>Real</code> field.</p>
     </li><li visbl="pub" name="basis.memory.Struct1#alignment" data-isabs="false">
       <a id="alignment:Long"></a>
       <h4 class="signature">
@@ -187,6 +188,17 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Real#box" data-isabs="false">
+      <a id="box(Double):Real"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">box</span>
+        
+        <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -429,6 +441,17 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       
+    </li><li visbl="pub" name="basis.algebra.Real#unbox" data-isabs="false">
+      <a id="unbox(Real):Double"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">unbox</span>
+        
+        <span class="params">(<span name="real">real: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>)</span><span class="result">: <span name="scala.Double" class="extype">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">

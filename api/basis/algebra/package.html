@@ -28,7 +28,7 @@
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains algebraic structures. Includes implicit conversions for some structures.</p><h4>Mathematical spaces</h4><p>Mathematical spaces are modelled by singleton types with type members
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains algebraic structures.</p><h4>Mathematical spaces</h4><p>Mathematical spaces are modelled by singleton types with type members
 defined by type refinements. For example, here's the definition of an
 abstract vector space:</p><pre>
 type VectorSpace = Singleton {
@@ -130,6 +130,28 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="shortcomment cmt">An abstract linear space over a complete field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a complete field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex" data-isabs="false">
+      <a id="Complex:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Complex.html"><span class="name">Complex</span></a>
+        
+        <span class="result"> extends CompleteField[Complex]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A complex number modeled by a <code>Double</code> real part and a <code>Double</code> imaginary part.</p>
+    </li><li visbl="pub" name="basis.algebra.DimensionException" data-isabs="false">
+      <a id="DimensionException:DimensionException"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="DimensionException.html"><span class="name">DimensionException</span></a>
+        
+        <span class="result"> extends RuntimeException</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="basis.algebra.package#EuclideanSpace" data-isabs="false">
       <a id="EuclideanSpace:EuclideanSpace"></a>
       <h4 class="signature">
@@ -163,6 +185,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">An element of a field.</p>
+    </li><li visbl="pub" name="basis.algebra.Integer" data-isabs="false">
+      <a id="Integer:Integer"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Integer.html"><span class="name">Integer</span></a>
+        
+        <span class="result"> extends OrderedRing[Integer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An integer modeled by a <code>Long</code> value.</p>
     </li><li visbl="pub" name="basis.algebra.Matrix" data-isabs="true">
       <a id="Matrix:Matrix[Matrix, Transpose, ColumnVector, RowVector, Scalar]"></a>
       <h4 class="signature">
@@ -181,7 +214,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="MatrixR2x2.html"><span class="name">MatrixR2x2</span></a>
         
-        <span class="result"> extends SquareMatrix[MatrixR2x2, VectorR2, Real] with RealVector[MatrixR2x2]</span>
+        <span class="result"> extends RealVector[MatrixR2x2] with SquareMatrix[MatrixR2x2, VectorR2, Real]</span>
       </span>
       </h4>
       <p class="comment cmt">A 2x2 matrix of <code>Real</code> values.</p>
@@ -192,7 +225,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="MatrixR3x3.html"><span class="name">MatrixR3x3</span></a>
         
-        <span class="result"> extends SquareMatrix[MatrixR3x3, VectorR3, Real] with RealVector[MatrixR3x3]</span>
+        <span class="result"> extends RealVector[MatrixR3x3] with SquareMatrix[MatrixR3x3, VectorR3, Real]</span>
       </span>
       </h4>
       <p class="comment cmt">A 3x3 matrix of <code>Real</code> values.</p>
@@ -203,10 +236,21 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="MatrixR4x4.html"><span class="name">MatrixR4x4</span></a>
         
-        <span class="result"> extends SquareMatrix[MatrixR4x4, VectorR4, Real] with RealVector[MatrixR4x4]</span>
+        <span class="result"> extends RealVector[MatrixR4x4] with SquareMatrix[MatrixR4x4, VectorR4, Real]</span>
       </span>
       </h4>
       <p class="comment cmt">A 4x4 matrix of <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN" data-isabs="false">
+      <a id="MatrixRMxN:MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="MatrixRMxN.html"><span class="name">MatrixRMxN</span></a>
+        
+        <span class="result"> extends RealVector[MatrixRMxN] with Matrix[MatrixRMxN, MatrixRMxN, VectorRN, VectorRN, Real]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An <i>M</i>x<i>N</i> matrix of <code>Real</code> values.</p>
     </li><li visbl="pub" name="basis.algebra.package#MatrixSpace" data-isabs="false">
       <a id="MatrixSpace:MatrixSpace"></a>
       <h4 class="signature">
@@ -361,6 +405,28 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="shortcomment cmt">A concrete 4x4 <code>Real</code> matrix space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 4x4 <code>Real</code> matrix space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#RMxN" data-isabs="false">
+      <a id="RMxN:RMxN"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RMxN</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 7 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete <i>M</i>x<i>N</i> <code>Real</code> matrix space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete <i>M</i>x<i>N</i> <code>Real</code> matrix space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#RN" data-isabs="false">
+      <a id="RN:RN"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">RN</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete <i>N</i>-dimensional <code>Real</code> euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete <i>N</i>-dimensional <code>Real</code> euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Real" data-isabs="false">
       <a id="Real:Real"></a>
       <h4 class="signature">
@@ -368,10 +434,10 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="Real.html"><span class="name">Real</span></a>
         
-        <span class="result"> extends EuclideanVector[Real, Real] with OrderedRing[Real] with CompleteField[Real]</span>
+        <span class="result"> extends EuclideanVector[Real, Real] with RealVector[Real] with OrderedRing[Real] with CompleteField[Real]</span>
       </span>
       </h4>
-      <p class="comment cmt">An approximation of a real number by a <code>Double</code> value.</p>
+      <p class="comment cmt">A real number modeled by a <code>Double</code> value.</p>
     </li><li visbl="pub" name="basis.algebra.package#RealAffineSpace" data-isabs="false">
       <a id="RealAffineSpace:RealAffineSpace"></a>
       <h4 class="signature">
@@ -515,6 +581,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">A vector in a 4-dimensional <code>Real</code> vector space.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorRN" data-isabs="false">
+      <a id="VectorRN:VectorRN"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorRN.html"><span class="name">VectorRN</span></a>
+        
+        <span class="result"> extends EuclideanVector[VectorRN, Real] with RealVector[VectorRN]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in an <i>N</i>-dimensional <code>Real</code> vector space.</p>
     </li><li visbl="pub" name="basis.algebra.package#VectorSpace" data-isabs="false">
       <a id="VectorSpace:VectorSpace"></a>
       <h4 class="signature">
@@ -533,17 +610,28 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="basis.algebra.package#DoubleToReal" data-isabs="false">
-      <a id="DoubleToReal(Double):Real"></a>
+              <ol><li visbl="pub" name="basis.algebra.Complex" data-isabs="false">
+      <a id="Complex:Complex"></a>
       <h4 class="signature">
-      <span class="kind">implicit def</span>
+      <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">DoubleToReal</span>
+        <a href="Complex$.html"><span class="name">Complex</span></a>
         
-        <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
+        <span class="result"> extends Struct2[Double, Double, Complex]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+      <p class="comment cmt">Contains factory methods for <code>Complex</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.Integer" data-isabs="false">
+      <a id="Integer:Integer"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Integer$.html"><span class="name">Integer</span></a>
+        
+        <span class="result"> extends Struct1[Long, Integer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for <code>Integer</code> values.</p>
     </li><li visbl="pub" name="basis.algebra.MatrixR2x2" data-isabs="false">
       <a id="MatrixR2x2:MatrixR2x2"></a>
       <h4 class="signature">
@@ -577,6 +665,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for matrices in <code>R4x4</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.MatrixRMxN" data-isabs="false">
+      <a id="MatrixRMxN:MatrixRMxN"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="MatrixRMxN$.html"><span class="name">MatrixRMxN</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for <i>M</i>x<i>N</i>-dimensional <code>Real</code> matrices.</p>
     </li><li visbl="pub" name="basis.algebra.PointR2" data-isabs="false">
       <a id="PointR2:PointR2"></a>
       <h4 class="signature">
@@ -587,7 +686,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct2[Double, Double, PointR2]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for points in <code>R2</code>.</p>
+      <p class="comment cmt">Contains factory methods for points in <code>R2</code>.</p>
     </li><li visbl="pub" name="basis.algebra.PointR3" data-isabs="false">
       <a id="PointR3:PointR3"></a>
       <h4 class="signature">
@@ -598,7 +697,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct3[Double, Double, Double, PointR3]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for points in <code>R3</code>.</p>
+      <p class="comment cmt">Contains factory methods for points in <code>R3</code>.</p>
     </li><li visbl="pub" name="basis.algebra.Real" data-isabs="false">
       <a id="Real:Real"></a>
       <h4 class="signature">
@@ -609,18 +708,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct1[Double, Real]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for <code>Real</code> values.</p>
-    </li><li visbl="pub" name="basis.algebra.package#RealToDouble" data-isabs="false">
-      <a id="RealToDouble(Real):Double"></a>
-      <h4 class="signature">
-      <span class="kind">implicit def</span>
-      <span class="symbol">
-        <span class="name">RealToDouble</span>
-        
-        <span class="params">(<span name="real">real: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>)</span><span class="result">: <span name="scala.Double" class="extype">Double</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+      <p class="comment cmt">Contains factory methods for <code>Real</code> values.</p>
     </li><li visbl="pub" name="basis.algebra.VectorR2" data-isabs="false">
       <a id="VectorR2:VectorR2"></a>
       <h4 class="signature">
@@ -631,7 +719,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct2[Double, Double, VectorR2]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R2</code>.</p>
+      <p class="comment cmt">Contains factory methods for vectors in <code>R2</code>.</p>
     </li><li visbl="pub" name="basis.algebra.VectorR3" data-isabs="false">
       <a id="VectorR3:VectorR3"></a>
       <h4 class="signature">
@@ -642,7 +730,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct3[Double, Double, Double, VectorR3]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R3</code>.</p>
+      <p class="comment cmt">Contains factory methods for vectors in <code>R3</code>.</p>
     </li><li visbl="pub" name="basis.algebra.VectorR4" data-isabs="false">
       <a id="VectorR4:VectorR4"></a>
       <h4 class="signature">
@@ -653,7 +741,18 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
         <span class="result"> extends Struct4[Double, Double, Double, Double, VectorR4]</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods and serves as a struct for vectors in <code>R4</code>.</p>
+      <p class="comment cmt">Contains factory methods for vectors in <code>R4</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorRN" data-isabs="false">
+      <a id="VectorRN:VectorRN"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorRN$.html"><span class="name">VectorRN</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for <i>N</i>-dimensional <code>Real</code> vectors.</p>
     </li></ol>
             </div>
 
