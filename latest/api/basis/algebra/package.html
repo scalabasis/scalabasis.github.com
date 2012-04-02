@@ -75,7 +75,18 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="basis.algebra.AffinePoint" data-isabs="true">
+              <ol><li visbl="pub" name="basis.algebra.AdditiveIdentity" data-isabs="false">
+      <a id="AdditiveIdentity:AdditiveIdentity[T]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="AdditiveIdentity.html"><span class="name">AdditiveIdentity</span></a>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> extends (basis.algebra.Zero.type) ⇒ T</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A typeclass representing the additive identity, or <i>zero</i> element of a type.</p>
+    </li><li visbl="pub" name="basis.algebra.AffinePoint" data-isabs="true">
       <a id="AffinePoint:AffinePoint[AffinePoint, Vector, Scalar]"></a>
       <h4 class="signature">
       <span class="kind">trait</span>
@@ -97,6 +108,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="shortcomment cmt">An abstract affine space over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#CompleteAffineSpace" data-isabs="false">
+      <a id="CompleteAffineSpace:CompleteAffineSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">CompleteAffineSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract affine space over a complete field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over a complete field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField" data-isabs="true">
       <a id="CompleteField:CompleteField[CompleteField]"></a>
       <h4 class="signature">
@@ -108,6 +130,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">An element of a complete field.</p>
+    </li><li visbl="pub" name="basis.algebra.package#CompleteOrderedAffineSpace" data-isabs="false">
+      <a id="CompleteOrderedAffineSpace:CompleteOrderedAffineSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">CompleteOrderedAffineSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract affine space over a complete ordered field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over a complete ordered field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.package#CompleteOrderedVectorSpace" data-isabs="false">
       <a id="CompleteOrderedVectorSpace:CompleteOrderedVectorSpace"></a>
       <h4 class="signature">
@@ -141,6 +174,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">A complex number modeled by a <code>Double</code> real part and a <code>Double</code> imaginary part.</p>
+    </li><li visbl="pub" name="basis.algebra.DenseVector" data-isabs="false">
+      <a id="DenseVector:DenseVector[Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="DenseVector.html"><span class="name">DenseVector</span></a>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: Ring[Scalar]</span>]</span>
+        <span class="result"> extends Vector[DenseVector[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A dense generic vector over a ring.</p>
     </li><li visbl="pub" name="basis.algebra.DimensionException" data-isabs="false">
       <a id="DimensionException:DimensionException"></a>
       <h4 class="signature">
@@ -273,6 +317,18 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="shortcomment cmt">An abstract linear space over a ring.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a ring.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.MultiplicativeIdentity" data-isabs="false">
+      <a id="MultiplicativeIdentity:MultiplicativeIdentity[T]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="MultiplicativeIdentity.html"><span class="name">MultiplicativeIdentity</span></a>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> extends (basis.algebra.One.type) ⇒ T</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A typeclass representing the multiplicative identity, or <i>one</i> element of
+a type.</p>
     </li><li visbl="pub" name="basis.algebra.Ordered" data-isabs="true">
       <a id="Ordered:Ordered[Ordered]"></a>
       <h4 class="signature">
@@ -284,6 +340,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">An element of a totally ordered set.</p>
+    </li><li visbl="pub" name="basis.algebra.package#OrderedAffineSpace" data-isabs="false">
+      <a id="OrderedAffineSpace:OrderedAffineSpace"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">OrderedAffineSpace</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An abstract affine space over an ordered field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over an ordered field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.OrderedRing" data-isabs="true">
       <a id="OrderedRing:OrderedRing[OrderedRing]"></a>
       <h4 class="signature">
@@ -548,6 +615,39 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">A vector in a module.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector2" data-isabs="false">
+      <a id="Vector2:Vector2[Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Vector2.html"><span class="name">Vector2</span></a>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: Ring[Scalar]</span>]</span>
+        <span class="result"> extends Vector[Vector2[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A generic 2-dimensional vector over a ring.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector3" data-isabs="false">
+      <a id="Vector3:Vector3[Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Vector3.html"><span class="name">Vector3</span></a>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: Ring[Scalar]</span>]</span>
+        <span class="result"> extends Vector[Vector3[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A generic 3-dimensional vector over a ring.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector4" data-isabs="false">
+      <a id="Vector4:Vector4[Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Vector4.html"><span class="name">Vector4</span></a>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: Ring[Scalar]</span>]</span>
+        <span class="result"> extends Vector[Vector4[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A generic 4-dimensional vector over a ring.</p>
     </li><li visbl="pub" name="basis.algebra.VectorR2" data-isabs="false">
       <a id="VectorR2:VectorR2"></a>
       <h4 class="signature">
@@ -617,10 +717,21 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="Complex$.html"><span class="name">Complex</span></a>
         
-        <span class="result"> extends Struct2[Double, Double, Complex]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods for <code>Complex</code> values.</p>
+      <p class="comment cmt">Contains factory methods and implicit conversions for <code>Complex</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.DenseVector" data-isabs="false">
+      <a id="DenseVector:DenseVector"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="DenseVector$.html"><span class="name">DenseVector</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for dense generic vectors.</p>
     </li><li visbl="pub" name="basis.algebra.Integer" data-isabs="false">
       <a id="Integer:Integer"></a>
       <h4 class="signature">
@@ -628,10 +739,10 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="Integer$.html"><span class="name">Integer</span></a>
         
-        <span class="result"> extends Struct1[Long, Integer]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods for <code>Integer</code> values.</p>
+      <p class="comment cmt">Contains factory methods and implicit conversions for <code>Integer</code> values.</p>
     </li><li visbl="pub" name="basis.algebra.MatrixR2x2" data-isabs="false">
       <a id="MatrixR2x2:MatrixR2x2"></a>
       <h4 class="signature">
@@ -676,6 +787,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for <i>M</i>x<i>N</i>-dimensional <code>Real</code> matrices.</p>
+    </li><li visbl="pub" name="basis.algebra.One" data-isabs="false">
+      <a id="One:One"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="One$.html"><span class="name">One</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A polymorphic identifier for the multiplicative identity, or <i>one</i> element of a type.</p>
     </li><li visbl="pub" name="basis.algebra.PointR2" data-isabs="false">
       <a id="PointR2:PointR2"></a>
       <h4 class="signature">
@@ -683,7 +805,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="PointR2$.html"><span class="name">PointR2</span></a>
         
-        <span class="result"> extends Struct2[Double, Double, PointR2]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for points in <code>R2</code>.</p>
@@ -694,7 +816,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="PointR3$.html"><span class="name">PointR3</span></a>
         
-        <span class="result"> extends Struct3[Double, Double, Double, PointR3]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for points in <code>R3</code>.</p>
@@ -705,10 +827,43 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="Real$.html"><span class="name">Real</span></a>
         
-        <span class="result"> extends Struct1[Double, Real]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
-      <p class="comment cmt">Contains factory methods for <code>Real</code> values.</p>
+      <p class="comment cmt">Contains factory methods and implicit conversions for <code>Real</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector2" data-isabs="false">
+      <a id="Vector2:Vector2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Vector2$.html"><span class="name">Vector2</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for generic 2-dimensional vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector3" data-isabs="false">
+      <a id="Vector3:Vector3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Vector3$.html"><span class="name">Vector3</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for generic 3-dimensional vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.Vector4" data-isabs="false">
+      <a id="Vector4:Vector4"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Vector4$.html"><span class="name">Vector4</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for generic 4-dimensional vectors.</p>
     </li><li visbl="pub" name="basis.algebra.VectorR2" data-isabs="false">
       <a id="VectorR2:VectorR2"></a>
       <h4 class="signature">
@@ -716,7 +871,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="VectorR2$.html"><span class="name">VectorR2</span></a>
         
-        <span class="result"> extends Struct2[Double, Double, VectorR2]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for vectors in <code>R2</code>.</p>
@@ -727,7 +882,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="VectorR3$.html"><span class="name">VectorR3</span></a>
         
-        <span class="result"> extends Struct3[Double, Double, Double, VectorR3]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for vectors in <code>R3</code>.</p>
@@ -738,7 +893,7 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="VectorR4$.html"><span class="name">VectorR4</span></a>
         
-        <span class="result"> extends Struct4[Double, Double, Double, Double, VectorR4]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for vectors in <code>R4</code>.</p>
@@ -753,6 +908,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for <i>N</i>-dimensional <code>Real</code> vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.Zero" data-isabs="false">
+      <a id="Zero:Zero"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Zero$.html"><span class="name">Zero</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A polymorphic identifier for the additive identity, or <i>zero</i> element of a type.</p>
     </li></ol>
             </div>
 

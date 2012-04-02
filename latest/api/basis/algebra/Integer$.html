@@ -24,14 +24,13 @@
       <span class="symbol">
         <span class="name">Integer</span>
         
-        <span class="result"> extends <a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a>[<span name="scala.Long" class="extype">Long</span>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods for <code>Integer</code> values. Serves as a struct for <code>Integer</code> values.
-Contains implicit conversions between <code>Long</code> values and <code>Integer</code> values.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Integer.scala">Integer.scala</a></dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods and implicit conversions for <code>Integer</code> values.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Integer.scala">Integer.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a>[<span name="scala.Long" class="extype">Long</span>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>], <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -47,7 +46,7 @@ Contains implicit conversions between <code>Long</code> values and <code>Integer
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.Integer" class="in"><span>Integer</span></li><li name="basis.memory.Struct1" class="in"><span>Struct1</span></li><li name="basis.memory.Struct" class="in"><span>Struct</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.Integer" class="in"><span>Integer</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -59,17 +58,17 @@ Contains implicit conversions between <code>Long</code> values and <code>Integer
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="prt" name="basis.memory.Struct.Frame" data-isabs="false">
-      <a id="Frame:Frame"></a>
+              <ol><li visbl="pub" name="basis.algebra.Integer.StructInteger" data-isabs="false">
+      <a id="StructInteger:StructInteger"></a>
       <h4 class="signature">
       <span class="kind">class</span>
       <span class="symbol">
-        <a href="../memory/Struct$Frame.html"><span class="name">Frame</span></a>
+        <a href="Integer$$StructInteger.html"><span class="name">StructInteger</span></a>
         
-        <span class="result"> extends Struct[T]</span>
+        <span class="result"> extends Struct1[Long, Integer]</span>
       </span>
       </h4>
-      <p class="comment cmt">A projection of the outer struct into a different frame.</p>
+      <p class="comment cmt">A struct for <code>Integer</code> values.</p>
     </li></ol>
             </div>
 
@@ -132,40 +131,17 @@ Contains implicit conversions between <code>Long</code> values and <code>Integer
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Integer#One" data-isabs="false">
-      <a id="One:Integer"></a>
+    </li><li visbl="pub" name="basis.algebra.Integer#additiveIdentity" data-isabs="false">
+      <a id="additiveIdentity:AdditiveIdentity[Integer]"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
+      <span class="kind">implicit val</span>
       <span class="symbol">
-        <span class="name">One</span>
+        <span class="name">additiveIdentity</span>
         
-        <span class="result">: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>
+        <span class="result">: <a name="basis.algebra.AdditiveIdentity" class="extype" href="AdditiveIdentity.html">AdditiveIdentity</a>[<a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The multiplicative identity of the <code>Integer</code> ring.</p>
-    </li><li visbl="pub" name="basis.algebra.Integer#Zero" data-isabs="false">
-      <a id="Zero:Integer"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">Zero</span>
-        
-        <span class="result">: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The additive identity of the <code>Integer</code> ring.</p>
-    </li><li visbl="pub" name="basis.memory.Struct1#alignment" data-isabs="false">
-      <a id="alignment:Long"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">alignment</span>
-        
-        <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The power-of-two alignment of this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The power-of-two alignment of this struct's frame. Storage addresses must
-be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+      <p class="shortcomment cmt">The additive identity of the <code>Integer</code> ring.</p><div class="fullcomment"><div class="comment cmt"><p>The additive identity of the <code>Integer</code> ring.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#apply" data-isabs="false">
       <a id="apply(Long):Integer"></a>
       <h4 class="signature">
@@ -213,17 +189,6 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct1#column" data-isabs="false">
-      <a id="column:Struct[Long]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit val</span>
-      <span class="symbol">
-        <span class="name">column</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Long" class="extype">Long</span>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected implicit </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -246,17 +211,6 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct1#field" data-isabs="false">
-      <a id="field:Struct[Long]"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">field</span>
-        
-        <span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<span name="scala.Long" class="extype">Long</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The projection of the column into this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The projection of the column into this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -304,19 +258,17 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Integer#load" data-isabs="false">
-      <a id="load(Data,Long):Integer"></a>
+    </li><li visbl="pub" name="basis.algebra.Integer#multiplicativeIdentity" data-isabs="false">
+      <a id="multiplicativeIdentity:MultiplicativeIdentity[Integer]"></a>
       <h4 class="signature">
-      <span class="kind">def</span>
+      <span class="kind">implicit val</span>
       <span class="symbol">
-        <span class="name">load</span>
+        <span class="name">multiplicativeIdentity</span>
         
-        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>
+        <span class="result">: <a name="basis.algebra.MultiplicativeIdentity" class="extype" href="MultiplicativeIdentity.html">MultiplicativeIdentity</a>[<a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Loads an instance of a data value.</p><div class="fullcomment"><div class="comment cmt"><p>Loads an instance of a data value.
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the <code>Data</code> to load from.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load from.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
+      <p class="shortcomment cmt">The multiplicative identity of the <code>Integer</code> ring.</p><div class="fullcomment"><div class="comment cmt"><p>The multiplicative identity of the <code>Integer</code> ring.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -350,64 +302,17 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="prt" name="basis.memory.Struct1#offset" data-isabs="false">
-      <a id="offset:Long"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">offset</span>
-        
-        <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The offset of the column in this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The offset of the column in this struct's frame.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.memory.Struct1#project" data-isabs="false">
-      <a id="project(Long,Long,Long):Struct[Integer]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">project</span>
-        
-        <span class="params">(<span name="offset">offset: <span name="scala.Long" class="extype">Long</span></span>, <span name="size">size: <span name="scala.Long" class="extype">Long</span></span>, <span name="alignment">alignment: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Projects this struct into a different frame.</p><div class="fullcomment"><div class="comment cmt"><p>Projects this struct into a different frame.
-</p></div><dl class="paramcmts block"><dt class="param">offset</dt><dd class="cmt"><p>the incremental offset into the new frame.</p></dd><dt class="param">size</dt><dd class="cmt"><p>the preferred size of the new frame.</p></dd><dt class="param">alignment</dt><dd class="cmt"><p>the preferred alignment of the new frame.</p></dd><dt>returns</dt><dd class="cmt"><p>this struct embedded into a new frame.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.memory.Struct1#size" data-isabs="false">
-      <a id="size:Long"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">size</span>
-        
-        <span class="result">: <span name="scala.Long" class="extype">Long</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The size in bytes of this struct's frame.</p><div class="fullcomment"><div class="comment cmt"><p>The size in bytes of this struct's frame. Must be a multiple of <code>alignment</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Integer#store" data-isabs="false">
-      <a id="store(Data,Long,Integer):Unit"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">store</span>
-        
-        <span class="params">(<span name="data">data: <a name="basis.memory.Data" class="extype" href="../memory/Data.html">Data</a></span>, <span name="address">address: <span name="scala.Long" class="extype">Long</span></span>, <span name="integer">integer: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores an instance as a data value.</p><div class="fullcomment"><div class="comment cmt"><p>Stores an instance as a data value.
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the <code>Data</code> to store to.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to store to.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#struct" data-isabs="false">
-      <a id="struct:basis.algebra.Integer.type"></a>
+      <a id="struct:StructInteger"></a>
       <h4 class="signature">
-      <span class="kind">implicit def</span>
+      <span class="kind">implicit lazy val</span>
       <span class="symbol">
         <span class="name">struct</span>
         
-        <span class="result">: basis.algebra.Integer.type</span>
+        <span class="result">: <a name="basis.algebra.Integer.StructInteger" class="extype" href="Integer$$StructInteger.html">StructInteger</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <p class="shortcomment cmt">The default struct for <code>Integer</code> values.</p><div class="fullcomment"><div class="comment cmt"><p>The default struct for <code>Integer</code> values.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -419,17 +324,17 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Integer#toString" data-isabs="false">
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">toString</span>
         
-        <span class="params">()</span><span class="result">: String</span>
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#unapply" data-isabs="false">
       <a id="unapply(Integer):Some[Long]"></a>
       <h4 class="signature">
@@ -499,11 +404,7 @@ be multiples of this alignment.</p></div><dl class="attributes block"> <dt>Defin
 
         
 
-        <div name="basis.memory.Struct1" class="parent">
-              <h3>Inherited from <a name="basis.memory.Struct1" class="extype" href="../memory/Struct1.html">Struct1</a>[<span name="scala.Long" class="extype">Long</span>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</h3>
-            </div><div name="basis.memory.Struct" class="parent">
-              <h3>Inherited from <a name="basis.memory.Struct" class="extype" href="../memory/Struct.html">Struct</a>[<a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</h3>
-            </div><div name="scala.AnyRef" class="parent">
+        <div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
