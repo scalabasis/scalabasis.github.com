@@ -24,14 +24,14 @@
       <span class="symbol">
         <span class="name">Integer</span>
         
-        <span class="result"> extends <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</span>
+        <span class="result"> extends <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>] with <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An integer modeled by a <code>Long</code> value.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Integer.scala">Integer.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Ordered" class="extype" href="Ordered.html">Ordered</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Ordered" class="extype" href="Ordered.html">Ordered</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -47,7 +47,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.Integer" class="in"><span>Integer</span></li><li name="basis.algebra.OrderedRing" class="in"><span>OrderedRing</span></li><li name="basis.algebra.Ring" class="in"><span>Ring</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="basis.algebra.Ordered" class="in"><span>Ordered</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.Integer" class="in"><span>Integer</span></li><li name="basis.algebra.OrderedRing" class="in"><span>OrderedRing</span></li><li name="basis.algebra.Ring" class="in"><span>Ring</span></li><li name="basis.algebra.Ordered" class="in"><span>Ordered</span></li><li name="basis.algebra.IntegerVector" class="in"><span>IntegerVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -111,17 +111,17 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#*" data-isabs="false">
-      <a id="*(Int):Integer"></a>
+      <a id="*(Long):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">*</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by an <code>Int</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by an <code>Int</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Integer</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by an <code>Long</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by an <code>Long</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Integer</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#*" data-isabs="false">
       <a id="*(Integer):Integer"></a>
@@ -136,7 +136,20 @@
       <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by another <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by another <code>Integer</code> value.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Integer</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Integer</code> value and the other <code>Integer</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Ring#*:" data-isabs="false">
+    </li><li visbl="pub" name="basis.algebra.Integer#*:" data-isabs="false">
+      <a id="*:(Long):Integer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">*:</span>
+        
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by a <code>Long</code> value on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by a <code>Long</code> value on the left.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Integer</code> value.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Integer#*:" data-isabs="false">
       <a id="*:(Integer):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -148,19 +161,19 @@
       </h4>
       <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by a <code>Integer</code> value on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by a <code>Integer</code> value on the left.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Integer</code> value.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#+" data-isabs="false">
-      <a id="+(Int):Integer"></a>
+      <a id="+(Long):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">+</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Adds an <code>Int</code> value to this <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Int</code> value to this <code>Integer</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>Integer</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Adds an <code>Long</code> value to this <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Long</code> value to this <code>Integer</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>Integer</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#+" data-isabs="false">
       <a id="+(Integer):Integer"></a>
@@ -176,17 +189,17 @@
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Integer</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector sum of this <code>Integer</code> value and the other <code>Integer</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#-" data-isabs="false">
-      <a id="-(Int):Integer"></a>
+      <a id="-(Long):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">-</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Subtracts an <code>Int</code> value from this <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Int</code> value from this <code>Integer</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>Integer</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Subtracts an <code>Long</code> value from this <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Long</code> value from this <code>Integer</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>Integer</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#-" data-isabs="false">
       <a id="-(Integer):Integer"></a>
@@ -201,7 +214,20 @@
       <p class="shortcomment cmt">Subtracts a <code>Integer</code> value from this <code>Integer</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a <code>Integer</code> value from this <code>Integer</code> value.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Integer</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this <code>Integer</code> value and the other <code>Integer</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Ring#:*" data-isabs="false">
+    </li><li visbl="pub" name="basis.algebra.Integer#:*" data-isabs="false">
+      <a id=":*(Long):Integer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">:*</span>
+        
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Multiplies this <code>Integer</code> value by a <code>Long</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Integer</code> value by a <code>Long</code> value on the right.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Integer</code> value.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Integer#:*" data-isabs="false">
       <a id=":*(Integer):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -213,7 +239,7 @@
       </h4>
       <p class="shortcomment cmt">Multiples this <code>Integer</code> value by a <code>Integer</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>Integer</code> value by a <code>Integer</code> value on the right.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Integer</code> value.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
       <a id=":+(Integer):Integer"></a>
       <h4 class="signature">
@@ -478,17 +504,17 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Integer#pow" data-isabs="false">
-      <a id="pow(Int):Integer"></a>
+      <a id="pow(Long):Integer"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">pow</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="basis.algebra.Integer" class="extype" href="">Integer</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Raises this <code>Integer</code> value to a positive <code>Int</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>Integer</code> value to a positive <code>Int</code> power.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>this <code>Integer</code> value multiplied by itself <code>n</code> times.
+      <p class="shortcomment cmt">Raises this <code>Integer</code> value to a positive <code>Long</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>Integer</code> value to a positive <code>Long</code> power.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>this <code>Integer</code> value multiplied by itself <code>n</code> times.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Integer" class="extype" href="">Integer</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
@@ -631,12 +657,14 @@
               <h3>Inherited from <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
             </div><div name="basis.algebra.Ring" class="parent">
               <h3>Inherited from <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
+            </div><div name="basis.algebra.Ordered" class="parent">
+              <h3>Inherited from <a name="basis.algebra.Ordered" class="extype" href="Ordered.html">Ordered</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
+            </div><div name="basis.algebra.IntegerVector" class="parent">
+              <h3>Inherited from <a name="basis.algebra.IntegerVector" class="extype" href="IntegerVector.html">IntegerVector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
             </div><div name="basis.algebra.Vector" class="parent">
               <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
             </div><div name="basis.algebra.AffinePoint" class="parent">
               <h3>Inherited from <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>, <a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
-            </div><div name="basis.algebra.Ordered" class="parent">
-              <h3>Inherited from <a name="basis.algebra.Ordered" class="extype" href="Ordered.html">Ordered</a>[<a name="basis.algebra.Integer" class="extype" href="">Integer</a>]</h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

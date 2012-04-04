@@ -28,8 +28,8 @@
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An element of a complete field.</p><p>A <code>CompleteField</code> has a morphism from <code>Int</code> values to <code>CompleteField</code> value values.
-An <code>Int</code> value <i>n</i> represents the <i>nth</i> addition of the <code>CompleteField</code>'s
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An element of a complete field.</p><p>A <code>CompleteField</code> has a morphism from <code>Long</code> values to <code>CompleteField</code> value values.
+An <code>Long</code> value <i>n</i> represents the <i>nth</i> addition of the <code>CompleteField</code>'s
 multiplicative identity to its additive identity.</p><p>A <code>CompleteField</code> also has a morphism from <code>Double</code> values to <code>CompleteField</code> values.
 A <code>Double</code> value <i>x</i> represents a rational approximation to an element of
 this <code>CompleteField</code>.</p></div><dl class="paramcmts block"><dt class="tparam">CompleteField</dt><dd class="cmt"><p>the element type of the complete field.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/CompleteField.scala">CompleteField.scala</a></dd></dl><div class="toggleContainer block">
@@ -275,17 +275,17 @@ contains the roots of all values.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField#*" data-isabs="false">
-      <a id="*(Int):CompleteField"></a>
+      <a id="*(Long):CompleteField"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">*</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: CompleteField</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiplies this <code>CompleteField</code> value by an <code>Int</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>CompleteField</code> value by an <code>Int</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>CompleteField</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Multiplies this <code>CompleteField</code> value by an <code>Long</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>CompleteField</code> value by an <code>Long</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>CompleteField</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.CompleteField" class="extype" href="">CompleteField</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#*:" data-isabs="false">
       <a id="*:(CompleteField):CompleteField"></a>
@@ -297,47 +297,47 @@ contains the roots of all values.
         <span class="params">(<span name="that">that: CompleteField</span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiplies this <code>CompleteField</code> value by a scalar on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>CompleteField</code> value by a scalar on the left.
+      <p class="shortcomment cmt">Multiplies this <code>CompleteField</code> value by a <code>CompleteField</code> value on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>CompleteField</code> value by a <code>CompleteField</code> value on the left.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>CompleteField</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField#+" data-isabs="false">
-      <a id="+(Int):CompleteField"></a>
+      <a id="+(Long):CompleteField"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">+</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: CompleteField</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Adds an <code>Int</code> value to this <code>CompleteField</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Int</code> value to this <code>CompleteField</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>CompleteField</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Adds an <code>Long</code> value to this <code>CompleteField</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Long</code> value to this <code>CompleteField</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>CompleteField</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.CompleteField" class="extype" href="">CompleteField</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField#-" data-isabs="false">
-      <a id="-(Int):CompleteField"></a>
+      <a id="-(Long):CompleteField"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">-</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: CompleteField</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Subtracts an <code>Int</code> value from this <code>CompleteField</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Int</code> value from this <code>CompleteField</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>CompleteField</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Subtracts an <code>Long</code> value from this <code>CompleteField</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Long</code> value from this <code>CompleteField</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>CompleteField</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.CompleteField" class="extype" href="">CompleteField</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField#/" data-isabs="false">
-      <a id="/(Int):CompleteField"></a>
+      <a id="/(Long):CompleteField"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">/</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: CompleteField</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Divides this <code>CompleteField</code> value by an <code>Int</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Divides this <code>CompleteField</code> value by an <code>Int</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to divide by.</p></dd><dt>returns</dt><dd class="cmt"><p>the quotient of this <code>CompleteField</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Divides this <code>CompleteField</code> value by an <code>Long</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Divides this <code>CompleteField</code> value by an <code>Long</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to divide by.</p></dd><dt>returns</dt><dd class="cmt"><p>the quotient of this <code>CompleteField</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.CompleteField" class="extype" href="">CompleteField</a> → <a name="basis.algebra.Field" class="extype" href="Field.html">Field</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#:*" data-isabs="false">
       <a id=":*(CompleteField):CompleteField"></a>
@@ -349,7 +349,7 @@ contains the roots of all values.
         <span class="params">(<span name="that">that: CompleteField</span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiples this <code>CompleteField</code> value by a scalar on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>CompleteField</code> value by a scalar on the right.
+      <p class="shortcomment cmt">Multiples this <code>CompleteField</code> value by a <code>CompleteField</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>CompleteField</code> value by a <code>CompleteField</code> value on the right.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>CompleteField</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
@@ -528,17 +528,17 @@ contains the roots of all values.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.CompleteField#pow" data-isabs="false">
-      <a id="pow(Int):CompleteField"></a>
+      <a id="pow(Long):CompleteField"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">pow</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: CompleteField</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: CompleteField</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Raises this <code>CompleteField</code> value to an <code>Int</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>CompleteField</code> value to an <code>Int</code> power.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>the exponentiation of this <code>CompleteField</code> value by the <code>Int</code> exponent.
+      <p class="shortcomment cmt">Raises this <code>CompleteField</code> value to an <code>Long</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>CompleteField</code> value to an <code>Long</code> power.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>the exponentiation of this <code>CompleteField</code> value by the <code>Long</code> exponent.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.CompleteField" class="extype" href="">CompleteField</a> → <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>

@@ -196,28 +196,6 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       
-    </li><li visbl="pub" name="basis.algebra.package#EuclideanSpace" data-isabs="false">
-      <a id="EuclideanSpace:EuclideanSpace"></a>
-      <h4 class="signature">
-      <span class="kind">type</span>
-      <span class="symbol">
-        <span class="name">EuclideanSpace</span>
-        
-        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">An abstract euclidean space.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract euclidean space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.EuclideanVector" data-isabs="true">
-      <a id="EuclideanVector:EuclideanVector[EuclideanVector, Scalar]"></a>
-      <h4 class="signature">
-      <span class="kind">trait</span>
-      <span class="symbol">
-        <a href="EuclideanVector.html"><span class="name">EuclideanVector</span></a>
-        <span class="tparams">[<span name="EuclideanVector">EuclideanVector</span>, <span name="Scalar">Scalar</span>]</span>
-        <span class="result"> extends Vector[EuclideanVector, Scalar]</span>
-      </span>
-      </h4>
-      <p class="comment cmt">A vector in a euclidean space.</p>
     </li><li visbl="pub" name="basis.algebra.Field" data-isabs="true">
       <a id="Field:Field[Field]"></a>
       <h4 class="signature">
@@ -229,6 +207,50 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </span>
       </h4>
       <p class="comment cmt">An element of a field.</p>
+    </li><li visbl="pub" name="basis.algebra.package#IZ1" data-isabs="false">
+      <a id="IZ1:IZ1"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">IZ1</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 1-dimensional discrete interval module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 1-dimensional discrete interval module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#IZ2" data-isabs="false">
+      <a id="IZ2:IZ2"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">IZ2</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 2-dimensional discrete interval module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 2-dimensional discrete interval module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#IZ3" data-isabs="false">
+      <a id="IZ3:IZ3"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">IZ3</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 3-dimensional discrete interval module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 3-dimensional discrete interval module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.InnerProduct" data-isabs="true">
+      <a id="InnerProduct:InnerProduct[Vector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="InnerProduct.html"><span class="name">InnerProduct</span></a>
+        <span class="tparams">[<span name="Vector">-Vector</span>, <span name="Scalar">+Scalar</span>]</span>
+        <span class="result"> extends (Vector, Vector) ⇒ Scalar</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A typeclass for an inner product on a vector space.</p>
     </li><li visbl="pub" name="basis.algebra.Integer" data-isabs="false">
       <a id="Integer:Integer"></a>
       <h4 class="signature">
@@ -236,10 +258,54 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       <span class="symbol">
         <a href="Integer.html"><span class="name">Integer</span></a>
         
-        <span class="result"> extends OrderedRing[Integer]</span>
+        <span class="result"> extends IntegerVector[Integer] with OrderedRing[Integer]</span>
       </span>
       </h4>
       <p class="comment cmt">An integer modeled by a <code>Long</code> value.</p>
+    </li><li visbl="pub" name="basis.algebra.IntegerVector" data-isabs="true">
+      <a id="IntegerVector:IntegerVector[IntegralVector]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="IntegerVector.html"><span class="name">IntegerVector</span></a>
+        <span class="tparams">[<span name="IntegralVector">IntegralVector</span>]</span>
+        <span class="result"> extends Vector[IntegralVector, Integer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in an <code>Integer</code> module.</p>
+    </li><li visbl="pub" name="basis.algebra.Interval" data-isabs="false">
+      <a id="Interval:Interval"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="Interval.html"><span class="name">Interval</span></a>
+        
+        <span class="result"> extends Ring[Interval]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A discrete closed interval implementing arithmetic operations.</p>
+    </li><li visbl="pub" name="basis.algebra.IntervalZ2" data-isabs="false">
+      <a id="IntervalZ2:IntervalZ2"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="IntervalZ2.html"><span class="name">IntervalZ2</span></a>
+        
+        <span class="result"> extends Vector[IntervalZ2, Interval]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A 2-dimensional vector of discrete intervals.</p>
+    </li><li visbl="pub" name="basis.algebra.IntervalZ3" data-isabs="false">
+      <a id="IntervalZ3:IntervalZ3"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="IntervalZ3.html"><span class="name">IntervalZ3</span></a>
+        
+        <span class="result"> extends Vector[IntervalZ3, Interval]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A 3-dimensional vector of discrete intervals.</p>
     </li><li visbl="pub" name="basis.algebra.Matrix" data-isabs="true">
       <a id="Matrix:Matrix[Matrix, Transpose, ColumnVector, RowVector, Scalar]"></a>
       <h4 class="signature">
@@ -329,6 +395,17 @@ res1: basis.algebra.package.R2#Vector = VectorR2(13.0, 16.0)
       </h4>
       <p class="comment cmt">A typeclass representing the multiplicative identity, or <i>one</i> element of
 a type.</p>
+    </li><li visbl="pub" name="basis.algebra.Norm" data-isabs="true">
+      <a id="Norm:Norm[Vector, Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <a href="Norm.html"><span class="name">Norm</span></a>
+        <span class="tparams">[<span name="Vector">-Vector</span>, <span name="Scalar">+Scalar</span>]</span>
+        <span class="result"> extends (Vector) ⇒ Scalar</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A typeclass for a norm on a vector space.</p>
     </li><li visbl="pub" name="basis.algebra.Ordered" data-isabs="true">
       <a id="Ordered:Ordered[Ordered]"></a>
       <h4 class="signature">
@@ -501,7 +578,7 @@ a type.</p>
       <span class="symbol">
         <a href="Real.html"><span class="name">Real</span></a>
         
-        <span class="result"> extends EuclideanVector[Real, Real] with RealVector[Real] with OrderedRing[Real] with CompleteField[Real]</span>
+        <span class="result"> extends RealVector[Real] with OrderedRing[Real] with CompleteField[Real]</span>
       </span>
       </h4>
       <p class="comment cmt">A real number modeled by a <code>Double</code> value.</p>
@@ -516,17 +593,6 @@ a type.</p>
       </span>
       </h4>
       <p class="shortcomment cmt">An abstract affine space over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract affine space over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.package#RealEuclideanSpace" data-isabs="false">
-      <a id="RealEuclideanSpace:RealEuclideanSpace"></a>
-      <h4 class="signature">
-      <span class="kind">type</span>
-      <span class="symbol">
-        <span class="name">RealEuclideanSpace</span>
-        
-        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">An abstract euclidean space over the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract euclidean space over the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.package#RealMatrixSpace" data-isabs="false">
       <a id="RealMatrixSpace:RealMatrixSpace"></a>
       <h4 class="signature">
@@ -655,7 +721,7 @@ a type.</p>
       <span class="symbol">
         <a href="VectorR2.html"><span class="name">VectorR2</span></a>
         
-        <span class="result"> extends EuclideanVector[VectorR2, Real] with RealVector[VectorR2]</span>
+        <span class="result"> extends RealVector[VectorR2]</span>
       </span>
       </h4>
       <p class="comment cmt">A vector in a 2-dimensional <code>Real</code> vector space.</p>
@@ -666,7 +732,7 @@ a type.</p>
       <span class="symbol">
         <a href="VectorR3.html"><span class="name">VectorR3</span></a>
         
-        <span class="result"> extends EuclideanVector[VectorR3, Real] with RealVector[VectorR3]</span>
+        <span class="result"> extends RealVector[VectorR3]</span>
       </span>
       </h4>
       <p class="comment cmt">A vector in a 3-dimensional <code>Real</code> vector space.</p>
@@ -677,7 +743,7 @@ a type.</p>
       <span class="symbol">
         <a href="VectorR4.html"><span class="name">VectorR4</span></a>
         
-        <span class="result"> extends EuclideanVector[VectorR4, Real] with RealVector[VectorR4]</span>
+        <span class="result"> extends RealVector[VectorR4]</span>
       </span>
       </h4>
       <p class="comment cmt">A vector in a 4-dimensional <code>Real</code> vector space.</p>
@@ -688,7 +754,7 @@ a type.</p>
       <span class="symbol">
         <a href="VectorRN.html"><span class="name">VectorRN</span></a>
         
-        <span class="result"> extends EuclideanVector[VectorRN, Real] with RealVector[VectorRN]</span>
+        <span class="result"> extends RealVector[VectorRN]</span>
       </span>
       </h4>
       <p class="comment cmt">A vector in an <i>N</i>-dimensional <code>Real</code> vector space.</p>
@@ -703,6 +769,83 @@ a type.</p>
       </span>
       </h4>
       <p class="shortcomment cmt">An abstract linear space over a field.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract linear space over a field.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.VectorZ2" data-isabs="false">
+      <a id="VectorZ2:VectorZ2"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorZ2.html"><span class="name">VectorZ2</span></a>
+        
+        <span class="result"> extends IntegerVector[VectorZ2]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a 2-dimensional <code>Integer</code> module.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorZ3" data-isabs="false">
+      <a id="VectorZ3:VectorZ3"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorZ3.html"><span class="name">VectorZ3</span></a>
+        
+        <span class="result"> extends IntegerVector[VectorZ3]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in a 3-dimensional <code>Integer</code> module.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorZN" data-isabs="false">
+      <a id="VectorZN:VectorZN"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <a href="VectorZN.html"><span class="name">VectorZN</span></a>
+        
+        <span class="result"> extends IntegerVector[VectorZN]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A vector in an <i>N</i>-dimensional <code>Integer</code> module.</p>
+    </li><li visbl="pub" name="basis.algebra.package#Z1" data-isabs="false">
+      <a id="Z1:Z1"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Z1</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 1-dimensional <code>Integer</code> module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 1-dimensional <code>Integer</code> module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#Z2" data-isabs="false">
+      <a id="Z2:Z2"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Z2</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 2-dimensional <code>Integer</code> module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 2-dimensional <code>Integer</code> module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#Z3" data-isabs="false">
+      <a id="Z3:Z3"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Z3</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete 3-dimensional <code>Integer</code> module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete 3-dimensional <code>Integer</code> module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#ZN" data-isabs="false">
+      <a id="ZN:ZN"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">ZN</span>
+        
+        <span class="result"> = <span name="scala.Singleton" class="extype">Singleton</span> { ... /* 3 definitions in type refinement */ }</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A concrete <i>N</i>-dimensional <code>Integer</code> module.</p><div class="fullcomment"><div class="comment cmt"><p>A concrete <i>N</i>-dimensional <code>Integer</code> module.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -732,6 +875,17 @@ a type.</p>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for dense generic vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.InnerProduct" data-isabs="false">
+      <a id="InnerProduct:InnerProduct"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="InnerProduct$.html"><span class="name">InnerProduct</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for creating <code>InnerProduct</code> typeclasses.</p>
     </li><li visbl="pub" name="basis.algebra.Integer" data-isabs="false">
       <a id="Integer:Integer"></a>
       <h4 class="signature">
@@ -743,6 +897,39 @@ a type.</p>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods and implicit conversions for <code>Integer</code> values.</p>
+    </li><li visbl="pub" name="basis.algebra.Interval" data-isabs="false">
+      <a id="Interval:Interval"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Interval$.html"><span class="name">Interval</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and implicit conversions for discrete intervals.</p>
+    </li><li visbl="pub" name="basis.algebra.IntervalZ2" data-isabs="false">
+      <a id="IntervalZ2:IntervalZ2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="IntervalZ2$.html"><span class="name">IntervalZ2</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and implicit conversions for 2D interval vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.IntervalZ3" data-isabs="false">
+      <a id="IntervalZ3:IntervalZ3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="IntervalZ3$.html"><span class="name">IntervalZ3</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods and implicit conversions for 3D interval vectors.</p>
     </li><li visbl="pub" name="basis.algebra.MatrixR2x2" data-isabs="false">
       <a id="MatrixR2x2:MatrixR2x2"></a>
       <h4 class="signature">
@@ -787,6 +974,17 @@ a type.</p>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for <i>M</i>x<i>N</i>-dimensional <code>Real</code> matrices.</p>
+    </li><li visbl="pub" name="basis.algebra.Norm" data-isabs="false">
+      <a id="Norm:Norm"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="Norm$.html"><span class="name">Norm</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for creating <code>Norm</code> typeclasses.</p>
     </li><li visbl="pub" name="basis.algebra.One" data-isabs="false">
       <a id="One:One"></a>
       <h4 class="signature">
@@ -908,6 +1106,39 @@ a type.</p>
       </span>
       </h4>
       <p class="comment cmt">Contains factory methods for <i>N</i>-dimensional <code>Real</code> vectors.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorZ2" data-isabs="false">
+      <a id="VectorZ2:VectorZ2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorZ2$.html"><span class="name">VectorZ2</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for vectors in <code>Z2</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorZ3" data-isabs="false">
+      <a id="VectorZ3:VectorZ3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorZ3$.html"><span class="name">VectorZ3</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for vectors in <code>Z3</code>.</p>
+    </li><li visbl="pub" name="basis.algebra.VectorZN" data-isabs="false">
+      <a id="VectorZN:VectorZN"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <a href="VectorZN$.html"><span class="name">VectorZN</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains factory methods for <i>N</i>-dimensional <code>Integer</code> vectors.</p>
     </li><li visbl="pub" name="basis.algebra.Zero" data-isabs="false">
       <a id="Zero:Zero"></a>
       <h4 class="signature">
@@ -919,6 +1150,36 @@ a type.</p>
       </span>
       </h4>
       <p class="comment cmt">A polymorphic identifier for the additive identity, or <i>zero</i> element of a type.</p>
+    </li><li visbl="pub" name="basis.algebra.package#innerProduct" data-isabs="false">
+      <a id="innerProduct[Vector, Scalar](Vector,Vector)(InnerProduct[Vector, Scalar]):Scalar"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">innerProduct</span>
+        <span class="tparams">[<span name="Vector">Vector</span>, <span name="Scalar">Scalar</span>]</span>
+        <span class="params">(<span name="u">u: Vector</span>, <span name="v">v: Vector</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="innerProduct">innerProduct: <a name="basis.algebra.InnerProduct" class="extype" href="InnerProduct.html">InnerProduct</a>[Vector, Scalar]</span>)</span><span class="result">: Scalar</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the inner product of two vectors.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the inner product of two vectors. This convenience function
+delegates to an implicit <code>InnerProduct</code> typeclass.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.package#norm" data-isabs="false">
+      <a id="norm[Vector, Scalar](Vector)(Norm[Vector, Scalar]):Scalar"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">norm</span>
+        <span class="tparams">[<span name="Vector">Vector</span>, <span name="Scalar">Scalar</span>]</span>
+        <span class="params">(<span name="u">u: Vector</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="norm">norm: <a name="basis.algebra.Norm" class="extype" href="Norm.html">Norm</a>[Vector, Scalar]</span>)</span><span class="result">: Scalar</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the norm of a vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the norm of a vector. This convenience function delegates to an
+imlicit <code>Norm</code> typeclass.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.package" class="extype" href="package$.html">package</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li></ol>
             </div>
 

@@ -29,14 +29,14 @@
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>An element of a commutative ring. A ring is an abelian group under addition
-and a semigroup under multiplication. Multiplication distributes over addition.</p><p>A <code>Ring</code> has a morphism from <code>Int</code> values to <code>Ring</code> value values.
-An <code>Int</code> value <i>n</i> represents the <i>nth</i> addition of the <code>Ring</code>'s
+and a semigroup under multiplication. Multiplication distributes over addition.</p><p>A <code>Ring</code> has a morphism from <code>Long</code> values to <code>Ring</code> value values.
+An <code>Long</code> value <i>n</i> represents the <i>nth</i> addition of the <code>Ring</code>'s
 multiplicative identity to its additive identity.</p></div><dl class="paramcmts block"><dt class="tparam">Ring</dt><dd class="cmt"><p>the element type of the ring.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Ring.scala">Ring.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[Ring, Ring], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[Ring, Ring, Ring], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="basis.algebra.CompleteField" class="extype" href="CompleteField.html">CompleteField</a>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>, <a name="basis.algebra.Field" class="extype" href="Field.html">Field</a>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></div>
+          <div class="subClasses hiddenContent"><a name="basis.algebra.CompleteField" class="extype" href="CompleteField.html">CompleteField</a>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>, <a name="basis.algebra.Field" class="extype" href="Field.html">Field</a>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.Interval" class="extype" href="Interval.html">Interval</a>, <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></div>
         </div></div>
         
 
@@ -67,17 +67,17 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
               <ol><li visbl="pub" name="basis.algebra.Ring#*" data-isabs="true">
-      <a id="*(Int):Ring"></a>
+      <a id="*(Long):Ring"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">*</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: Ring</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiplies this <code>Ring</code> value by an <code>Int</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Ring</code> value by an <code>Int</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Ring</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Multiplies this <code>Ring</code> value by an <code>Long</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Ring</code> value by an <code>Long</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Ring</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#*" data-isabs="true">
       <a id="*(Ring):Ring"></a>
@@ -93,17 +93,17 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Ring</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of this <code>Ring</code> value and the other <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#+" data-isabs="true">
-      <a id="+(Int):Ring"></a>
+      <a id="+(Long):Ring"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">+</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: Ring</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Adds an <code>Int</code> value to this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Int</code> value to this <code>Ring</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>Ring</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Adds an <code>Long</code> value to this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an <code>Long</code> value to this <code>Ring</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of this <code>Ring</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#+" data-isabs="true">
       <a id="+(Ring):Ring"></a>
@@ -119,17 +119,17 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Ring</code> value to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector sum of this <code>Ring</code> value and the other <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#-" data-isabs="true">
-      <a id="-(Int):Ring"></a>
+      <a id="-(Long):Ring"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">-</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: Ring</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Subtracts an <code>Int</code> value from this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Int</code> value from this <code>Ring</code> value.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>Ring</code> value and the <code>Int</code> value.
+      <p class="shortcomment cmt">Subtracts an <code>Long</code> value from this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts an <code>Long</code> value from this <code>Ring</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the difference of this <code>Ring</code> value and the <code>Long</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#-" data-isabs="true">
       <a id="-(Ring):Ring"></a>
@@ -145,17 +145,17 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Ring</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this <code>Ring</code> value and the other <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#pow" data-isabs="true">
-      <a id="pow(Int):Ring"></a>
+      <a id="pow(Long):Ring"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">pow</span>
         
-        <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: Ring</span>
+        <span class="params">(<span name="n">n: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Raises this <code>Ring</code> value to a positive <code>Int</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>Ring</code> value to a positive <code>Int</code> power.
-</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Int</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>this <code>Ring</code> value multiplied by itself <code>n</code> times.
+      <p class="shortcomment cmt">Raises this <code>Ring</code> value to a positive <code>Long</code> power.</p><div class="fullcomment"><div class="comment cmt"><p>Raises this <code>Ring</code> value to a positive <code>Long</code> power.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the <code>Long</code> exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>this <code>Ring</code> value multiplied by itself <code>n</code> times.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#unary_-" data-isabs="true">
       <a id="unary_-:Ring"></a>
@@ -218,7 +218,7 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
         <span class="params">(<span name="that">that: Ring</span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiplies this <code>Ring</code> value by a scalar on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Ring</code> value by a scalar on the left.
+      <p class="shortcomment cmt">Multiplies this <code>Ring</code> value by a <code>Ring</code> value on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this <code>Ring</code> value by a <code>Ring</code> value on the left.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#:*" data-isabs="false">
@@ -231,7 +231,7 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
         <span class="params">(<span name="that">that: Ring</span>)</span><span class="result">: Ring</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Multiples this <code>Ring</code> value by a scalar on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>Ring</code> value by a scalar on the right.
+      <p class="shortcomment cmt">Multiples this <code>Ring</code> value by a <code>Ring</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>Ring</code> value by a <code>Ring</code> value on the right.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">

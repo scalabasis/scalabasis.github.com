@@ -141,7 +141,7 @@
         <span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a name="basis.algebra.AdditiveIdentity" class="extype" href="AdditiveIdentity.html">AdditiveIdentity</a>[Scalar]</span>)</span><span class="result">: <a name="basis.algebra.AdditiveIdentity" class="extype" href="AdditiveIdentity.html">AdditiveIdentity</a>[<a name="basis.algebra.Vector2" class="extype" href="Vector2.html">Vector2</a>[Scalar]]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns the additive identity of a kind of 2-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the additive identity of a kind of 2-dimensional vector.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <p class="shortcomment cmt">Returns the additive identity typeclass for a kind of 2-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the additive identity typeclass for a kind of 2-dimensional vector.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector2#apply" data-isabs="false">
       <a id="apply[Scalar&lt;:Ring[Scalar]](Scalar,Scalar):Vector2[Scalar]"></a>
       <h4 class="signature">
@@ -178,6 +178,17 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Vector2#dotProduct" data-isabs="false">
+      <a id="dotProduct[Scalar&lt;:Ring[Scalar]]:InnerProduct[Vector2[Scalar], Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">dotProduct</span>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: <a name="basis.algebra.Ring" class="extype" href="Ring.html">Ring</a>[Scalar]</span>]</span>
+        <span class="result">: <a name="basis.algebra.InnerProduct" class="extype" href="InnerProduct.html">InnerProduct</a>[<a name="basis.algebra.Vector2" class="extype" href="Vector2.html">Vector2</a>[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the inner dot product typeclass for a kind of 2-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the inner dot product typeclass for a kind of 2-dimensional vector.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -200,6 +211,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Vector2#euclideanNorm" data-isabs="false">
+      <a id="euclideanNorm[Scalar&lt;:CompleteField[Scalar]]:Norm[Vector2[Scalar], Scalar]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">euclideanNorm</span>
+        <span class="tparams">[<span name="Scalar">Scalar &lt;: <a name="basis.algebra.CompleteField" class="extype" href="CompleteField.html">CompleteField</a>[Scalar]</span>]</span>
+        <span class="result">: <a name="basis.algebra.Norm" class="extype" href="Norm.html">Norm</a>[<a name="basis.algebra.Vector2" class="extype" href="Vector2.html">Vector2</a>[Scalar], Scalar]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the euclidean norm typeclass for a kind of 2-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the euclidean norm typeclass for a kind of 2-dimensional vector.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">

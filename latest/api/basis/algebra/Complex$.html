@@ -141,18 +141,7 @@
         <span class="result">: <a name="basis.algebra.AdditiveIdentity" class="extype" href="AdditiveIdentity.html">AdditiveIdentity</a>[<a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The additive identity of the <code>Complex</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The additive identity of the <code>Complex</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Complex#apply" data-isabs="false">
-      <a id="apply(Double):Complex"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">apply</span>
-        
-        <span class="params">(<span name="real">real: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
-      </span>
-      </h4>
-      
+      <p class="shortcomment cmt">The additive identity typeclass for the <code>Complex</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The additive identity typeclass for the <code>Complex</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Complex#apply" data-isabs="false">
       <a id="apply(Double,Double):Complex"></a>
       <h4 class="signature">
@@ -175,17 +164,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Complex#box" data-isabs="false">
-      <a id="box(Double):Complex"></a>
-      <h4 class="signature">
-      <span class="kind">implicit def</span>
-      <span class="symbol">
-        <span class="name">box</span>
-        
-        <span class="params">(<span name="real">real: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a <code>Complex</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a <code>Complex</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -222,6 +200,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#euclideanNorm" data-isabs="false">
+      <a id="euclideanNorm:Norm[Complex, Real]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol">
+        <span class="name">euclideanNorm</span>
+        
+        <span class="result">: <a name="basis.algebra.Norm" class="extype" href="Norm.html">Norm</a>[<a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The euclidean norm typeclass for the <code>Complex</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The euclidean norm typeclass for the <code>Complex</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -258,6 +247,28 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#i" data-isabs="false">
+      <a id="i:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">i</span>
+        
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The imaginary unit <code>Complex</code> value.</p>
+    </li><li visbl="pub" name="basis.algebra.Complex#imaginary" data-isabs="false">
+      <a id="imaginary(Double):Complex"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">imaginary</span>
+        
+        <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Converts a <code>Double</code> value to an imaginary <code>Complex</code> value.</p>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -279,7 +290,7 @@
         <span class="result">: <a name="basis.algebra.MultiplicativeIdentity" class="extype" href="MultiplicativeIdentity.html">MultiplicativeIdentity</a>[<a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The multiplicative identity of the <code>Complex</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The multiplicative identity of the <code>Complex</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <p class="shortcomment cmt">The multiplicative identity typeclass for the <code>Complex</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The multiplicative identity typeclass for the <code>Complex</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -313,6 +324,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#one" data-isabs="false">
+      <a id="one:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">one</span>
+        
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The unit <code>Complex</code> value.</p>
     </li><li visbl="pub" name="basis.algebra.Complex#polar" data-isabs="false">
       <a id="polar(Double,Double):Complex"></a>
       <h4 class="signature">
@@ -326,6 +348,17 @@
       <p class="shortcomment cmt">Constructs a <code>Complex</code> value with polar coordinates.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a <code>Complex</code> value with polar coordinates.
 </p></div><dl class="paramcmts block"><dt class="param">r</dt><dd class="cmt"><p>the modulus of the complex number.</p></dd><dt class="param">φ</dt><dd class="cmt"><p>the argument of the complex number.</p></dd><dt>returns</dt><dd class="cmt"><p>a new <code>Complex</code> value.
 </p></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#real" data-isabs="false">
+      <a id="real(Double):Complex"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">real</span>
+        
+        <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a real <code>Complex</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a real <code>Complex</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Complex#struct" data-isabs="false">
       <a id="struct:StructComplex"></a>
       <h4 class="signature">
@@ -412,6 +445,17 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Complex#zero" data-isabs="false">
+      <a id="zero:Complex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">zero</span>
+        
+        <span class="result">: <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The zero <code>Complex</code> value.</p>
     </li></ol>
             </div>
 
