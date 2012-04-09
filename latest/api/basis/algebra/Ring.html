@@ -33,10 +33,10 @@ and a semigroup under multiplication. Multiplication distributes over addition.<
 An <code>Long</code> value <i>n</i> represents the <i>nth</i> addition of the <code>Ring</code>'s
 multiplicative identity to its additive identity.</p></div><dl class="paramcmts block"><dt class="tparam">Ring</dt><dd class="cmt"><p>the element type of the ring.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Ring.scala">Ring.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[Ring, Ring], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[Ring, Ring, Ring], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[Ring, Ring], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="basis.algebra.CompleteField" class="extype" href="CompleteField.html">CompleteField</a>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>, <a name="basis.algebra.Field" class="extype" href="Field.html">Field</a>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.Interval" class="extype" href="Interval.html">Interval</a>, <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></div>
+          <div class="subClasses hiddenContent"><a name="basis.algebra.CompleteField" class="extype" href="CompleteField.html">CompleteField</a>, <a name="basis.algebra.Complex" class="extype" href="Complex.html">Complex</a>, <a name="basis.algebra.Field" class="extype" href="Field.html">Field</a>, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.OrderedRing" class="extype" href="OrderedRing.html">OrderedRing</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></div>
         </div></div>
         
 
@@ -52,7 +52,7 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.Ring" class="in"><span>Ring</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.Ring" class="in"><span>Ring</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -143,7 +143,7 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
       </h4>
       <p class="shortcomment cmt">Subtracts a <code>Ring</code> value from this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a <code>Ring</code> value from this <code>Ring</code> value.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the <code>Ring</code> value to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this <code>Ring</code> value and the other <code>Ring</code> value.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Ring#pow" data-isabs="true">
       <a id="pow(Long):Ring"></a>
       <h4 class="signature">
@@ -234,32 +234,6 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
       <p class="shortcomment cmt">Multiples this <code>Ring</code> value by a <code>Ring</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this <code>Ring</code> value by a <code>Ring</code> value on the right.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the scaled <code>Ring</code> value.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Ring" class="extype" href="">Ring</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
-      <a id=":+(Ring):Ring"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:+</span>
-        
-        <span class="params">(<span name="that">that: Ring</span>)</span><span class="result">: Ring</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a <code>Ring</code> value to this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a <code>Ring</code> value to this <code>Ring</code> value.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine sum of this <code>Ring</code> value and the other <code>Ring</code> value.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:-" data-isabs="false">
-      <a id=":-(Ring):Ring"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:-</span>
-        
-        <span class="params">(<span name="that">that: Ring</span>)</span><span class="result">: Ring</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Subtracts a <code>Ring</code> value from this <code>Ring</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a <code>Ring</code> value from this <code>Ring</code> value.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine difference of this <code>Ring</code> value and the other <code>Ring</code> value.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -480,8 +454,6 @@ multiplicative identity to its additive identity.</p></div><dl class="paramcmts 
 
         <div name="basis.algebra.Vector" class="parent">
               <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[Ring, Ring]</h3>
-            </div><div name="basis.algebra.AffinePoint" class="parent">
-              <h3>Inherited from <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[Ring, Ring, Ring]</h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

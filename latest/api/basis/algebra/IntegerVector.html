@@ -23,19 +23,19 @@
       <span class="kind">trait</span>
       <span class="symbol">
         <span class="name">IntegerVector</span>
-        <span class="tparams">[<span name="IntegralVector">IntegralVector</span>]</span>
-        <span class="result"> extends <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegralVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
+        <span class="tparams">[<span name="IntegerVector">IntegerVector</span>]</span>
+        <span class="result"> extends <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegerVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>A vector in an <code>Integer</code> module.
-</p></div><dl class="paramcmts block"><dt class="tparam">IntegralVector</dt><dd class="cmt"><p>the vector type of the module.
+</p></div><dl class="paramcmts block"><dt class="tparam">IntegerVector</dt><dd class="cmt"><p>the vector type of the module.
 </p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/IntegerVector.scala">IntegerVector.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegralVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[IntegralVector, IntegralVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegerVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.VectorZ2" class="extype" href="VectorZ2.html">VectorZ2</a>, <a name="basis.algebra.VectorZ3" class="extype" href="VectorZ3.html">VectorZ3</a>, <a name="basis.algebra.VectorZN" class="extype" href="VectorZN.html">VectorZN</a></div>
+          <div class="subClasses hiddenContent"><a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>, <a name="basis.algebra.Z3.Vector" class="extype" href="Z3$$Vector.html">Vector</a>, <a name="basis.algebra.Z2.Vector" class="extype" href="Z2$$Vector.html">Vector</a></div>
         </div></div>
         
 
@@ -51,7 +51,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.IntegerVector" class="in"><span>IntegerVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.IntegerVector" class="in"><span>IntegerVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -66,65 +66,65 @@
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
               <ol><li visbl="pub" name="basis.algebra.IntegerVector#*:" data-isabs="true">
-      <a id="*:(Long):IntegralVector"></a>
+      <a id="*:(Long):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">*:</span>
         
-        <span class="params">(<span name="scalar">scalar: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="scalar">scalar: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Multiplies this vector by a <code>Long</code> value on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this vector by a <code>Long</code> value on the left.
 </p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the <code>Long</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#+" data-isabs="true">
-      <a id="+(IntegralVector):IntegralVector"></a>
+      <a id="+(IntegerVector):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">+</span>
         
-        <span class="params">(<span name="that">that: IntegralVector</span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="that">that: IntegerVector</span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Adds a vector to this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a vector to this vector.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the vector to add.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector sum of this vector and the other vector.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#-" data-isabs="true">
-      <a id="-(IntegralVector):IntegralVector"></a>
+      <a id="-(IntegerVector):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">-</span>
         
-        <span class="params">(<span name="that">that: IntegralVector</span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="that">that: IntegerVector</span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the vector to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.IntegerVector#:*" data-isabs="true">
-      <a id=":*(Long):IntegralVector"></a>
+      <a id=":*(Long):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">:*</span>
         
-        <span class="params">(<span name="scalar">scalar: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="scalar">scalar: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Multiplies this vector by a <code>Long</code> value on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this vector by a <code>Long</code> value on the right.
 </p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the <code>Long</code> value to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Vector#unary_-" data-isabs="true">
-      <a id="unary_-:IntegralVector"></a>
+      <a id="unary_-:IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">unary_-</span>
         
-        <span class="result">: IntegralVector</span>
+        <span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Negates this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Negates this vector.
@@ -169,57 +169,31 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.IntegerVector#*:" data-isabs="false">
-      <a id="*:(Integer):IntegralVector"></a>
+      <a id="*:(Integer):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">*:</span>
         
-        <span class="params">(<span name="scalar">scalar: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="scalar">scalar: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Multiplies this vector by a scalar on the left.</p><div class="fullcomment"><div class="comment cmt"><p>Multiplies this vector by a scalar on the left.
 </p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.IntegerVector" class="extype" href="">IntegerVector</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.IntegerVector#:*" data-isabs="false">
-      <a id=":*(Integer):IntegralVector"></a>
+      <a id=":*(Integer):IntegerVector"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">:*</span>
         
-        <span class="params">(<span name="scalar">scalar: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>)</span><span class="result">: IntegralVector</span>
+        <span class="params">(<span name="scalar">scalar: <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a></span>)</span><span class="result">: IntegerVector</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Multiples this vector by a scalar on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this vector by a scalar on the right.
 </p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.IntegerVector" class="extype" href="">IntegerVector</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
-      <a id=":+(IntegralVector):IntegralVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:+</span>
-        
-        <span class="params">(<span name="that">that: IntegralVector</span>)</span><span class="result">: IntegralVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a vector to this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a vector to this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine sum of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:-" data-isabs="false">
-      <a id=":-(IntegralVector):IntegralVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:-</span>
-        
-        <span class="params">(<span name="that">that: IntegralVector</span>)</span><span class="result">: IntegralVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -439,9 +413,7 @@
         
 
         <div name="basis.algebra.Vector" class="parent">
-              <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegralVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</h3>
-            </div><div name="basis.algebra.AffinePoint" class="parent">
-              <h3>Inherited from <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[IntegralVector, IntegralVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</h3>
+              <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[IntegerVector, <a name="basis.algebra.Integer" class="extype" href="Integer.html">Integer</a>]</h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

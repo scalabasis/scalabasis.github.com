@@ -32,10 +32,10 @@
 </p></div><dl class="paramcmts block"><dt class="tparam">RealVector</dt><dd class="cmt"><p>the vector type of the real vector space.
 </p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/RealVector.scala">RealVector.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[RealVector, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[RealVector, RealVector, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[RealVector, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="basis.algebra.MatrixR2x2" class="extype" href="MatrixR2x2.html">MatrixR2x2</a>, <a name="basis.algebra.MatrixR3x3" class="extype" href="MatrixR3x3.html">MatrixR3x3</a>, <a name="basis.algebra.MatrixR4x4" class="extype" href="MatrixR4x4.html">MatrixR4x4</a>, <a name="basis.algebra.MatrixRMxN" class="extype" href="MatrixRMxN.html">MatrixRMxN</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>, <a name="basis.algebra.VectorR2" class="extype" href="VectorR2.html">VectorR2</a>, <a name="basis.algebra.VectorR3" class="extype" href="VectorR3.html">VectorR3</a>, <a name="basis.algebra.VectorR4" class="extype" href="VectorR4.html">VectorR4</a>, <a name="basis.algebra.VectorRN" class="extype" href="VectorRN.html">VectorRN</a></div>
+          <div class="subClasses hiddenContent"><a name="basis.algebra.R4.Matrix" class="extype" href="R4$$Matrix.html">Matrix</a>, <a name="basis.algebra.R3.Matrix" class="extype" href="R3$$Matrix.html">Matrix</a>, <a name="basis.algebra.R2.Matrix" class="extype" href="R2$$Matrix.html">Matrix</a>, <a name="basis.algebra.R.Matrix" class="extype" href="R$Matrix.html">Matrix</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>, <a name="basis.algebra.R4.Vector" class="extype" href="R4$$Vector.html">Vector</a>, <a name="basis.algebra.R3.Vector" class="extype" href="R3$$Vector.html">Vector</a>, <a name="basis.algebra.R2.Vector" class="extype" href="R2$$Vector.html">Vector</a>, <a name="basis.algebra.R.Vector" class="extype" href="R$Vector.html">Vector</a></div>
         </div></div>
         
 
@@ -51,7 +51,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.RealVector" class="in"><span>RealVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="basis.algebra.AffinePoint" class="in"><span>AffinePoint</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.RealVector" class="in"><span>RealVector</span></li><li name="basis.algebra.Vector" class="in"><span>Vector</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -103,7 +103,7 @@
       </h4>
       <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
 </p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the vector to subtract.</p></dd><dt>returns</dt><dd class="cmt"><p>the vector difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.RealVector#/" data-isabs="true">
       <a id="/(Double):RealVector"></a>
       <h4 class="signature">
@@ -220,32 +220,6 @@
       <p class="shortcomment cmt">Multiples this vector by a scalar on the right.</p><div class="fullcomment"><div class="comment cmt"><p>Multiples this vector by a scalar on the right.
 </p></div><dl class="paramcmts block"><dt class="param">scalar</dt><dd class="cmt"><p>the scalar to multiply by.</p></dd><dt>returns</dt><dd class="cmt"><p>the scaled vector.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.RealVector" class="extype" href="">RealVector</a> → <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:+" data-isabs="false">
-      <a id=":+(RealVector):RealVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:+</span>
-        
-        <span class="params">(<span name="that">that: RealVector</span>)</span><span class="result">: RealVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a vector to this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a vector to this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine sum of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Vector#:-" data-isabs="false">
-      <a id=":-(RealVector):RealVector"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">:-</span>
-        
-        <span class="params">(<span name="that">that: RealVector</span>)</span><span class="result">: RealVector</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Subtracts a vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Subtracts a vector from this vector.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the affine difference of this vector and the other vector.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a> → <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -466,8 +440,6 @@
 
         <div name="basis.algebra.Vector" class="parent">
               <h3>Inherited from <a name="basis.algebra.Vector" class="extype" href="Vector.html">Vector</a>[RealVector, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</h3>
-            </div><div name="basis.algebra.AffinePoint" class="parent">
-              <h3>Inherited from <a name="basis.algebra.AffinePoint" class="extype" href="AffinePoint.html">AffinePoint</a>[RealVector, RealVector, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

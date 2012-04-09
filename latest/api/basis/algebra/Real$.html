@@ -24,13 +24,13 @@
       <span class="symbol">
         <span class="name">Real</span>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends <a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Contains factory methods and implicit conversions for <code>Real</code> values.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Real.scala">Real.scala</a></dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Real.scala">Real.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>], <a name="basis.algebra.VectorSpace" class="extype" href="VectorSpace.html">VectorSpace</a>, <a name="basis.algebra.Module" class="extype" href="Module.html">Module</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -46,7 +46,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="basis.algebra.Real" class="in"><span>Real</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="basis.algebra.Real" class="in"><span>Real</span></li><li name="basis.algebra.ScalarSpace" class="in"><span>ScalarSpace</span></li><li name="basis.algebra.VectorSpace" class="in"><span>VectorSpace</span></li><li name="basis.algebra.Module" class="in"><span>Module</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -58,17 +58,28 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="basis.algebra.Real.StructReal" data-isabs="false">
-      <a id="StructReal:StructReal"></a>
+              <ol><li visbl="pub" name="basis.algebra.ScalarSpace#Scalar" data-isabs="false">
+      <a id="Scalar:Scalar"></a>
       <h4 class="signature">
-      <span class="kind">class</span>
+      <span class="kind">type</span>
       <span class="symbol">
-        <a href="Real$$StructReal.html"><span class="name">StructReal</span></a>
+        <span class="name">Scalar</span>
         
-        <span class="result"> extends Struct1[Double, Real]</span>
+        <span class="result"> = <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
       </span>
       </h4>
-      <p class="comment cmt">A struct for <code>Real</code> values.</p>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a> → <a name="basis.algebra.VectorSpace" class="extype" href="VectorSpace.html">VectorSpace</a> → <a name="basis.algebra.Module" class="extype" href="Module.html">Module</a></dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.ScalarSpace#Vector" data-isabs="false">
+      <a id="Vector:Vector"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Vector</span>
+        
+        <span class="result"> = <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a> → <a name="basis.algebra.Module" class="extype" href="Module.html">Module</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -131,17 +142,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Real#additiveIdentity" data-isabs="false">
-      <a id="additiveIdentity:AdditiveIdentity[Real]"></a>
+    </li><li visbl="pub" name="basis.algebra.ScalarSpace#Scalar" data-isabs="false">
+      <a id="Scalar:ScalarSpace[Real]"></a>
       <h4 class="signature">
-      <span class="kind">implicit val</span>
+      <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">additiveIdentity</span>
+        <span class="name">Scalar</span>
         
-        <span class="result">: <a name="basis.algebra.AdditiveIdentity" class="extype" href="AdditiveIdentity.html">AdditiveIdentity</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
+        <span class="result">: <a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The additive identity typeclass for the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The additive identity typeclass for the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a> → <a name="basis.algebra.VectorSpace" class="extype" href="VectorSpace.html">VectorSpace</a></dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Real#apply" data-isabs="false">
       <a id="apply(Double):Real"></a>
       <h4 class="signature">
@@ -174,7 +185,7 @@
         <span class="params">(<span name="value">value: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Double</code> value to a <code>Real</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -211,17 +222,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Real#euclideanNorm" data-isabs="false">
-      <a id="euclideanNorm:Norm[Real, Real]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit val</span>
-      <span class="symbol">
-        <span class="name">euclideanNorm</span>
-        
-        <span class="result">: <a name="basis.algebra.Norm" class="extype" href="Norm.html">Norm</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The euclidean norm typeclass for the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The euclidean norm typeclass for the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -269,17 +269,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Real#multiplicativeIdentity" data-isabs="false">
-      <a id="multiplicativeIdentity:MultiplicativeIdentity[Real]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit val</span>
-      <span class="symbol">
-        <span class="name">multiplicativeIdentity</span>
-        
-        <span class="result">: <a name="basis.algebra.MultiplicativeIdentity" class="extype" href="MultiplicativeIdentity.html">MultiplicativeIdentity</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The multiplicative identity typeclass for the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The multiplicative identity typeclass for the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -313,39 +302,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Real#one" data-isabs="false">
-      <a id="one:Real"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">one</span>
-        
-        <span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The unit <code>Real</code> value.</p>
-    </li><li visbl="pub" name="basis.algebra.Real#product" data-isabs="false">
-      <a id="product:InnerProduct[Real, Real]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit val</span>
-      <span class="symbol">
-        <span class="name">product</span>
-        
-        <span class="result">: <a name="basis.algebra.InnerProduct" class="extype" href="InnerProduct.html">InnerProduct</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>, <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The inner product typeclass for the <code>Real</code> field.</p><div class="fullcomment"><div class="comment cmt"><p>The inner product typeclass for the <code>Real</code> field.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
-    </li><li visbl="pub" name="basis.algebra.Real#struct" data-isabs="false">
-      <a id="struct:StructReal"></a>
-      <h4 class="signature">
-      <span class="kind">implicit lazy val</span>
-      <span class="symbol">
-        <span class="name">struct</span>
-        
-        <span class="result">: <a name="basis.algebra.Real.StructReal" class="extype" href="Real$$StructReal.html">StructReal</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The default struct for <code>Real</code> values.</p><div class="fullcomment"><div class="comment cmt"><p>The default struct for <code>Real</code> values.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -357,17 +313,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li visbl="pub" name="basis.algebra.Real#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">toString</span>
         
-        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="params">()</span><span class="result">: String</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Real" class="extype" href="">Real</a> → AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="basis.algebra.Real#unapply" data-isabs="false">
       <a id="unapply(Real):Some[Double]"></a>
       <h4 class="signature">
@@ -389,7 +345,18 @@
         <span class="params">(<span name="real">real: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>)</span><span class="result">: <span name="scala.Double" class="extype">Double</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts a <code>Real</code> value to a <code>Double</code> value.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="basis.algebra.Real#unit" data-isabs="false">
+      <a id="unit:Real"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">unit</span>
+        
+        <span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Real" class="extype" href="">Real</a> → <a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">
@@ -442,13 +409,19 @@
         <span class="result">: <a name="basis.algebra.Real" class="extype" href="Real.html">Real</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The zero <code>Real</code> value.</p>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="basis.algebra.Real" class="extype" href="">Real</a> → <a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a> → <a name="basis.algebra.Module" class="extype" href="Module.html">Module</a></dd></dl></div>
     </li></ol>
             </div>
 
         
 
-        <div name="scala.AnyRef" class="parent">
+        <div name="basis.algebra.ScalarSpace" class="parent">
+              <h3>Inherited from <a name="basis.algebra.ScalarSpace" class="extype" href="ScalarSpace.html">ScalarSpace</a>[<a name="basis.algebra.Real" class="extype" href="Real.html">Real</a>]</h3>
+            </div><div name="basis.algebra.VectorSpace" class="parent">
+              <h3>Inherited from <a name="basis.algebra.VectorSpace" class="extype" href="VectorSpace.html">VectorSpace</a></h3>
+            </div><div name="basis.algebra.Module" class="parent">
+              <h3>Inherited from <a name="basis.algebra.Module" class="extype" href="Module.html">Module</a></h3>
+            </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
