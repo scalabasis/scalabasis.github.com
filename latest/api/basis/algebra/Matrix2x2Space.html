@@ -27,16 +27,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Matrix2x2Space</span><span class="result"> extends <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a></span>
+        <span class="name">Matrix2x2Space</span><span class="tparams">[<span name="V">V &lt;: <a href="Vector2Space.html" class="extype" name="basis.algebra.Vector2Space">Vector2Space</a>[S] with <span class="extype" name="scala.Singleton">Singleton</span></span>, <span name="W">W &lt;: <a href="Vector2Space.html" class="extype" name="basis.algebra.Vector2Space">Vector2Space</a>[S] with <span class="extype" name="scala.Singleton">Singleton</span></span>, <span name="S">S &lt;: <a href="Field.html" class="extype" name="basis.algebra.Field">Field</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>]</span><span class="result"> extends <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a>[V, W, S]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a></dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Matrix2x2Space.scala" target="_blank">Matrix2x2Space.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Matrix2x2Space.scala" target="_blank">Matrix2x2Space.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a>, <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>, <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a>, <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a>, AnyRef, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a>[V, W, S], <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>[V, W, S], <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a>[S], <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a>, AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="generic/F2x2.html" class="extype" name="basis.algebra.generic.F2x2">F2x2</a>, <a href="binary64/R2x2.html" class="extype" name="basis.algebra.binary64.R2x2">R2x2</a></div>
+          <div class="subClasses hiddenContent"><a href="generic/F2x2.html" class="extype" name="basis.algebra.generic.F2x2">F2x2</a>, <a href="binary64/R2x2$.html" class="extype" name="basis.algebra.binary64.R2x2">R2x2</a></div>
         </div></div>
         
 
@@ -50,7 +50,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.algebra.Matrix2x2Space"><span>Matrix2x2Space</span></li><li class="in" name="basis.algebra.SquareMatrixSpace"><span>SquareMatrixSpace</span></li><li class="in" name="basis.algebra.MatrixSpace"><span>MatrixSpace</span></li><li class="in" name="basis.algebra.LinearSpace"><span>LinearSpace</span></li><li class="in" name="basis.algebra.AffineSpace"><span>AffineSpace</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.algebra.Matrix2x2Space"><span>Matrix2x2Space</span></li><li class="in" name="basis.algebra.MatrixRing"><span>MatrixRing</span></li><li class="in" name="basis.algebra.MatrixSpace"><span>MatrixSpace</span></li><li class="in" name="basis.algebra.LinearSpace"><span>LinearSpace</span></li><li class="in" name="basis.algebra.Ring"><span>Ring</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -72,7 +72,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.algebra.SquareMatrixSpace#Col" visbl="pub" data-isabs="false" fullComment="yes">
+              <ol><li name="basis.algebra.MatrixSpace#Col" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Col:Col"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,10 +80,22 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Col</span><span class="result"> = Vec</span>
+        <span class="name">Col</span><span class="result"> = Vector</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space.Element" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Element:Element"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Matrix2x2Space$Element.html"><span class="name">Element</span></a><span class="result"> extends Element</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
     </li><li name="basis.algebra.Matrix2x2Space#Matrix" visbl="pub" data-isabs="true" fullComment="yes">
       <a id="Matrix:Matrix"></a>
       <h4 class="signature">
@@ -92,23 +104,11 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Matrix</span><span class="result"> &lt;: <a href="Matrix2x2.html" class="extype" name="basis.algebra.Matrix2x2">Matrix2x2</a> { ... /* 3 definitions in type refinement */ }</span>
+        <span class="name">Matrix</span><span class="result"> &lt;: <a href="Matrix2x2Space$Element.html" class="extype" name="basis.algebra.Matrix2x2Space.Element">Element</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.MatrixSpace#Point" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Point:Point"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Point</span><span class="result"> = Matrix</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.SquareMatrixSpace#Row" visbl="pub" data-isabs="false" fullComment="yes">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.MatrixSpace#Row" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Row:Row"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -116,46 +116,22 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Row</span><span class="result"> = Vec</span>
+        <span class="name">Row</span><span class="result"> = Vector</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.Matrix2x2Space#Scalar" visbl="pub" data-isabs="true" fullComment="yes">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.LinearSpace#Scalar" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Scalar:Scalar"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Scalar</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.SquareMatrixSpace#T" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="T:T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">T</span><span class="result"> = Matrix</span>
+        <span class="name">Scalar</span><span class="result"> = Vector</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.Matrix2x2Space#Vec" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="Vec:Vec"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Vec</span><span class="result"> &lt;: <a href="Vector2.html" class="extype" name="basis.algebra.Vector2">Vector2</a> { ... /* 2 definitions in type refinement */ }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a></dd></dl></div>
     </li><li name="basis.algebra.MatrixSpace#Vector" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Vector:Vector"></a>
       <h4 class="signature">
@@ -167,13 +143,61 @@
         <span class="name">Vector</span><span class="result"> = Matrix</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a></dd></dl></div>
     </li></ol>
             </div>
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="basis.algebra.Matrix2x2Space#apply" visbl="pub" data-isabs="true" fullComment="no">
+              <ol><li name="basis.algebra.Matrix2x2Space#Col" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Col:W"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Col</span><span class="result">: W</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#Row" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Row:V"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Row</span><span class="result">: V</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#Scalar" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Scalar:S"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Scalar</span><span class="result">: S</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#Transpose" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Transpose:Matrix2x2Space[W, V, S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Transpose</span><span class="result">: <a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a>[W, V, S]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#apply" visbl="pub" data-isabs="true" fullComment="no">
       <a id="apply(Scalar,Scalar,Scalar,Scalar):Matrix"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -261,7 +285,7 @@
         <span class="name">M</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
     </li><li name="basis.algebra.Matrix2x2Space#N" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="N:Int"></a>
       <h4 class="signature">
@@ -273,19 +297,7 @@
         <span class="name">N</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.SquareMatrixSpace#T" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="T:Matrix2x2Space.this.type"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">T</span><span class="result">: Matrix2x2Space.this.type</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
     </li><li name="basis.algebra.Matrix2x2Space#apply" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="apply(TraversableOnce[Scalar]):Matrix"></a>
       <h4 class="signature">
@@ -297,7 +309,7 @@
         <span class="name">apply</span><span class="params">(<span name="entries">entries: TraversableOnce[Scalar]</span>)</span><span class="result">: Matrix</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -349,6 +361,18 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
+    </li><li name="basis.algebra.MatrixSpace#compose" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="compose[U&lt;:VectorSpace[S] with Singleton](MatrixSpace[U, V, S]):MatrixSpace[U, W, S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compose</span><span class="tparams">[<span name="U">U &lt;: <a href="VectorSpace.html" class="extype" name="basis.algebra.VectorSpace">VectorSpace</a>[S] with <span class="extype" name="scala.Singleton">Singleton</span></span>]</span><span class="params">(<span name="that">that: <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>[U, V, S]</span>)</span><span class="result">: <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>[U, W, S]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -460,6 +484,18 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="basis.algebra.MatrixSpace#product" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="product[U&lt;:VectorSpace[S] with Singleton](A#Matrix forSome { type A &lt;: basis.algebra.MatrixSpace[U,W,S] },B#Matrix forSome { type B &lt;: basis.algebra.MatrixSpace[V,U,S] }):Matrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">product</span><span class="tparams">[<span name="U">U &lt;: <a href="VectorSpace.html" class="extype" name="basis.algebra.VectorSpace">VectorSpace</a>[S] with <span class="extype" name="scala.Singleton">Singleton</span></span>]</span><span class="params">(<span name="matrixA">matrixA: A#Matrix forSome { type A &lt;: basis.algebra.MatrixSpace[U,W,S] }</span>, <span name="matrixB">matrixB: B#Matrix forSome { type B &lt;: basis.algebra.MatrixSpace[V,U,S] }</span>)</span><span class="result">: Matrix</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></dd></dl></div>
     </li><li name="basis.algebra.Matrix2x2Space#rows" visbl="pub" data-isabs="false" fullComment="no">
       <a id="rows(Row,Row):Matrix"></a>
       <h4 class="signature">
@@ -508,6 +544,18 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#unit" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="unit:Matrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unit</span><span class="result">: Matrix</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="wait():Unit"></a>
       <h4 class="signature">
@@ -553,6 +601,18 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="basis.algebra.Matrix2x2Space#zero" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="zero:Matrix"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zero</span><span class="result">: Matrix</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> → <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> → <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -560,14 +620,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="basis.algebra.SquareMatrixSpace">
-              <h3>Inherited from <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a></h3>
+        <div class="parent" name="basis.algebra.MatrixRing">
+              <h3>Inherited from <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a>[V, W, S]</h3>
             </div><div class="parent" name="basis.algebra.MatrixSpace">
-              <h3>Inherited from <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a></h3>
+              <h3>Inherited from <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>[V, W, S]</h3>
             </div><div class="parent" name="basis.algebra.LinearSpace">
-              <h3>Inherited from <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a></h3>
-            </div><div class="parent" name="basis.algebra.AffineSpace">
-              <h3>Inherited from <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></h3>
+              <h3>Inherited from <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a>[S]</h3>
+            </div><div class="parent" name="basis.algebra.Ring">
+              <h3>Inherited from <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">

@@ -16,15 +16,15 @@
         </head>
         <body class="type" onload="sh_highlightDocument('../lib/', '.min.js');">
       <div id="definition">
-        <a href="Allocator$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <a href="Allocator$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.memory">memory</a></p>
         <h1><a href="Allocator$.html" title="Go to companion">Allocator</a></h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <span class="name">Allocator</span><span class="result"> extends AnyRef</span>
@@ -38,12 +38,13 @@
       <span class="symbol">&quot;Cannot find implicit allocator.&quot;</span>
     </span>)</span>
               
-        </dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/memory/Allocator.scala" target="_blank">Allocator.scala</a></dd></dl><div class="toggleContainer block">
+        </dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/memory/Allocator.scala" target="_blank">Allocator.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="Data.html" class="extype" name="basis.memory.Data">Data</a>
+</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="Data$$Block1BE$.html" class="extype" name="basis.memory.Data.Block1BE">Block1BE</a>, <a href="Data$$Block1LE$.html" class="extype" name="basis.memory.Data.Block1LE">Block1LE</a>, <a href="Data$$Block2BE$.html" class="extype" name="basis.memory.Data.Block2BE">Block2BE</a>, <a href="Data$$Block2LE$.html" class="extype" name="basis.memory.Data.Block2LE">Block2LE</a>, <a href="Data$$Block4BE$.html" class="extype" name="basis.memory.Data.Block4BE">Block4BE</a>, <a href="Data$$Block4LE$.html" class="extype" name="basis.memory.Data.Block4LE">Block4LE</a>, <a href="Data$$Block8BE$.html" class="extype" name="basis.memory.Data.Block8BE">Block8BE</a>, <a href="Data$$Block8LE$.html" class="extype" name="basis.memory.Data.Block8LE">Block8LE</a>, <a href="Data$$BlockBE$.html" class="extype" name="basis.memory.Data.BlockBE">BlockBE</a>, <a href="Data$$BlockLE$.html" class="extype" name="basis.memory.Data.BlockLE">BlockLE</a>, <a href="Data$$ChunkBE$.html" class="extype" name="basis.memory.Data.ChunkBE">ChunkBE</a>, <a href="Data$$ChunkLE$.html" class="extype" name="basis.memory.Data.ChunkLE">ChunkLE</a></div>
+          <div class="subClasses hiddenContent"><a href="ArrayAllocator.html" class="extype" name="basis.memory.ArrayAllocator">ArrayAllocator</a>, <a href="ArrayDataBE$.html" class="extype" name="basis.memory.ArrayDataBE">ArrayDataBE</a>, <a href="ArrayDataLE$.html" class="extype" name="basis.memory.ArrayDataLE">ArrayDataLE</a>, <a href="BufferDataBE$.html" class="extype" name="basis.memory.BufferDataBE">BufferDataBE</a>, <a href="BufferDataLE$.html" class="extype" name="basis.memory.BufferDataLE">BufferDataLE</a>, <a href="ByteDataBE$.html" class="extype" name="basis.memory.ByteDataBE">ByteDataBE</a>, <a href="ByteDataLE$.html" class="extype" name="basis.memory.ByteDataLE">ByteDataLE</a>, <a href="IntDataBE$.html" class="extype" name="basis.memory.IntDataBE">IntDataBE</a>, <a href="IntDataLE$.html" class="extype" name="basis.memory.IntDataLE">IntDataLE</a>, <a href="LongDataBE$.html" class="extype" name="basis.memory.LongDataBE">LongDataBE</a>, <a href="LongDataLE$.html" class="extype" name="basis.memory.LongDataLE">LongDataLE</a>, <a href="ShortDataBE$.html" class="extype" name="basis.memory.ShortDataBE">ShortDataBE</a>, <a href="ShortDataLE$.html" class="extype" name="basis.memory.ShortDataLE">ShortDataLE</a></div>
         </div></div>
         
 
@@ -75,22 +76,7 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="basis.memory.Allocator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no">
-      <a id="&lt;init&gt;:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Allocator</span><span class="params">()</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -122,7 +108,21 @@
       <p class="shortcomment cmt">Allocates data for a number of unit sized values.</p><div class="fullcomment"><div class="comment cmt"><p>Allocates data for a number of unit sized values.
 Allocates <code>struct.size * count</code> bytes of data. May return a <code>Data</code> class
 optimized for the given unit struct.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the unit struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of units to allocate.</p></dd><dt class="param">unit</dt><dd class="cmt"><p>the implicit unit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the zero-filled data.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the unit struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of units to allocate.</p></dd><dt class="param">unit</dt><dd class="cmt"><p>the implicit unit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the allocated zero-filled data.
+</p></dd></dl></div>
+    </li><li name="basis.memory.Allocator#apply" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="apply(Long):Data"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="size">size: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Allocates a number of bytes of data.</p><div class="fullcomment"><div class="comment cmt"><p>Allocates a number of bytes of data.
+</p></div><dl class="paramcmts block"><dt class="param">size</dt><dd class="cmt"><p>the number of bytes to allocate.</p></dd><dt>returns</dt><dd class="cmt"><p>the allocated zero-filled data.
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -189,21 +189,6 @@ optimized for the given unit struct.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.memory.Allocator#apply" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="apply[T](T*)(Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="values">values: T*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">values</dt><dd class="cmt"><p>the sequence to store.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -255,21 +240,6 @@ Allocates <code>struct.size * count</code> bytes of data.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="basis.memory.Allocator#fill" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="fill[T](Long)(⇒ T)(Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fill</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="value">value: ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of generated values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of generated values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value generator.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -321,21 +291,6 @@ Allocates <code>struct.size * count</code> bytes of data.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.memory.Allocator#iterate" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="iterate[T](T,Long)((T) ⇒ T)(Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">iterate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="start">start: T</span>, <span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (T) ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of iterated function values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of iterated function values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the initial value of the sequence.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">f</dt><dd class="cmt"><p>the iteratively applied function.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -384,22 +339,6 @@ Allocates <code>struct.size * count</code> bytes of data.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.memory.Allocator#tabulate" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="tabulate[T](Long)((Long) ⇒ T)(Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">tabulate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Long">Long</span>) ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of enumerated function values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of enumerated function values to newly allocated data.
-Applies sequential <code>Long</code> values to the enumerator function starting from 0.
-Allocates <code>struct.size * count</code> bytes of data.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">f</dt><dd class="cmt"><p>the enumerator function.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="toString():String"></a>
       <h4 class="signature">

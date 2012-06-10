@@ -16,7 +16,7 @@
         </head>
         <body class="value" onload="sh_highlightDocument('../lib/', '.min.js');">
       <div id="definition">
-        <a href="Data.html" title="Go to companion"><img src="../../lib/object_to_class_big.png" /></a>
+        <a href="Data.html" title="Go to companion"><img src="../../lib/object_to_trait_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.memory">memory</a></p>
         <h1><a href="Data.html" title="Go to companion">Data</a></h1>
       </div>
@@ -31,7 +31,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Conatins data implementations and allocators.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/memory/Data.scala" target="_blank">Data.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains convenience functions for allocating data.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/memory/Data.scala" target="_blank">Data.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -67,118 +67,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="basis.memory.Data.Block1BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block1BE:Block1BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block1BE.html"><span class="name">Block1BE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Big-endian <code>Byte</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block1LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block1LE:Block1LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block1LE.html"><span class="name">Block1LE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Little-endian <code>Byte</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block2BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block2BE:Block2BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block2BE.html"><span class="name">Block2BE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Big-endian <code>Short</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block2LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block2LE:Block2LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block2LE.html"><span class="name">Block2LE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Little-endian <code>Short</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block4BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block4BE:Block4BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block4BE.html"><span class="name">Block4BE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Big-endian <code>Int</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block4LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block4LE:Block4LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block4LE.html"><span class="name">Block4LE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Little-endian <code>Int</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block8BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block8BE:Block8BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block8BE.html"><span class="name">Block8BE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Big-endian <code>Long</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Block8LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block8LE:Block8LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block8LE.html"><span class="name">Block8LE</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Little-endian <code>Long</code> array backed data.</p>
-    </li><li name="basis.memory.Data.Chunk" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Chunk:Chunk"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Chunk.html"><span class="name">Chunk</span></a><span class="result"> extends Data</span>
-      </span>
-      </h4>
-      <p class="comment cmt"><code>ByteBuffer</code> backed Data.</p>
-    </li></ol>
-            </div>
+        
 
         
 
@@ -244,222 +133,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.memory.Data#Block" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Block</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Block allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Block allocator. Allocates data backed by a primitive arrays.</p></div></div>
-    </li><li name="basis.memory.Data#Block1" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block1:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Block1</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Block1 allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Block1 allocator. Allocates data backed by a <code>Byte</code> array.</p></div></div>
-    </li><li name="basis.memory.Data.Block1BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block1BE:Block1BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block1BE$.html"><span class="name">Block1BE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Block1 allocator.</p>
-    </li><li name="basis.memory.Data.Block1LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block1LE:Block1LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block1LE$.html"><span class="name">Block1LE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Block1 allocator.</p>
-    </li><li name="basis.memory.Data#Block2" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block2:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Block2</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Block2 allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Block2 allocator. Allocates data backed by a <code>Short</code> array.</p></div></div>
-    </li><li name="basis.memory.Data.Block2BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block2BE:Block2BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block2BE$.html"><span class="name">Block2BE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Block2 allocator.</p>
-    </li><li name="basis.memory.Data.Block2LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block2LE:Block2LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block2LE$.html"><span class="name">Block2LE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Block2 allocator.</p>
-    </li><li name="basis.memory.Data#Block4" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block4:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Block4</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Block4 allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Block4 allocator. Allocates data backed by an <code>Int</code> array.</p></div></div>
-    </li><li name="basis.memory.Data.Block4BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block4BE:Block4BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block4BE$.html"><span class="name">Block4BE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Block4 allocator.</p>
-    </li><li name="basis.memory.Data.Block4LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block4LE:Block4LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block4LE$.html"><span class="name">Block4LE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Block4 allocator.</p>
-    </li><li name="basis.memory.Data#Block8" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block8:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Block8</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Block8 allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Block8 allocator. Allocates data backed by a <code>Long</code> array.</p></div></div>
-    </li><li name="basis.memory.Data.Block8BE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block8BE:Block8BE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block8BE$.html"><span class="name">Block8BE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Block8 allocator.</p>
-    </li><li name="basis.memory.Data.Block8LE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Block8LE:Block8LE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$Block8LE$.html"><span class="name">Block8LE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Block8 allocator.</p>
-    </li><li name="basis.memory.Data.BlockBE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="BlockBE:BlockBE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$BlockBE$.html"><span class="name">BlockBE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Block allocator.</p>
-    </li><li name="basis.memory.Data.BlockLE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="BlockLE:BlockLE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$BlockLE$.html"><span class="name">BlockLE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Block allocator.</p>
-    </li><li name="basis.memory.Data#Chunk" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Chunk:Allocator"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Chunk</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The native-endian Chunk allocator.</p><div class="fullcomment"><div class="comment cmt"><p>The native-endian Chunk allocator. Allocates data backed by a <code>ByteBuffer</code>.</p></div></div>
-    </li><li name="basis.memory.Data.ChunkBE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="ChunkBE:ChunkBE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$ChunkBE$.html"><span class="name">ChunkBE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The big-endian Chunk allocator.</p>
-    </li><li name="basis.memory.Data.ChunkLE" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="ChunkLE:ChunkLE"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="Data$$ChunkLE$.html"><span class="name">ChunkLE</span></a><span class="result"> extends Allocator</span>
-      </span>
-      </h4>
-      <p class="comment cmt">The little-endian Chunk allocator.</p>
     </li><li name="basis.memory.Data#alloc" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="alloc[T](Long)(Allocator,Struct[T]):Data"></a>
       <h4 class="signature">
@@ -475,26 +148,25 @@
 Allocates <code>struct.size * count</code> bytes of data. May return a <code>Data</code> class
 optimized for the given unit struct. This convenience function delegates
 to the implicitly scoped allocator.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the unit struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of units to allocate.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">unit</dt><dd class="cmt"><p>the implicit unit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the zero-filled data.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the unit struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of units to allocate.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">unit</dt><dd class="cmt"><p>the implicit unit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the allocated zero-filled data.
 </p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="basis.memory.Data#apply" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="apply[T](T*)(Allocator,Struct[T]):Data"></a>
+      <a id="apply(Long)(Allocator):Data"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="values">values: T*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="allocator">allocator: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>, <span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
+        <span class="name">apply</span><span class="params">(<span name="size">size: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="allocator">allocator: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Stores a sequence of values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data. This convenience function
-delegates to the implicitly scoped allocator.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">values</dt><dd class="cmt"><p>the sequence to store.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
+      <p class="shortcomment cmt">Allocates a number of bytes of data.</p><div class="fullcomment"><div class="comment cmt"><p>Allocates a number of bytes of data. This convenience function delegates
+to the implicitly scoped allocator.
+</p></div><dl class="paramcmts block"><dt class="param">size</dt><dd class="cmt"><p>the number of bytes to allocate.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt>returns</dt><dd class="cmt"><p>the allocated zero-filled data.
 </p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
@@ -550,25 +222,6 @@ delegates to the implicitly scoped allocator.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="basis.memory.Data#fill" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="fill[T](Long)(⇒ T)(Allocator,Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fill</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="value">value: ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="allocator">allocator: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>, <span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of generated values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of generated values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data. This convenience function
-delegates to the implicitly scoped allocator.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value generator.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@inline</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -620,25 +273,6 @@ delegates to the implicitly scoped allocator.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.memory.Data#iterate" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="iterate[T](T,Long)((T) ⇒ T)(Allocator,Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">iterate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="start">start: T</span>, <span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (T) ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="allocator">allocator: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>, <span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of iterated function values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of iterated function values to newly allocated data.
-Allocates <code>struct.size * count</code> bytes of data. This convenience function
-delegates to the implicitly scoped allocator.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the initial value of the sequence.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">f</dt><dd class="cmt"><p>the iteratively applied function.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@inline</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -687,26 +321,6 @@ delegates to the implicitly scoped allocator.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.memory.Data#tabulate" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="tabulate[T](Long)((Long) ⇒ T)(Allocator,Struct[T]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">tabulate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Long">Long</span>) ⇒ T</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="allocator">allocator: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>, <span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stores a sequence of enumerated function values to newly allocated data.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a sequence of enumerated function values to newly allocated data.
-Applies sequential <code>Long</code> values to the enumerator function starting from 0.
-Allocates <code>struct.size * count</code> bytes of data. This convenience function
-delegates to the implicitly scoped allocator.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values in the sequence.</p></dd><dt class="param">f</dt><dd class="cmt"><p>the enumerator function.</p></dd><dt class="param">allocator</dt><dd class="cmt"><p>the implicit allocator to delegate to.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the initialized data.
-</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@inline</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -764,66 +378,6 @@ delegates to the implicitly scoped allocator.
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.memory.Data#wrap" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wrap(ByteBuffer):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wrap</span><span class="params">(<span name="buffer">buffer: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns native-endian data backed by the given <code>ByteBuffer</code>.</p>
-    </li><li name="basis.memory.Data#wrap" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wrap(Array[Long]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wrap</span><span class="params">(<span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Long">Long</span>]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns native-endian data backed by the given <code>Long</code> array.</p>
-    </li><li name="basis.memory.Data#wrap" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wrap(Array[Int]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wrap</span><span class="params">(<span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns native-endian data backed by the given <code>Int</code> array.</p>
-    </li><li name="basis.memory.Data#wrap" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wrap(Array[Short]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wrap</span><span class="params">(<span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Short">Short</span>]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns native-endian data backed by the given <code>Short</code> array.</p>
-    </li><li name="basis.memory.Data#wrap" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wrap(Array[Byte]):Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wrap</span><span class="params">(<span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result">: <a href="Data.html" class="extype" name="basis.memory.Data">Data</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns native-endian data backed by the given <code>Byte</code> array.</p>
     </li></ol>
             </div>
 

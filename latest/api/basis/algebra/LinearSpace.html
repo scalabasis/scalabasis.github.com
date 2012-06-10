@@ -27,16 +27,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">LinearSpace</span><span class="result"> extends <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></span>
+        <span class="name">LinearSpace</span><span class="tparams">[<span name="S">S &lt;: <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>]</span><span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a></dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/LinearSpace.scala" target="_blank">LinearSpace.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/LinearSpace.scala" target="_blank">LinearSpace.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a>, AnyRef, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="generic/F2.html" class="extype" name="basis.algebra.generic.F2">F2</a>, <a href="generic/F2x2.html" class="extype" name="basis.algebra.generic.F2x2">F2x2</a>, <a href="generic/F3.html" class="extype" name="basis.algebra.generic.F3">F3</a>, <a href="generic/F3x3.html" class="extype" name="basis.algebra.generic.F3x3">F3x3</a>, <a href="generic/F4.html" class="extype" name="basis.algebra.generic.F4">F4</a>, <a href="generic/F4x4.html" class="extype" name="basis.algebra.generic.F4x4">F4x4</a>, <a href="generic/FMxN.html" class="extype" name="basis.algebra.generic.FMxN">FMxN</a>, <a href="generic/FN.html" class="extype" name="basis.algebra.generic.FN">FN</a>, <a href="binary64/Integer$.html" class="extype" name="basis.algebra.binary64.Integer">Integer</a>, <a href="Matrix2x2Space.html" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a>, <a href="Matrix3x3Space.html" class="extype" name="basis.algebra.Matrix3x3Space">Matrix3x3Space</a>, <a href="Matrix4x4Space.html" class="extype" name="basis.algebra.Matrix4x4Space">Matrix4x4Space</a>, <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>, <a href="binary64/R2.html" class="extype" name="basis.algebra.binary64.R2">R2</a>, <a href="binary64/R2x2.html" class="extype" name="basis.algebra.binary64.R2x2">R2x2</a>, <a href="binary64/R3.html" class="extype" name="basis.algebra.binary64.R3">R3</a>, <a href="binary64/R3x3.html" class="extype" name="basis.algebra.binary64.R3x3">R3x3</a>, <a href="binary64/R4.html" class="extype" name="basis.algebra.binary64.R4">R4</a>, <a href="binary64/R4x4.html" class="extype" name="basis.algebra.binary64.R4x4">R4x4</a>, <a href="binary64/RMxN.html" class="extype" name="basis.algebra.binary64.RMxN">RMxN</a>, <a href="binary64/RN.html" class="extype" name="basis.algebra.binary64.RN">RN</a>, <a href="binary64/Real$.html" class="extype" name="basis.algebra.binary64.Real">Real</a>, <a href="binary64/RealMatrixSpace.html" class="extype" name="basis.algebra.binary64.RealMatrixSpace">RealMatrixSpace</a>, <a href="binary64/RealVectorSpace.html" class="extype" name="basis.algebra.binary64.RealVectorSpace">RealVectorSpace</a>, <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a>, <a href="Vector2Space.html" class="extype" name="basis.algebra.Vector2Space">Vector2Space</a>, <a href="Vector3Space.html" class="extype" name="basis.algebra.Vector3Space">Vector3Space</a>, <a href="Vector4Space.html" class="extype" name="basis.algebra.Vector4Space">Vector4Space</a>, <a href="VectorSpace.html" class="extype" name="basis.algebra.VectorSpace">VectorSpace</a></div>
+          <div class="subClasses hiddenContent"><a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a>, <a href="generic/F2.html" class="extype" name="basis.algebra.generic.F2">F2</a>, <a href="generic/F2x2.html" class="extype" name="basis.algebra.generic.F2x2">F2x2</a>, <a href="generic/F3.html" class="extype" name="basis.algebra.generic.F3">F3</a>, <a href="generic/F3x3.html" class="extype" name="basis.algebra.generic.F3x3">F3x3</a>, <a href="generic/F4.html" class="extype" name="basis.algebra.generic.F4">F4</a>, <a href="generic/F4x4.html" class="extype" name="basis.algebra.generic.F4x4">F4x4</a>, <a href="generic/FMxN.html" class="extype" name="basis.algebra.generic.FMxN">FMxN</a>, <a href="generic/FN.html" class="extype" name="basis.algebra.generic.FN">FN</a>, <a href="binary64/IntegerVectorSpace.html" class="extype" name="basis.algebra.binary64.IntegerVectorSpace">IntegerVectorSpace</a>, <a href="Matrix2x2Space.html" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a>, <a href="Matrix3x3Space.html" class="extype" name="basis.algebra.Matrix3x3Space">Matrix3x3Space</a>, <a href="Matrix4x4Space.html" class="extype" name="basis.algebra.Matrix4x4Space">Matrix4x4Space</a>, <a href="MatrixRing.html" class="extype" name="basis.algebra.MatrixRing">MatrixRing</a>, <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a>, <a href="binary64/R2$.html" class="extype" name="basis.algebra.binary64.R2">R2</a>, <a href="binary64/R2x2$.html" class="extype" name="basis.algebra.binary64.R2x2">R2x2</a>, <a href="binary64/R3$.html" class="extype" name="basis.algebra.binary64.R3">R3</a>, <a href="binary64/R3x3$.html" class="extype" name="basis.algebra.binary64.R3x3">R3x3</a>, <a href="binary64/R4$.html" class="extype" name="basis.algebra.binary64.R4">R4</a>, <a href="binary64/R4x4$.html" class="extype" name="basis.algebra.binary64.R4x4">R4x4</a>, <a href="binary64/RMxN.html" class="extype" name="basis.algebra.binary64.RMxN">RMxN</a>, <a href="binary64/RN.html" class="extype" name="basis.algebra.binary64.RN">RN</a>, <a href="binary64/RealMatrixSpace.html" class="extype" name="basis.algebra.binary64.RealMatrixSpace">RealMatrixSpace</a>, <a href="binary64/RealVectorSpace.html" class="extype" name="basis.algebra.binary64.RealVectorSpace">RealVectorSpace</a>, <a href="Vector2Space.html" class="extype" name="basis.algebra.Vector2Space">Vector2Space</a>, <a href="Vector3Space.html" class="extype" name="basis.algebra.Vector3Space">Vector3Space</a>, <a href="Vector4Space.html" class="extype" name="basis.algebra.Vector4Space">Vector4Space</a>, <a href="VectorSpace.html" class="extype" name="basis.algebra.VectorSpace">VectorSpace</a>, <a href="binary64/Z2$.html" class="extype" name="basis.algebra.binary64.Z2">Z2</a>, <a href="binary64/Z3$.html" class="extype" name="basis.algebra.binary64.Z3">Z3</a>, <a href="binary64/ZN.html" class="extype" name="basis.algebra.binary64.ZN">ZN</a></div>
         </div></div>
         
 
@@ -50,7 +50,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.algebra.LinearSpace"><span>LinearSpace</span></li><li class="in" name="basis.algebra.AffineSpace"><span>AffineSpace</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.algebra.LinearSpace"><span>LinearSpace</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -72,31 +72,31 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.algebra.LinearSpace#Point" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Point:Point"></a>
+              <ol><li name="basis.algebra.LinearSpace.Element" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="Element:Element"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LinearSpace$Element.html"><span class="name">Element</span></a><span class="result"> extends Any</span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.algebra.LinearSpace#Scalar" visbl="pub" data-isabs="false" fullComment="no">
+      <a id="Scalar:Scalar"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Point</span><span class="result"> = Vector</span>
+        <span class="name">Scalar</span><span class="result"> = Vector</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.LinearSpace#Scalar" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="Scalar:Scalar"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Scalar</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
-    </li><li name="basis.algebra.LinearSpace#Vector" visbl="pub" data-isabs="true" fullComment="yes">
+      
+    </li><li name="basis.algebra.LinearSpace#Vector" visbl="pub" data-isabs="true" fullComment="no">
       <a id="Vector:Vector"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -104,17 +104,44 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Vector</span><span class="result"> &lt;: <a href="Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> { ... /* 2 definitions in type refinement */ }</span>
+        <span class="name">Vector</span><span class="result"> &lt;: <a href="LinearSpace$Element.html" class="extype" name="basis.algebra.LinearSpace.Element">Element</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> → <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></dd></dl></div>
+      
     </li></ol>
             </div>
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="basis.algebra.LinearSpace#Scalar" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="Scalar:S"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Scalar</span><span class="result">: S</span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.algebra.LinearSpace#zero" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="zero:Vector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zero</span><span class="result">: Vector</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -389,9 +416,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="basis.algebra.AffineSpace">
-              <h3>Inherited from <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

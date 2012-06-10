@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>json - basis.json</title>
+          <meta name="description" content="json - basis.json" />
+          <meta name="keywords" content="json basis.json" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="sh_highlightDocument('../lib/', '.min.js');">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a></p>
+        <h1>json</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">json</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains data types, parsers, and string interpolation macros for
+<b>J</b>avascript <b>O</b>bject <b>NO</b>tation.</p><h4>Data types</h4><p><a href="JSONFactory.html" class="extype" name="basis.json.JSONFactory">JSONFactory</a> serves as the foundation for all JSON
+implementations and provides abstract types and builders for JSON values.
+Implementations include:</p><ul><li><code>JSONTree</code> – algebraic data types supporting jquery-style selectors;
+    selection operations return updated root trees, enabling intuitive
+    sub-tree transformations of immutable trees.</li><li><code>JSONType</code> – represents JSON values with general Scala types.</li><li><code>JSONExpr</code> – generates expressions that build data structures for
+    another JSON implementation; used by string interpolators to
+    transform textual JSON to builder operations at compile time.</li></ul><h4>Parsers</h4><p><a href="JSONParser.html" class="extype" name="basis.json.JSONParser">JSONParser</a> provides a fast, single-character lookahead
+recursive descent parser. <a href="JSONFactory.html" class="extype" name="basis.json.JSONFactory">JSONFactory</a> instances compose
+with parsers to build JSON values. <code>JSONParser</code>'s companion object
+contains parser implementations for various input sources.</p><h4>String interpolators</h4><p>Parsing of interpolated JSON text happens at compile time. <code>JSONTree</code> and
+<code>JSONType</code> each provide the following string interpolation methods:</p><ul><li><code>json&quot;&quot;</code> – statically parses any JSON value.</li><li><code>jsobject&quot;&quot;</code> – statically parses a JSON object.</li><li><code>jsarray&quot;&quot;</code> – statically parses a JSON array.
+</li></ul></div><dl class="attributes block"> <div class="block">Example:
+                <ol><li class="cmt"><p></p><pre>scala&gt; <span class="kw">import</span> basis.json.JSONTree._
+<span class="kw">import</span> basis.json.JSONTree._
+
+scala&gt; json<span class="lit">""</span><span class="lit">" [{}, [], "</span><span class="lit">", 0, 0.0, true, false, null] "</span><span class="lit">""</span>
+res0: basis.json.JSONTree.JSArray = [{},[],<span class="lit">""</span>,<span class="num">0</span>,<span class="num">0.0</span>,<span class="kw">true</span>,<span class="kw">false</span>,<span class="kw">null</span>]
+
+scala&gt; <span class="kw">def</span> person(name: <span class="std">String</span>, age: <span class="std">Int</span>) =
+     |   jsobject<span class="lit">""</span><span class="lit">" { "</span>name<span class="lit">" : $name, "</span>age<span class="lit">" : $age } "</span><span class="lit">""</span>
+person: (name: <span class="std">String</span>, age: <span class="std">Int</span>)basis.json.JSONTree.JSObject
+
+scala&gt; person(<span class="lit">"Bart Simpson"</span>, <span class="num">10</span>)
+res1: basis.json.JSONTree.JSObject = {<span class="lit">"name"</span>:<span class="lit">"Bart Simpson"</span>,<span class="lit">"age"</span>:<span class="num">10</span>}</pre></li></ol>
+              </div></dl></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="basis.json.JSONException" visbl="pub" data-isabs="false" fullComment="no">
+      <a id="JSONException:JSONException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONException.html"><span class="name">JSONException</span></a><span class="result"> extends RuntimeException</span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.json.JSONExpr" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="JSONExpr:JSONExpr[Context, JSON]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONExpr.html"><span class="name">JSONExpr</span></a><span class="tparams">[<span name="Context">+Context &lt;: Universe with Singleton</span>, <span name="JSON">JSON &lt;: JSONFactory with Singleton</span>]</span><span class="result"> extends JSONFactory</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A JSON factory that generates expressions that build data structures for
+another JSON implementation.</p>
+    </li><li name="basis.json.JSONFactory" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="JSONFactory:JSONFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONFactory.html"><span class="name">JSONFactory</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains abstract types and factories for JSON values.</p>
+    </li><li name="basis.json.JSONParser" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="JSONParser:JSONParser[JSON]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONParser.html"><span class="name">JSONParser</span></a><span class="tparams">[<span name="JSON">+JSON &lt;: JSONFactory with Singleton</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An abstract parser for JSON text.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="basis.json.JSONParser" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="JSONParser:JSONParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONParser$.html"><span class="name">JSONParser</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains JSON parser implementations for various input sources.</p>
+    </li><li name="basis.json.JSONTree" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="JSONTree:JSONTree"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONTree$.html"><span class="name">JSONTree</span></a><span class="result"> extends JSONFactory</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An optimized JSON tree model supporting jquery-style selectors and
+compile-time sting interpolation.</p>
+    </li><li name="basis.json.JSONType" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="JSONType:JSONType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JSONType$.html"><span class="name">JSONType</span></a><span class="result"> extends JSONFactory</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A JSON model implemented by general Scala types and supporting compile-time
+string interpolation.</p>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

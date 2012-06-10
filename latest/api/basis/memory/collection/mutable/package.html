@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>mutable - basis.memory.collection.mutable</title>
+          <meta name="description" content="mutable - basis.memory.collection.mutable" />
+          <meta name="keywords" content="mutable basis.memory.collection.mutable" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="sh_highlightDocument('../lib/', '.min.js');">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="basis">basis</a>.<a href="../../package.html" class="extype" name="basis.memory">memory</a>.<a href="../package.html" class="extype" name="basis.memory.collection">collection</a></p>
+        <h1>mutable</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mutable</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains mutable collections that optionally store their elements by value.</p></div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="basis.memory.collection.mutable.RawArray" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="RawArray:RawArray[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RawArray.html"><span class="name">RawArray</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RawSeq[A] with GenericTraversableTemplate[A, RawArray] with IndexedSeqLike[A, RawArray[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An array that optionally stores its elements by value.</p>
+    </li><li name="basis.memory.collection.mutable.RawBuffer" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="RawBuffer:RawBuffer[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RawBuffer.html"><span class="name">RawBuffer</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A] with RawSeq[A] with GenericTraversableTemplate[A, RawBuffer] with BufferLike[A, RawBuffer[A]] with IndexedSeqLike[A, RawBuffer[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A buffer that optionally stores its elements by value.</p>
+    </li><li name="basis.memory.collection.mutable.RawSeq" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="RawSeq:RawSeq[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RawSeq.html"><span class="name">RawSeq</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends IndexedSeq[A] with RawSeq[A] with GenericTraversableTemplate[A, RawSeq] with IndexedSeqLike[A, RawSeq[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A mutable indexed sequence that optionally stores its elements by value.</p>
+    </li><li name="basis.memory.collection.mutable.RefArray" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RefArray:RefArray[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefArray.html"><span class="name">RefArray</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RawArray[A] with GenericTraversableTemplate[A, RawArray] with IndexedSeqLike[A, RefArray[A]] with IndexedSeqOptimized[A, RefArray[A]] with CustomParallelizable[A, ParArray[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An array that stores its elements by reference.</p>
+    </li><li name="basis.memory.collection.mutable.RefBuffer" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RefBuffer:RefBuffer[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefBuffer.html"><span class="name">RefBuffer</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RawBuffer[A] with GenericTraversableTemplate[A, RawBuffer] with BufferLike[A, RefBuffer[A]] with IndexedSeqLike[A, RefBuffer[A]] with IndexedSeqOptimized[A, RefBuffer[A]] with Builder[A, RefBuffer[A]] with CustomParallelizable[A, ParArray[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A buffer that stores its elements by reference.</p>
+    </li><li name="basis.memory.collection.mutable.ValArray" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ValArray:ValArray[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ValArray.html"><span class="name">ValArray</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RawArray[A] with GenericTraversableTemplate[A, RawArray] with IndexedSeqLike[A, ValArray[A]] with IndexedSeqOptimized[A, ValArray[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An array that stores its elements by value.</p>
+    </li><li name="basis.memory.collection.mutable.ValBuffer" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ValBuffer:ValBuffer[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ValBuffer.html"><span class="name">ValBuffer</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RawBuffer[A] with GenericTraversableTemplate[A, RawBuffer] with BufferLike[A, ValBuffer[A]] with IndexedSeqLike[A, ValBuffer[A]] with IndexedSeqOptimized[A, ValBuffer[A]] with Builder[A, ValBuffer[A]]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A buffer that stores its elements by value.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="basis.memory.collection.mutable.RawArray" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RawArray:RawArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RawArray$.html"><span class="name">RawArray</span></a><span class="result"> extends RawSeqFactory[RawArray]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>RawArray</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.RawBuffer" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RawBuffer:RawBuffer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RawBuffer$.html"><span class="name">RawBuffer</span></a><span class="result"> extends RawSeqFactory[RawBuffer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>RawBuffer</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.RawSeq" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RawSeq:RawSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RawSeq$.html"><span class="name">RawSeq</span></a><span class="result"> extends RawSeqFactory[RawSeq]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>RawSeq</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.RefArray" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RefArray:RefArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RefArray$.html"><span class="name">RefArray</span></a><span class="result"> extends RefSeqFactory[RefArray]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>RefArray</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.RefBuffer" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="RefBuffer:RefBuffer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RefBuffer$.html"><span class="name">RefBuffer</span></a><span class="result"> extends RefSeqFactory[RefBuffer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>RefBuffer</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.ValArray" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ValArray:ValArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ValArray$.html"><span class="name">ValArray</span></a><span class="result"> extends ValSeqFactory[ValArray]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>ValArray</code> sequences.</p>
+    </li><li name="basis.memory.collection.mutable.ValBuffer" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ValBuffer:ValBuffer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ValBuffer$.html"><span class="name">ValBuffer</span></a><span class="result"> extends ValSeqFactory[ValBuffer]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A factory for <code>ValBuffer</code> sequences.</p>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

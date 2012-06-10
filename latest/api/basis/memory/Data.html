@@ -16,18 +16,18 @@
         </head>
         <body class="type" onload="sh_highlightDocument('../lib/', '.min.js');">
       <div id="definition">
-        <a href="Data$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <a href="Data$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.memory">memory</a></p>
         <h1><a href="Data$.html" title="Go to companion">Data</a></h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Data</span><span class="result"> extends AnyRef</span>
+        <span class="name">Data</span><span class="result"> extends <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
       
@@ -70,10 +70,10 @@ scala&gt; data.loadUnalignedShort(<span class="num">1</span>L).toHexString <span
 res5: <span class="std">String</span> = fffffeba</pre></li></ol>
               </div></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="Data$$Block1BE.html" class="extype" name="basis.memory.Data.Block1BE">Block1BE</a>, <a href="Data$$Block1LE.html" class="extype" name="basis.memory.Data.Block1LE">Block1LE</a>, <a href="Data$$Block2BE.html" class="extype" name="basis.memory.Data.Block2BE">Block2BE</a>, <a href="Data$$Block2LE.html" class="extype" name="basis.memory.Data.Block2LE">Block2LE</a>, <a href="Data$$Block4BE.html" class="extype" name="basis.memory.Data.Block4BE">Block4BE</a>, <a href="Data$$Block4LE.html" class="extype" name="basis.memory.Data.Block4LE">Block4LE</a>, <a href="Data$$Block8BE.html" class="extype" name="basis.memory.Data.Block8BE">Block8BE</a>, <a href="Data$$Block8LE.html" class="extype" name="basis.memory.Data.Block8LE">Block8LE</a>, <a href="Data$$Chunk.html" class="extype" name="basis.memory.Data.Chunk">Chunk</a></div>
+          <div class="subClasses hiddenContent"><a href="ArrayData.html" class="extype" name="basis.memory.ArrayData">ArrayData</a>, <a href="BufferData.html" class="extype" name="basis.memory.BufferData">BufferData</a>, <a href="ByteDataBE.html" class="extype" name="basis.memory.ByteDataBE">ByteDataBE</a>, <a href="ByteDataLE.html" class="extype" name="basis.memory.ByteDataLE">ByteDataLE</a>, <a href="IntDataBE.html" class="extype" name="basis.memory.IntDataBE">IntDataBE</a>, <a href="IntDataLE.html" class="extype" name="basis.memory.IntDataLE">IntDataLE</a>, <a href="LongDataBE.html" class="extype" name="basis.memory.LongDataBE">LongDataBE</a>, <a href="LongDataLE.html" class="extype" name="basis.memory.LongDataLE">LongDataLE</a>, <a href="ShortDataBE.html" class="extype" name="basis.memory.ShortDataBE">ShortDataBE</a>, <a href="ShortDataLE.html" class="extype" name="basis.memory.ShortDataLE">ShortDataLE</a></div>
         </div></div>
         
 
@@ -87,7 +87,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.memory.Data"><span>Data</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.memory.Data"><span>Data</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -105,22 +105,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="basis.memory.Data#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no">
-      <a id="&lt;init&gt;:Data"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Data</span><span class="params">()</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -152,6 +137,18 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
       </span>
       </h4>
       <p class="shortcomment cmt">The data's byte order.</p>
+    </li><li name="scala.Any#getClass" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="basis.memory.Data#loadByte" visbl="pub" data-isabs="true" fullComment="yes">
       <a id="loadByte(Long):Byte"></a>
       <h4 class="signature">
@@ -209,19 +206,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
 
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes">
+              <ol><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -233,7 +218,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.Any###" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -244,19 +229,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -295,21 +268,6 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
       <p class="shortcomment cmt">Zeros a range of addresses.</p><div class="fullcomment"><div class="comment cmt"><p>Zeros a range of addresses.
 </p></div><dl class="paramcmts block"><dt class="param">base</dt><dd class="cmt"><p>the lower bound of the address range.</p></dd><dt class="param">limit</dt><dd class="cmt"><p>the exclusive least upper bound of the address range.
 </p></dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes">
-      <a id="clone():AnyRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/package.html" class="extype" name="java.lang">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="basis.memory.Data#copyToArray" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="copyToArray[T](Long,Array[T],Int,Int)(Struct[T]):Unit"></a>
       <h4 class="signature">
@@ -324,19 +282,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
       <p class="shortcomment cmt">Copies a sequence of data values to an instance array slice.</p><div class="fullcomment"><div class="comment cmt"><p>Copies a sequence of data values to an instance array slice.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">array</dt><dd class="cmt"><p>the array to copy to.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the lower bound of the array slice to copy to.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to copy.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.
 </p></dd></dl></div>
-    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="eq(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.Any#equals" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -347,35 +293,8 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes">
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/package.html" class="extype" name="java.lang">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="getClass():Class[_]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: Class[_]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any#hashCode" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -386,7 +305,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -414,18 +333,18 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.
 </p></dd></dl></div>
     </li><li name="basis.memory.Data#loadArray" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="loadArray[T](Long,Int)(Struct[T],ClassManifest[T]):Array[T]"></a>
+      <a id="loadArray[T](Long,Int)(Struct[T],ArrayTag[T]):Array[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>, <span name="manifest">manifest: ClassManifest[T]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[T]</span>
+        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>, <span name="arrayTag">arrayTag: <span class="extype" name="scala.reflect.ArrayTag">ArrayTag</span>[T]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[T]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads a sequence of data values as a new instance array.</p><div class="fullcomment"><div class="comment cmt"><p>Loads a sequence of data values as a new instance array.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt class="param">manifest</dt><dd class="cmt"><p>the manifest to create the array of type <code>T</code>.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of Scala values.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt class="param">arrayTag</dt><dd class="cmt"><p>the reflective type of the array to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of Scala values.
 </p></dd></dl></div>
     </li><li name="basis.memory.Data#loadChar" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="loadChar(Long):Char"></a>
@@ -615,42 +534,6 @@ Truncates <code>address</code> to 2-byte alignment.
       <p class="shortcomment cmt">Moves a byte sequence to a different, potentially overlapping address.</p><div class="fullcomment"><div class="comment cmt"><p>Moves a byte sequence to a different, potentially overlapping address.
 </p></div><dl class="paramcmts block"><dt class="param">fromAddress</dt><dd class="cmt"><p>the address to copy from.</p></dd><dt class="param">toAddress</dt><dd class="cmt"><p>the address to copy to.</p></dd><dt class="param">size</dt><dd class="cmt"><p>the number of bytes to copy.
 </p></dd></dl></div>
-    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="ne(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="notify():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="notifyAll():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="basis.memory.Data#store" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="store[T](Long,T)(Struct[T]):Unit"></a>
       <h4 class="signature">
@@ -853,19 +736,7 @@ Truncates <code>address</code> to 2-byte alignment.
       <p class="shortcomment cmt">Stores a native-endian <code>Short</code> value as a 2-byte <code>endian</code> ordered word.</p><div class="fullcomment"><div class="comment cmt"><p>Stores a native-endian <code>Short</code> value as a 2-byte <code>endian</code> ordered word.
 </p></div><dl class="paramcmts block"><dt class="param">address</dt><dd class="cmt"><p>the unaligned storage address.</p></dd><dt class="param">value</dt><dd class="cmt"><p>the <code>Short</code> value to store.
 </p></dd></dl></div>
-    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.Any#toString" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -876,7 +747,7 @@ Truncates <code>address</code> to 2-byte alignment.
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="basis.memory.Data#transfer" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="transfer(Long,Data,Long,Long):Unit"></a>
       <h4 class="signature">
@@ -891,51 +762,6 @@ Truncates <code>address</code> to 2-byte alignment.
       <p class="shortcomment cmt">Copies a byte sequence to this data.</p><div class="fullcomment"><div class="comment cmt"><p>Copies a byte sequence to this data.
 </p></div><dl class="paramcmts block"><dt class="param">address</dt><dd class="cmt"><p>the address to transfer to.</p></dd><dt class="param">data</dt><dd class="cmt"><p>the data to transfer from.</p></dd><dt class="param">base</dt><dd class="cmt"><p>the address to transfer from.</p></dd><dt class="param">size</dt><dd class="cmt"><p>the number of bytes to transfer.
 </p></dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wait(Long,Int):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="wait(Long):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li></ol>
             </div>
 
@@ -943,9 +769,7 @@ Truncates <code>address</code> to 2-byte alignment.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from AnyRef</h3>
-            </div><div class="parent" name="scala.Any">
+        <div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>
         

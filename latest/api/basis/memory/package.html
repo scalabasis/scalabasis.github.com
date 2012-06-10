@@ -54,14 +54,74 @@
       <a id="Allocator:Allocator"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <a href="Allocator.html"><span class="name">Allocator</span></a><span class="result"> extends AnyRef</span>
       </span>
       </h4>
       <p class="comment cmt">A <code>Data</code> allocator.</p>
+    </li><li name="basis.memory.ArrayAllocator" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="ArrayAllocator:ArrayAllocator[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayAllocator.html"><span class="name">ArrayAllocator</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends Allocator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for <code>Data</code> backed by an array.</p>
+    </li><li name="basis.memory.ArrayData" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="ArrayData:ArrayData[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayData.html"><span class="name">ArrayData</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends Data</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Data backed by an array.</p>
+    </li><li name="basis.memory.BufferData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="BufferData:BufferData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BufferData.html"><span class="name">BufferData</span></a><span class="result"> extends AnyVal with Data</span>
+      </span>
+      </h4>
+      <p class="comment cmt"><code>ByteBuffer</code> backed Data.</p>
+    </li><li name="basis.memory.ByteDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ByteDataBE:ByteDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteDataBE.html"><span class="name">ByteDataBE</span></a><span class="result"> extends AnyVal with ArrayData[Byte]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Big-endian <code>Byte</code> array backed data.</p>
+    </li><li name="basis.memory.ByteDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ByteDataLE:ByteDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteDataLE.html"><span class="name">ByteDataLE</span></a><span class="result"> extends AnyVal with ArrayData[Byte]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Little-endian <code>Byte</code> array backed data.</p>
     </li><li name="basis.memory.CaseStruct1" visbl="pub" data-isabs="true" fullComment="yes">
       <a id="CaseStruct1:CaseStruct1[T1, T]"></a>
       <h4 class="signature">
@@ -114,11 +174,11 @@
       <a id="Data:Data"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Data.html"><span class="name">Data</span></a><span class="result"> extends AnyRef</span>
+        <a href="Data.html"><span class="name">Data</span></a><span class="result"> extends Any</span>
       </span>
       </h4>
       <p class="comment cmt">A byte-addressable memory region.</p>
@@ -134,6 +194,78 @@
       </span>
       </h4>
       <p class="comment cmt">A representation of a significance ordering.</p>
+    </li><li name="basis.memory.IntDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="IntDataBE:IntDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntDataBE.html"><span class="name">IntDataBE</span></a><span class="result"> extends AnyVal with ArrayData[Int]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Big-endian <code>Int</code> array backed data.</p>
+    </li><li name="basis.memory.IntDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="IntDataLE:IntDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntDataLE.html"><span class="name">IntDataLE</span></a><span class="result"> extends AnyVal with ArrayData[Int]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Little-endian <code>Int</code> array backed data.</p>
+    </li><li name="basis.memory.LongDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="LongDataBE:LongDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LongDataBE.html"><span class="name">LongDataBE</span></a><span class="result"> extends AnyVal with ArrayData[Long]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Big-endian <code>Long</code> array backed data.</p>
+    </li><li name="basis.memory.LongDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="LongDataLE:LongDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LongDataLE.html"><span class="name">LongDataLE</span></a><span class="result"> extends AnyVal with ArrayData[Long]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Little-endian <code>Long</code> array backed data.</p>
+    </li><li name="basis.memory.ShortDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ShortDataBE:ShortDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortDataBE.html"><span class="name">ShortDataBE</span></a><span class="result"> extends AnyVal with ArrayData[Short]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Big-endian <code>Short</code> array backed data.</p>
+    </li><li name="basis.memory.ShortDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ShortDataLE:ShortDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortDataLE.html"><span class="name">ShortDataLE</span></a><span class="result"> extends AnyVal with ArrayData[Short]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Little-endian <code>Short</code> array backed data.</p>
     </li><li name="basis.memory.Struct" visbl="pub" data-isabs="true" fullComment="yes">
       <a id="Struct:Struct[T]"></a>
       <h4 class="signature">
@@ -213,6 +345,102 @@
       </span>
       </h4>
       <p class="comment cmt">Contains the implicit default allocator.</p>
+    </li><li name="basis.memory.package#ArrayData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ArrayData:Allocator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ArrayData</span><span class="result">: <a href="Allocator.html" class="extype" name="basis.memory.Allocator">Allocator</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An allocator for native-endian data backed by some primitive array.</p><div class="fullcomment"><div class="comment cmt"><p>An allocator for native-endian data backed by some primitive array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
+    </li><li name="basis.memory.ArrayDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ArrayDataBE:ArrayDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayDataBE$.html"><span class="name">ArrayDataBE</span></a><span class="result"> extends Allocator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by some primitive array.</p>
+    </li><li name="basis.memory.ArrayDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ArrayDataLE:ArrayDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayDataLE$.html"><span class="name">ArrayDataLE</span></a><span class="result"> extends Allocator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by some primitive array.</p>
+    </li><li name="basis.memory.BufferDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="BufferDataBE:BufferDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BufferDataBE$.html"><span class="name">BufferDataBE</span></a><span class="result"> extends Allocator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by a <code>ByteBuffer</code>.</p>
+    </li><li name="basis.memory.BufferDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="BufferDataLE:BufferDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BufferDataLE$.html"><span class="name">BufferDataLE</span></a><span class="result"> extends Allocator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by a <code>ByteBuffer</code>.</p>
+    </li><li name="basis.memory.package#ByteData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ByteData:ArrayAllocator[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ByteData</span><span class="result">: <a href="ArrayAllocator.html" class="extype" name="basis.memory.ArrayAllocator">ArrayAllocator</a>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An allocator for native-endian data backed by a <code>Byte</code> array.</p><div class="fullcomment"><div class="comment cmt"><p>An allocator for native-endian data backed by a <code>Byte</code> array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
+    </li><li name="basis.memory.ByteDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ByteDataBE:ByteDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteDataBE$.html"><span class="name">ByteDataBE</span></a><span class="result"> extends ArrayAllocator[Byte]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by a <code>Byte</code> array.</p>
+    </li><li name="basis.memory.ByteDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ByteDataLE:ByteDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteDataLE$.html"><span class="name">ByteDataLE</span></a><span class="result"> extends ArrayAllocator[Byte]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by a <code>Byte</code> array.</p>
     </li><li name="basis.memory.Data" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Data:Data"></a>
       <h4 class="signature">
@@ -224,7 +452,7 @@
         <a href="Data$.html"><span class="name">Data</span></a><span class="result"> extends AnyRef</span>
       </span>
       </h4>
-      <p class="comment cmt">Conatins data implementations and allocators.</p>
+      <p class="comment cmt">Contains convenience functions for allocating data.</p>
     </li><li name="basis.memory.Endianness" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Endianness:Endianness"></a>
       <h4 class="signature">
@@ -237,6 +465,114 @@
       </span>
       </h4>
       <p class="comment cmt">Contains enumerated significance orderings.</p>
+    </li><li name="basis.memory.package#IntData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="IntData:ArrayAllocator[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IntData</span><span class="result">: <a href="ArrayAllocator.html" class="extype" name="basis.memory.ArrayAllocator">ArrayAllocator</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An allocator for native-endian data backed by an <code>Int</code> array.</p><div class="fullcomment"><div class="comment cmt"><p>An allocator for native-endian data backed by an <code>Int</code> array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
+    </li><li name="basis.memory.IntDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="IntDataBE:IntDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntDataBE$.html"><span class="name">IntDataBE</span></a><span class="result"> extends ArrayAllocator[Int]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by an <code>Int</code> array.</p>
+    </li><li name="basis.memory.IntDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="IntDataLE:IntDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntDataLE$.html"><span class="name">IntDataLE</span></a><span class="result"> extends ArrayAllocator[Int]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by an <code>Int</code> array.</p>
+    </li><li name="basis.memory.package#LongData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="LongData:ArrayAllocator[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LongData</span><span class="result">: <a href="ArrayAllocator.html" class="extype" name="basis.memory.ArrayAllocator">ArrayAllocator</a>[<span class="extype" name="scala.Long">Long</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An allocator for native-endian data backed by a <code>Long</code> array.</p><div class="fullcomment"><div class="comment cmt"><p>An allocator for native-endian data backed by a <code>Long</code> array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
+    </li><li name="basis.memory.LongDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="LongDataBE:LongDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LongDataBE$.html"><span class="name">LongDataBE</span></a><span class="result"> extends ArrayAllocator[Long]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by a <code>Long</code> array.</p>
+    </li><li name="basis.memory.LongDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="LongDataLE:LongDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LongDataLE$.html"><span class="name">LongDataLE</span></a><span class="result"> extends ArrayAllocator[Long]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by a <code>Long</code> array.</p>
+    </li><li name="basis.memory.package#ShortData" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ShortData:ArrayAllocator[Short]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ShortData</span><span class="result">: <a href="ArrayAllocator.html" class="extype" name="basis.memory.ArrayAllocator">ArrayAllocator</a>[<span class="extype" name="scala.Short">Short</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An allocator for native-endian data backed by a <code>Short</code> array.</p><div class="fullcomment"><div class="comment cmt"><p>An allocator for native-endian data backed by a <code>Short</code> array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
+    </li><li name="basis.memory.ShortDataBE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ShortDataBE:ShortDataBE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortDataBE$.html"><span class="name">ShortDataBE</span></a><span class="result"> extends ArrayAllocator[Short]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for big-endian data backed by a <code>Short</code> array.</p>
+    </li><li name="basis.memory.ShortDataLE" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ShortDataLE:ShortDataLE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortDataLE$.html"><span class="name">ShortDataLE</span></a><span class="result"> extends ArrayAllocator[Short]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An allocator for little-endian data backed by a <code>Short</code> array.</p>
     </li><li name="basis.memory.Struct" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="Struct:Struct"></a>
       <h4 class="signature">
@@ -260,7 +596,7 @@
         <span class="name">align</span><span class="params">(<span name="alignment">alignment: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Advances an address to the next power-of-2 alignment.</p><div class="fullcomment"><div class="comment cmt"><p>Advances an address to the next power-of-2 alignment.
+      <p class="shortcomment cmt">Returns an address advanced to its next power-of-2 alignment.</p><div class="fullcomment"><div class="comment cmt"><p>Returns an address advanced to its next power-of-2 alignment.
 </p></div><dl class="paramcmts block"><dt class="param">alignment</dt><dd class="cmt"><p>the required alignment–forced to a power-of-2.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the address to align.</p></dd><dt>returns</dt><dd class="cmt"><p>the aligned address.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.memory.package">package</a></dd></dl></div>
     </li><li name="basis.memory.package#alignOf" visbl="pub" data-isabs="false" fullComment="yes">
@@ -278,6 +614,18 @@
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="basis.memory.collection" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="collection:collection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="collection/package.html"><span class="name">collection</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains collections that optionally store their elements by value.</p>
     </li><li name="basis.memory.package#sizeOf" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="sizeOf[T](Struct[T]):Long"></a>
       <h4 class="signature">

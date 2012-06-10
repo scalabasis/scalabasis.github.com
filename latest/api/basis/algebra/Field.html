@@ -33,10 +33,10 @@
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/Field.scala" target="_blank">Field.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a>, AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a>, <a href="binary64/Real.html" class="extype" name="basis.algebra.binary64.Real">Real</a>, <a href="RealField.html" class="extype" name="basis.algebra.RealField">RealField</a></div>
+          <div class="subClasses hiddenContent"><a href="CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a>, <a href="generic/FieldInterval.html" class="extype" name="basis.algebra.generic.FieldInterval">FieldInterval</a>, <a href="IntervalField.html" class="extype" name="basis.algebra.IntervalField">IntervalField</a>, <a href="OrderedField.html" class="extype" name="basis.algebra.OrderedField">OrderedField</a>, <a href="binary64/Real$.html" class="extype" name="basis.algebra.binary64.Real">Real</a>, <a href="RealField.html" class="extype" name="basis.algebra.RealField">RealField</a>, <a href="binary64/RealInterval$.html" class="extype" name="basis.algebra.binary64.RealInterval">RealInterval</a></div>
         </div></div>
         
 
@@ -50,7 +50,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.algebra.Field"><span>Field</span></li><li class="in" name="basis.algebra.Ring"><span>Ring</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.algebra.Field"><span>Field</span></li><li class="in" name="basis.algebra.Ring"><span>Ring</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -72,7 +72,19 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.algebra.Field#Vector" visbl="pub" data-isabs="true" fullComment="yes">
+              <ol><li name="basis.algebra.Field.Element" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="Element:Element"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Field$Element.html"><span class="name">Element</span></a><span class="result"> extends Element</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
+    </li><li name="basis.algebra.Field#Vector" visbl="pub" data-isabs="true" fullComment="yes">
       <a id="Vector:Vector"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,7 +92,7 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Vector</span>
+        <span class="name">Vector</span><span class="result"> &lt;: <a href="Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
@@ -89,87 +101,27 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="basis.algebra.Field#*" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="*(Vector):Vector"></a>
+              <ol><li name="basis.algebra.Field#unit" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="unit:Vector"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="that">that: Vector</span>)</span><span class="result">: Vector</span>
+        <span class="name">unit</span><span class="result">: Vector</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
-    </li><li name="basis.algebra.Field#+" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="+(Vector):Vector"></a>
+    </li><li name="basis.algebra.Field#zero" visbl="pub" data-isabs="true" fullComment="yes">
+      <a id="zero:Vector"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="that">that: Vector</span>)</span><span class="result">: Vector</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
-    </li><li name="basis.algebra.Field#-" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="-(Vector):Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="that">that: Vector</span>)</span><span class="result">: Vector</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
-    </li><li name="basis.algebra.Field#/" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="/(Vector):Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="that">that: Vector</span>)</span><span class="result">: Vector</span>
-      </span>
-      </h4>
-      
-    </li><li name="scala.Any#getClass" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="getClass():Class[_]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: Class[_]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.algebra.Field#inverse" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="inverse:Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">inverse</span><span class="result">: Vector</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Field#unary_-" visbl="pub" data-isabs="true" fullComment="yes">
-      <a id="unary_-:Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: unary_$minus" class="name">unary_-</span><span class="result">: Vector</span>
+        <span class="name">zero</span><span class="result">: Vector</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.Field">Field</a> → <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd></dl></div>
@@ -178,7 +130,19 @@
 
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -190,7 +154,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.Any###" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -201,7 +165,19 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -226,7 +202,34 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.Any#equals" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/package.html" class="extype" name="java.lang">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -237,8 +240,35 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.Any#hashCode" visbl="pub" data-isabs="false" fullComment="yes">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/package.html" class="extype" name="java.lang">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -249,7 +279,7 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -262,7 +292,55 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.Any#toString" visbl="pub" data-isabs="false" fullComment="yes">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -273,7 +351,52 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li></ol>
             </div>
 
@@ -283,6 +406,8 @@
         <div id="inheritedMembers">
         <div class="parent" name="basis.algebra.Ring">
               <h3>Inherited from <a href="Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

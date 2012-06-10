@@ -27,13 +27,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Real</span><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span> with <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> with <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a></span>
+        <span class="name">Real</span><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span> with <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/algebra/binary64/Real.scala" target="_blank">Real.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a>, <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a>, <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a>, <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a>, <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a>, <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a>, <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a>, <span class="extype" name="scala.AnyVal">AnyVal</span>, <span class="extype" name="scala.NotNull">NotNull</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a>, <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a>, <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a>, <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a>, <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a>, <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a>, <span class="extype" name="scala.AnyVal">AnyVal</span>, <span class="extype" name="scala.NotNull">NotNull</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -47,7 +47,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.algebra.binary64.Real"><span>Real</span></li><li class="in" name="basis.algebra.RealField"><span>RealField</span></li><li class="in" name="basis.algebra.CompleteField"><span>CompleteField</span></li><li class="in" name="basis.algebra.Field"><span>Field</span></li><li class="in" name="basis.algebra.OrderedRing"><span>OrderedRing</span></li><li class="in" name="basis.algebra.Ring"><span>Ring</span></li><li class="in" name="basis.algebra.Linear"><span>Linear</span></li><li class="in" name="basis.algebra.Affine"><span>Affine</span></li><li class="in" name="scala.AnyVal"><span>AnyVal</span></li><li class="in" name="scala.NotNull"><span>NotNull</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.algebra.binary64.Real"><span>Real</span></li><li class="in" name="basis.algebra.RealField.Element"><span>Element</span></li><li class="in" name="basis.algebra.CompleteField.Element"><span>Element</span></li><li class="in" name="basis.algebra.OrderedField.Element"><span>Element</span></li><li class="in" name="basis.algebra.Field.Element"><span>Element</span></li><li class="in" name="basis.algebra.OrderedRing.Element"><span>Element</span></li><li class="in" name="basis.algebra.Ring.Element"><span>Element</span></li><li class="in" name="scala.AnyVal"><span>AnyVal</span></li><li class="in" name="scala.NotNull"><span>NotNull</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -82,46 +82,7 @@
     </li></ol>
             </div>
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="basis.algebra.Linear#Point" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Point:Point"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Point</span><span class="result"> = Vector</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> → <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a></dd></dl></div>
-    </li><li name="basis.algebra.binary64.Real#Scalar" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Scalar:Scalar"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Scalar</span><span class="result"> = <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a></dd></dl></div>
-    </li><li name="basis.algebra.binary64.Real#Vector" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="Vector:Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Vector</span><span class="result"> = <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a> → <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> → <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         
 
@@ -162,22 +123,7 @@
         <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a> → <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></dd><dt>Annotations</dt><dd>
-                <span class="name">@inline</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="basis.algebra.binary64.Real#*:" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="*:(Real):Real"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $times$colon" class="name">*:</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a> → <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -192,7 +138,7 @@
         <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a> → <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> → <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a> → <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -207,7 +153,7 @@
         <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a> → <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a> → <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a> → <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -222,22 +168,7 @@
         <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a></dd><dt>Annotations</dt><dd>
-                <span class="name">@inline</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="basis.algebra.binary64.Real#:*" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id=":*(Real):Real"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $colon$times" class="name">:*</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -252,7 +183,7 @@
         <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -267,7 +198,7 @@
         <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -294,7 +225,7 @@
         <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -309,7 +240,7 @@
         <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -324,7 +255,7 @@
         <span class="name">abs</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -393,7 +324,7 @@
         <span class="name">inverse</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -420,7 +351,7 @@
         <span class="name">max</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -435,7 +366,7 @@
         <span class="name">min</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -450,7 +381,7 @@
         <span class="name">pow</span><span class="params">(<span name="that">that: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>)</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -465,7 +396,7 @@
         <span class="name">sqrt</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -555,7 +486,7 @@
         <span title="gt4s: unary_$minus" class="name">unary_-</span><span class="result">: <a href="" class="extype" name="basis.algebra.binary64.Real">Real</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a> → <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a> → <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a> → <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a> → <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a> → <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.algebra.binary64.Real">Real</a> → <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a> → <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a> → <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a> → <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a> → <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a> → <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -578,20 +509,18 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="basis.algebra.RealField">
-              <h3>Inherited from <a href="../RealField.html" class="extype" name="basis.algebra.RealField">RealField</a></h3>
-            </div><div class="parent" name="basis.algebra.CompleteField">
-              <h3>Inherited from <a href="../CompleteField.html" class="extype" name="basis.algebra.CompleteField">CompleteField</a></h3>
-            </div><div class="parent" name="basis.algebra.Field">
-              <h3>Inherited from <a href="../Field.html" class="extype" name="basis.algebra.Field">Field</a></h3>
-            </div><div class="parent" name="basis.algebra.OrderedRing">
-              <h3>Inherited from <a href="../OrderedRing.html" class="extype" name="basis.algebra.OrderedRing">OrderedRing</a></h3>
-            </div><div class="parent" name="basis.algebra.Ring">
-              <h3>Inherited from <a href="../Ring.html" class="extype" name="basis.algebra.Ring">Ring</a></h3>
-            </div><div class="parent" name="basis.algebra.Linear">
-              <h3>Inherited from <a href="../Linear.html" class="extype" name="basis.algebra.Linear">Linear</a></h3>
-            </div><div class="parent" name="basis.algebra.Affine">
-              <h3>Inherited from <a href="../Affine.html" class="extype" name="basis.algebra.Affine">Affine</a></h3>
+        <div class="parent" name="basis.algebra.RealField.Element">
+              <h3>Inherited from <a href="../RealField$Element.html" class="extype" name="basis.algebra.RealField.Element">Element</a></h3>
+            </div><div class="parent" name="basis.algebra.CompleteField.Element">
+              <h3>Inherited from <a href="../CompleteField$Element.html" class="extype" name="basis.algebra.CompleteField.Element">Element</a></h3>
+            </div><div class="parent" name="basis.algebra.OrderedField.Element">
+              <h3>Inherited from <a href="../OrderedField$Element.html" class="extype" name="basis.algebra.OrderedField.Element">Element</a></h3>
+            </div><div class="parent" name="basis.algebra.Field.Element">
+              <h3>Inherited from <a href="../Field$Element.html" class="extype" name="basis.algebra.Field.Element">Element</a></h3>
+            </div><div class="parent" name="basis.algebra.OrderedRing.Element">
+              <h3>Inherited from <a href="../OrderedRing$Element.html" class="extype" name="basis.algebra.OrderedRing.Element">Element</a></h3>
+            </div><div class="parent" name="basis.algebra.Ring.Element">
+              <h3>Inherited from <a href="../Ring$Element.html" class="extype" name="basis.algebra.Ring.Element">Element</a></h3>
             </div><div class="parent" name="scala.AnyVal">
               <h3>Inherited from <span class="extype" name="scala.AnyVal">AnyVal</span></h3>
             </div><div class="parent" name="scala.NotNull">

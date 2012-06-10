@@ -50,27 +50,15 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.algebra.Affine" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Affine:Affine"></a>
+              <ol><li name="basis.algebra.AffineSpace" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="AffineSpace:AffineSpace[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Affine.html"><span class="name">Affine</span></a><span class="result"> extends Any</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.AffineSpace" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="AffineSpace:AffineSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="AffineSpace.html"><span class="name">AffineSpace</span></a><span class="result"> extends AnyRef</span>
+        <a href="AffineSpace.html"><span class="name">AffineSpace</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends LinearSpace[S]</span>
       </span>
       </h4>
       
@@ -110,171 +98,111 @@
       </span>
       </h4>
       
-    </li><li name="basis.algebra.Linear" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Linear:Linear"></a>
+    </li><li name="basis.algebra.IntervalField" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="IntervalField:IntervalField[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Linear.html"><span class="name">Linear</span></a><span class="result"> extends Affine</span>
+        <a href="IntervalField.html"><span class="name">IntervalField</span></a><span class="tparams">[<span name="S">S &lt;: OrderedField with Singleton</span>]</span><span class="result"> extends IntervalRing[S] with Field</span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.algebra.IntervalRing" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="IntervalRing:IntervalRing[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IntervalRing.html"><span class="name">IntervalRing</span></a><span class="tparams">[<span name="S">S &lt;: OrderedRing with Singleton</span>]</span><span class="result"> extends Ring</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.LinearSpace" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="LinearSpace:LinearSpace"></a>
+      <a id="LinearSpace:LinearSpace[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LinearSpace.html"><span class="name">LinearSpace</span></a><span class="result"> extends AffineSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix:Matrix"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix.html"><span class="name">Matrix</span></a><span class="result"> extends Linear</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix2x2" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix2x2:Matrix2x2"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix2x2.html"><span class="name">Matrix2x2</span></a><span class="result"> extends SquareMatrix</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix2x2Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix2x2Like:Matrix2x2Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix2x2Like.html"><span class="name">Matrix2x2Like</span></a><span class="result"> extends SquareMatrixLike with Matrix2x2</span>
+        <a href="LinearSpace.html"><span class="name">LinearSpace</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Matrix2x2Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix2x2Space:Matrix2x2Space"></a>
+      <a id="Matrix2x2Space:Matrix2x2Space[V, W, S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Matrix2x2Space.html"><span class="name">Matrix2x2Space</span></a><span class="result"> extends SquareMatrixSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix3x3" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix3x3:Matrix3x3"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix3x3.html"><span class="name">Matrix3x3</span></a><span class="result"> extends SquareMatrix</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix3x3Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix3x3Like:Matrix3x3Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix3x3Like.html"><span class="name">Matrix3x3Like</span></a><span class="result"> extends SquareMatrixLike with Matrix3x3</span>
+        <a href="Matrix2x2Space.html"><span class="name">Matrix2x2Space</span></a><span class="tparams">[<span name="V">V &lt;: Vector2Space[S] with Singleton</span>, <span name="W">W &lt;: Vector2Space[S] with Singleton</span>, <span name="S">S &lt;: Field with Singleton</span>]</span><span class="result"> extends MatrixRing[V, W, S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Matrix3x3Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix3x3Space:Matrix3x3Space"></a>
+      <a id="Matrix3x3Space:Matrix3x3Space[V, W, S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Matrix3x3Space.html"><span class="name">Matrix3x3Space</span></a><span class="result"> extends SquareMatrixSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix4x4" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix4x4:Matrix4x4"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix4x4.html"><span class="name">Matrix4x4</span></a><span class="result"> extends SquareMatrix</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Matrix4x4Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix4x4Like:Matrix4x4Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Matrix4x4Like.html"><span class="name">Matrix4x4Like</span></a><span class="result"> extends SquareMatrixLike with Matrix4x4</span>
+        <a href="Matrix3x3Space.html"><span class="name">Matrix3x3Space</span></a><span class="tparams">[<span name="V">V &lt;: Vector3Space[S] with Singleton</span>, <span name="W">W &lt;: Vector3Space[S] with Singleton</span>, <span name="S">S &lt;: Field with Singleton</span>]</span><span class="result"> extends MatrixRing[V, W, S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Matrix4x4Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Matrix4x4Space:Matrix4x4Space"></a>
+      <a id="Matrix4x4Space:Matrix4x4Space[V, W, S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Matrix4x4Space.html"><span class="name">Matrix4x4Space</span></a><span class="result"> extends SquareMatrixSpace</span>
+        <a href="Matrix4x4Space.html"><span class="name">Matrix4x4Space</span></a><span class="tparams">[<span name="V">V &lt;: Vector4Space[S] with Singleton</span>, <span name="W">W &lt;: Vector4Space[S] with Singleton</span>, <span name="S">S &lt;: Field with Singleton</span>]</span><span class="result"> extends MatrixRing[V, W, S]</span>
       </span>
       </h4>
       
-    </li><li name="basis.algebra.MatrixLike" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="MatrixLike:MatrixLike"></a>
+    </li><li name="basis.algebra.MatrixRing" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="MatrixRing:MatrixRing[V, W, S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MatrixLike.html"><span class="name">MatrixLike</span></a><span class="result"> extends Equals with Matrix</span>
+        <a href="MatrixRing.html"><span class="name">MatrixRing</span></a><span class="tparams">[<span name="V">V &lt;: VectorSpace[S] with Singleton</span>, <span name="W">W &lt;: VectorSpace[S] with Singleton</span>, <span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends Ring with MatrixSpace[V, W, S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.MatrixSpace" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="MatrixSpace:MatrixSpace"></a>
+      <a id="MatrixSpace:MatrixSpace[V, W, S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MatrixSpace.html"><span class="name">MatrixSpace</span></a><span class="result"> extends LinearSpace</span>
+        <a href="MatrixSpace.html"><span class="name">MatrixSpace</span></a><span class="tparams">[<span name="V">V &lt;: VectorSpace[S] with Singleton</span>, <span name="W">W &lt;: VectorSpace[S] with Singleton</span>, <span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends LinearSpace[S]</span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.algebra.OrderedField" visbl="pub" data-isabs="true" fullComment="no">
+      <a id="OrderedField:OrderedField"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OrderedField.html"><span class="name">OrderedField</span></a><span class="result"> extends OrderedRing with Field</span>
       </span>
       </h4>
       
@@ -298,7 +226,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="RealField.html"><span class="name">RealField</span></a><span class="result"> extends OrderedRing with CompleteField</span>
+        <a href="RealField.html"><span class="name">RealField</span></a><span class="result"> extends OrderedField with CompleteField</span>
       </span>
       </h4>
       
@@ -310,403 +238,55 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Ring.html"><span class="name">Ring</span></a><span class="result"> extends Any</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.package#SomeAffineSpace" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeAffineSpace:SomeAffineSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeAffineSpace</span><span class="result"> = <a href="AffineSpace.html" class="extype" name="basis.algebra.AffineSpace">AffineSpace</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeCompleteField" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeCompleteField:SomeCompleteField"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeCompleteField</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.CompleteField{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeCompleteOrderedField" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeCompleteOrderedField:SomeCompleteOrderedField"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeCompleteOrderedField</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.OrderedRing with basis.algebra.CompleteField{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeField" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeField:SomeField"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeField</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.Field{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeLinearSpace" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeLinearSpace:SomeLinearSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeLinearSpace</span><span class="result"> = <a href="LinearSpace.html" class="extype" name="basis.algebra.LinearSpace">LinearSpace</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeMatrix2x2Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeMatrix2x2Space:SomeMatrix2x2Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeMatrix2x2Space</span><span class="result"> = <a href="Matrix2x2Space.html" class="extype" name="basis.algebra.Matrix2x2Space">Matrix2x2Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeMatrix3x3Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeMatrix3x3Space:SomeMatrix3x3Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeMatrix3x3Space</span><span class="result"> = <a href="Matrix3x3Space.html" class="extype" name="basis.algebra.Matrix3x3Space">Matrix3x3Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeMatrix4x4Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeMatrix4x4Space:SomeMatrix4x4Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeMatrix4x4Space</span><span class="result"> = <a href="Matrix4x4Space.html" class="extype" name="basis.algebra.Matrix4x4Space">Matrix4x4Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeMatrixSpace" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeMatrixSpace:SomeMatrixSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeMatrixSpace</span><span class="result"> = <a href="MatrixSpace.html" class="extype" name="basis.algebra.MatrixSpace">MatrixSpace</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeOrderedField" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeOrderedField:SomeOrderedField"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeOrderedField</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.OrderedRing with basis.algebra.Field{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeOrderedRing" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeOrderedRing:SomeOrderedRing"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeOrderedRing</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.OrderedRing{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeRealField" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeRealField:SomeRealField"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeRealField</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.RealField{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeRing" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeRing:SomeRing"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeRing</span><span class="result"> = <span class="extype" name="scala.Singleton">Singleton</span> { type Scalar &lt;: basis.algebra.Ring{type Vector = this.Scalar} }</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeSquareMatrixSpace" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeSquareMatrixSpace:SomeSquareMatrixSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeSquareMatrixSpace</span><span class="result"> = <a href="SquareMatrixSpace.html" class="extype" name="basis.algebra.SquareMatrixSpace">SquareMatrixSpace</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeVector2Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeVector2Space:SomeVector2Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeVector2Space</span><span class="result"> = <a href="Vector2Space.html" class="extype" name="basis.algebra.Vector2Space">Vector2Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeVector3Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeVector3Space:SomeVector3Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeVector3Space</span><span class="result"> = <a href="Vector3Space.html" class="extype" name="basis.algebra.Vector3Space">Vector3Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeVector4Space" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeVector4Space:SomeVector4Space"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeVector4Space</span><span class="result"> = <a href="Vector4Space.html" class="extype" name="basis.algebra.Vector4Space">Vector4Space</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.package#SomeVectorSpace" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="SomeVectorSpace:SomeVectorSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">SomeVectorSpace</span><span class="result"> = <a href="VectorSpace.html" class="extype" name="basis.algebra.VectorSpace">VectorSpace</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="package$.html" class="extype" name="basis.algebra.package">package</a></dd></dl></div>
-    </li><li name="basis.algebra.SquareMatrix" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="SquareMatrix:SquareMatrix"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="SquareMatrix.html"><span class="name">SquareMatrix</span></a><span class="result"> extends Linear with Ring with Matrix</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.SquareMatrixLike" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="SquareMatrixLike:SquareMatrixLike"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="SquareMatrixLike.html"><span class="name">SquareMatrixLike</span></a><span class="result"> extends Equals with Linear with Ring with MatrixLike with SquareMatrix</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.SquareMatrixSpace" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="SquareMatrixSpace:SquareMatrixSpace"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="SquareMatrixSpace.html"><span class="name">SquareMatrixSpace</span></a><span class="result"> extends MatrixSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector:Vector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector.html"><span class="name">Vector</span></a><span class="result"> extends Linear</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector2" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector2:Vector2"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector2.html"><span class="name">Vector2</span></a><span class="result"> extends Vector</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector2Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector2Like:Vector2Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector2Like.html"><span class="name">Vector2Like</span></a><span class="result"> extends VectorLike with Vector2</span>
+        <a href="Ring.html"><span class="name">Ring</span></a><span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Vector2Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector2Space:Vector2Space"></a>
+      <a id="Vector2Space:Vector2Space[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Vector2Space.html"><span class="name">Vector2Space</span></a><span class="result"> extends VectorSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector3" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector3:Vector3"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector3.html"><span class="name">Vector3</span></a><span class="result"> extends Vector</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector3Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector3Like:Vector3Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector3Like.html"><span class="name">Vector3Like</span></a><span class="result"> extends VectorLike with Vector3</span>
+        <a href="Vector2Space.html"><span class="name">Vector2Space</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends VectorSpace[S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Vector3Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector3Space:Vector3Space"></a>
+      <a id="Vector3Space:Vector3Space[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Vector3Space.html"><span class="name">Vector3Space</span></a><span class="result"> extends VectorSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector4" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector4:Vector4"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector4.html"><span class="name">Vector4</span></a><span class="result"> extends Vector</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.Vector4Like" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector4Like:Vector4Like"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Vector4Like.html"><span class="name">Vector4Like</span></a><span class="result"> extends VectorLike with Vector4</span>
+        <a href="Vector3Space.html"><span class="name">Vector3Space</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends VectorSpace[S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.Vector4Space" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="Vector4Space:Vector4Space"></a>
+      <a id="Vector4Space:Vector4Space[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Vector4Space.html"><span class="name">Vector4Space</span></a><span class="result"> extends VectorSpace</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.algebra.VectorLike" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="VectorLike:VectorLike"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="VectorLike.html"><span class="name">VectorLike</span></a><span class="result"> extends Equals with Vector</span>
+        <a href="Vector4Space.html"><span class="name">Vector4Space</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends VectorSpace[S]</span>
       </span>
       </h4>
       
     </li><li name="basis.algebra.VectorSpace" visbl="pub" data-isabs="true" fullComment="no">
-      <a id="VectorSpace:VectorSpace"></a>
+      <a id="VectorSpace:VectorSpace[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="VectorSpace.html"><span class="name">VectorSpace</span></a><span class="result"> extends LinearSpace</span>
+        <a href="VectorSpace.html"><span class="name">VectorSpace</span></a><span class="tparams">[<span name="S">S &lt;: Ring with Singleton</span>]</span><span class="result"> extends AffineSpace[S] with LinearSpace[S]</span>
       </span>
       </h4>
       
