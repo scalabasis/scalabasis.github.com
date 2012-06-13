@@ -14,11 +14,11 @@
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type" onload="sh_highlightDocument('../lib/', '.min.js');">
+        <body class="type">
       <div id="definition">
-        <a href="JSONParser$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <img src="../../lib/class_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.json">json</a></p>
-        <h1><a href="JSONParser$.html" title="Go to companion">JSONParser</a></h1>
+        <h1>JSONParser</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -27,7 +27,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">JSONParser</span><span class="tparams">[<span name="JSON">+JSON &lt;: <a href="JSONFactory.html" class="extype" name="basis.json.JSONFactory">JSONFactory</a> with <span class="extype" name="scala.Singleton">Singleton</span></span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">JSONParser</span><span class="tparams">[<span name="Target">-Target &lt;: <a href="JSONContext.html" class="extype" name="basis.json.JSONContext">JSONContext</a></span>]</span><span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
@@ -37,17 +37,17 @@ this character stream as they parse. The protected methods <code>lookahead</code
 <code>readChar()</code> implement the character stream.</p><p>The <code>parse_()</code> methods loosely map to productions in the JSON grammar.
 These methods do not consume leading whitespace. Call <code>skipWhitespace()</code>
 before parsing top-level JSON values.
-</p></div><dl class="paramcmts block"><dt class="tparam">JSON</dt><dd class="cmt"><p>The singleton type of the <code>JSONFactory</code> composed with this parser.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/json/JSONParser.scala" target="_blank">JSONParser.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/json/JSONParser.scala" target="_blank">JSONParser.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="JSONParser$$FromCharSequence.html" class="extype" name="basis.json.JSONParser.FromCharSequence">FromCharSequence</a>, <a href="JSONParser$$FromReader.html" class="extype" name="basis.json.JSONParser.FromReader">FromReader</a>, <a href="JSONParser$$Interpolating.html" class="extype" name="basis.json.JSONParser.Interpolating">Interpolating</a></div>
+          <div class="subClasses hiddenContent"><a href="JSONInterpolator.html" class="extype" name="basis.json.JSONInterpolator">JSONInterpolator</a>, <a href="JSONPartParser.html" class="extype" name="basis.json.JSONPartParser">JSONPartParser</a>, <a href="JSONReader.html" class="extype" name="basis.json.JSONReader">JSONReader</a>, <a href="JSONMacros$MatchParser.html" class="extype" name="basis.json.JSONMacros.MatchParser">MatchParser</a></div>
         </div></div>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
               <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
@@ -76,19 +76,18 @@ before parsing top-level JSON values.
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="basis.json.JSONParser#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="&lt;init&gt;:JSONParser[JSON]"></a>
+              <ol><li name="basis.json.JSONParser#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no">
+      <a id="&lt;init&gt;:JSONParser[Target]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">JSONParser</span><span class="params">(<span name="json">json: JSON</span>)</span>
+        <span class="name">JSONParser</span><span class="params">()</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Constructs a JSON parser with a <code>JSONFactory</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a JSON parser with a <code>JSONFactory</code>.</p></div><dl class="paramcmts block"><dt class="param">json</dt><dd class="cmt"><p>The <code>JSONFactory</code> used by this parser to construct JSON values.
-</p></dd></dl></div>
+      
     </li></ol>
             </div>
 
@@ -290,19 +289,6 @@ value of <code>lookahead</code> and fails on end-of-input.</p></div><dl class="a
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.json.JSONParser#json" visbl="prt" data-isabs="false" fullComment="yes">
-      <a id="json:JSON"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">json</span><span class="result">: JSON</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The <code>JSONFactory</code> used by this parser to construct JSON values.</p><div class="fullcomment"><div class="comment cmt"><p>The <code>JSONFactory</code> used by this parser to construct JSON values.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -369,122 +355,146 @@ to the supplied character sequence.</p><div class="fullcomment"><div class="comm
 to the supplied character sequence. Fails if the stream and the character
 sequence do not match.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="basis.json.JSONParser#parseJSArray" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSArray():JSArray"></a>
+      <a id="parseJSArray[T&lt;:Target](T):JSArray"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSArray</span><span class="params">()</span><span class="result">: JSArray</span>
+        <span class="name">parseJSArray</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSArray</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON array parsed from the input stream.</p>
-    </li><li name="basis.json.JSONParser#parseJSBoolean" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSBoolean():JSBoolean"></a>
+    </li><li name="basis.json.JSONParser#parseJSArrayValue" visbl="prt" data-isabs="false" fullComment="yes">
+      <a id="parseJSArrayValue[T&lt;:Target](T,Int):JSValue"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSBoolean</span><span class="params">()</span><span class="result">: JSBoolean</span>
+        <span class="name">parseJSArrayValue</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>, <span name="index">index: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: JSValue</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="basis.json.JSONParser#parseJSBoolean" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="parseJSBoolean[T&lt;:Target](T):JSBoolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseJSBoolean</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSBoolean</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON boolean parsed from the input stream.</p>
     </li><li name="basis.json.JSONParser#parseJSFalse" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSFalse():JSBoolean"></a>
+      <a id="parseJSFalse[T&lt;:Target](T):JSBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSFalse</span><span class="params">()</span><span class="result">: JSBoolean</span>
+        <span class="name">parseJSFalse</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSBoolean</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses and returns the <code>false</code> JSON boolean value.</p>
     </li><li name="basis.json.JSONParser#parseJSField" visbl="prt" data-isabs="false" fullComment="yes">
-      <a id="parseJSField(JSObjectBuilder):Unit"></a>
+      <a id="parseJSField[T&lt;:Target](T):(String, JSValue)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSField</span><span class="params">(<span name="builder">builder: <a href="JSONFactory$JSObjectBuilder.html" class="extype" name="basis.json.JSONFactory.JSObjectBuilder">JSObjectBuilder</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">parseJSField</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: (String, JSValue)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses an object field from the input stream and adds it to <code>builder</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Parses an object field from the input stream and adds it to <code>builder</code>.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="basis.json.JSONParser#parseJSNull" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSNull():JSNull"></a>
+    </li><li name="basis.json.JSONParser#parseJSFieldValue" visbl="prt" data-isabs="false" fullComment="yes">
+      <a id="parseJSFieldValue[T&lt;:Target](T,String):JSValue"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSNull</span><span class="params">()</span><span class="result">: JSNull</span>
+        <span class="name">parseJSFieldValue</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>, <span name="name">name: String</span>)</span><span class="result">: JSValue</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="basis.json.JSONParser#parseJSNull" visbl="pub" data-isabs="false" fullComment="yes">
+      <a id="parseJSNull[T&lt;:Target](T):JSNull"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseJSNull</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSNull</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses and returns the <code>null</code> JSON boolean value.</p>
     </li><li name="basis.json.JSONParser#parseJSNumber" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSNumber():JSNumber"></a>
+      <a id="parseJSNumber[T&lt;:Target](T):JSNumber"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSNumber</span><span class="params">()</span><span class="result">: JSNumber</span>
+        <span class="name">parseJSNumber</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSNumber</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON number parsed from the input stream.</p>
     </li><li name="basis.json.JSONParser#parseJSObject" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSObject():JSObject"></a>
+      <a id="parseJSObject[T&lt;:Target](T):JSObject"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSObject</span><span class="params">()</span><span class="result">: JSObject</span>
+        <span class="name">parseJSObject</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSObject</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON object parsed from the input stream.</p>
     </li><li name="basis.json.JSONParser#parseJSString" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSString():JSString"></a>
+      <a id="parseJSString[T&lt;:Target](T):JSString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSString</span><span class="params">()</span><span class="result">: JSString</span>
+        <span class="name">parseJSString</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSString</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON string parsed from the input stream.</p>
     </li><li name="basis.json.JSONParser#parseJSTrue" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSTrue():JSBoolean"></a>
+      <a id="parseJSTrue[T&lt;:Target](T):JSBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSTrue</span><span class="params">()</span><span class="result">: JSBoolean</span>
+        <span class="name">parseJSTrue</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSBoolean</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses and returns the <code>true</code> JSON boolean value.</p>
     </li><li name="basis.json.JSONParser#parseJSValue" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="parseJSValue():JSValue"></a>
+      <a id="parseJSValue[T&lt;:Target](T):JSValue"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseJSValue</span><span class="params">()</span><span class="result">: JSValue</span>
+        <span class="name">parseJSValue</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSValue</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a JSON value parsed from the input stream.</p>
@@ -501,6 +511,20 @@ sequence do not match.</p></div><dl class="attributes block"> <dt>Attributes</dt
       </h4>
       <p class="shortcomment cmt">Parses and unescapes a quoted JSON string from the input stream.</p><div class="fullcomment"><div class="comment cmt"><p>Parses and unescapes a quoted JSON string from the input stream.
 Returns a Scala string.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="basis.json.JSONParser#readJSValue" visbl="prt" data-isabs="false" fullComment="yes">
+      <a id="readJSValue[T&lt;:Target](T):JSValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readJSValue</span><span class="tparams">[<span name="T">T &lt;: Target</span>]</span><span class="params">(<span name="target">target: T</span>)</span><span class="result">: JSValue</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Consumes the substitution character (U+001A) and returns an interpolated
+JSON value.</p><div class="fullcomment"><div class="comment cmt"><p>Consumes the substitution character (U+001A) and returns an interpolated
+JSON value. Fails if the parser is not at a valid substitution point.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="basis.json.JSONParser#skipWhitespace" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="skipWhitespace():Unit"></a>
       <h4 class="signature">

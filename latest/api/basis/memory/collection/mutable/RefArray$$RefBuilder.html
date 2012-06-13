@@ -14,7 +14,7 @@
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type" onload="sh_highlightDocument('../lib/', '.min.js');">
+        <body class="type">
       <div id="definition">
         <img src="../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="basis">basis</a>.<a href="../../package.html" class="extype" name="basis.memory">memory</a>.<a href="../package.html" class="extype" name="basis.memory.collection">collection</a>.<a href="package.html" class="extype" name="basis.memory.collection.mutable">mutable</a>.<a href="RefArray$.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a></p>
@@ -33,12 +33,12 @@
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/src/main/scala/basis/memory/collection/mutable/RefArray.scala" target="_blank">RefArray.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../generic/BuilderProxy.html" class="extype" name="basis.memory.collection.generic.BuilderProxy">BuilderProxy</a>[A, <a href="RefArray.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a>[A]], <span class="extype" name="scala.Proxy">Proxy</span>, <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[A, <a href="RefArray.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a>[A]], <span class="extype" name="scala.collection.generic.Growable">Growable</span>[A], AnyRef, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../generic/BuilderProxy.html" class="extype" name="basis.memory.collection.generic.BuilderProxy">BuilderProxy</a>[A, <a href="RefArray.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a>[A]], <span class="extype" name="scala.Proxy">Proxy</span>, <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[A, <a href="RefArray.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a>[A]], <span class="extype" name="scala.collection.generic.Growable">Growable</span>[A], <span class="extype" name="scala.collection.generic.Clearable">Clearable</span>, AnyRef, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
               <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
@@ -47,7 +47,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.memory.collection.mutable.RefArray.RefBuilder"><span>RefBuilder</span></li><li class="in" name="basis.memory.collection.generic.BuilderProxy"><span>BuilderProxy</span></li><li class="in" name="scala.Proxy"><span>Proxy</span></li><li class="in" name="scala.collection.mutable.Builder"><span>Builder</span></li><li class="in" name="scala.collection.generic.Growable"><span>Growable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.memory.collection.mutable.RefArray.RefBuilder"><span>RefBuilder</span></li><li class="in" name="basis.memory.collection.generic.BuilderProxy"><span>BuilderProxy</span></li><li class="in" name="scala.Proxy"><span>Proxy</span></li><li class="in" name="scala.collection.mutable.Builder"><span>Builder</span></li><li class="in" name="scala.collection.generic.Growable"><span>Growable</span></li><li class="in" name="scala.collection.generic.Clearable"><span>Clearable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -207,7 +207,7 @@
         <span class="name">clear</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../generic/BuilderProxy.html" class="extype" name="basis.memory.collection.generic.BuilderProxy">BuilderProxy</a> → Builder → Growable</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../generic/BuilderProxy.html" class="extype" name="basis.memory.collection.generic.BuilderProxy">BuilderProxy</a> → Builder → Growable → Clearable</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -490,6 +490,8 @@
               <h3>Inherited from <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[A, <a href="RefArray.html" class="extype" name="basis.memory.collection.mutable.RefArray">RefArray</a>[A]]</h3>
             </div><div class="parent" name="scala.collection.generic.Growable">
               <h3>Inherited from <span class="extype" name="scala.collection.generic.Growable">Growable</span>[A]</h3>
+            </div><div class="parent" name="scala.collection.generic.Clearable">
+              <h3>Inherited from <span class="extype" name="scala.collection.generic.Clearable">Clearable</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">

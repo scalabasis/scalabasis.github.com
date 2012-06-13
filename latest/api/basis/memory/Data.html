@@ -14,7 +14,7 @@
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type" onload="sh_highlightDocument('../lib/', '.min.js');">
+        <body class="type">
       <div id="definition">
         <a href="Data$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.memory">memory</a></p>
@@ -78,7 +78,7 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
               <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
@@ -333,18 +333,18 @@ res5: <span class="std">String</span> = fffffeba</pre></li></ol>
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.
 </p></dd></dl></div>
     </li><li name="basis.memory.Data#loadArray" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="loadArray[T](Long,Int)(Struct[T],ArrayTag[T]):Array[T]"></a>
+      <a id="loadArray[T](Long,Int)(Struct[T],ClassTag[T]):Array[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>, <span name="arrayTag">arrayTag: <span class="extype" name="scala.reflect.ArrayTag">ArrayTag</span>[T]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[T]</span>
+        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="struct">struct: <a href="Struct.html" class="extype" name="basis.memory.Struct">Struct</a>[T]</span>, <span name="classTag">classTag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[T]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[T]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads a sequence of data values as a new instance array.</p><div class="fullcomment"><div class="comment cmt"><p>Loads a sequence of data values as a new instance array.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt class="param">arrayTag</dt><dd class="cmt"><p>the reflective type of the array to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of Scala values.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the struct type.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">struct</dt><dd class="cmt"><p>the implicit struct.</p></dd><dt class="param">classTag</dt><dd class="cmt"><p>the reflective type of the array to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of Scala values.
 </p></dd></dl></div>
     </li><li name="basis.memory.Data#loadChar" visbl="pub" data-isabs="false" fullComment="yes">
       <a id="loadChar(Long):Char"></a>
