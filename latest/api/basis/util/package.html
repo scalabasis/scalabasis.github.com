@@ -8,10 +8,23 @@
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'basis.util.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
         <body class="value">
@@ -31,9 +44,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains general purpose utilities.</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">AnyRef, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">scala.Any</span></div>
         </div></div>
         
 
@@ -41,7 +54,11 @@
         <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
                 <span class="filtertype">Inherited<br />
@@ -55,7 +72,7 @@
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -67,37 +84,102 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="basis.util.IntOps" visbl="pub" data-isabs="true" fullComment="no" group="No Group">
+      <a id="IntOpsextendsObject"></a>
+      <a id="IntOps:IntOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IntOps.html"><span class="name">IntOps</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="basis.util.Range" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="RangeextendsEnumerator[basis.Int]"></a>
+      <a id="Range:Range"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Range.html"><span class="name">Range</span></a><span class="result"> extends <a href="../Enumerator.html" class="extype" name="basis.Enumerator">Enumerator</a>[<a href="../package.html#Int=Int" class="extmbr" name="basis.Int">Int</a>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A bounded enumeration of monotonic <code>Int</code> values.</p>
+    </li><li name="basis.util.RangeOps" visbl="pub" data-isabs="true" fullComment="no" group="No Group">
+      <a id="RangeOpsextendsObject"></a>
+      <a id="RangeOps:RangeOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RangeOps.html"><span class="name">RangeOps</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
 
         
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="basis.util.MurmurHash" visbl="pub" data-isabs="false" fullComment="yes">
-      <a id="MurmurHash:MurmurHash"></a>
+              <ol><li name="basis.util#IntOps" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="IntOps(value:basis.Int):basis.util.IntOps"></a>
+      <a id="IntOps(Int):IntOps"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <a href="MurmurHash$.html"><span class="name">MurmurHash</span></a><span class="result"> extends AnyRef</span>
+        <span class="name">IntOps</span><span class="params">(<span name="value">value: <a href="../package.html#Int=Int" class="extmbr" name="basis.Int">Int</a></span>)</span><span class="result">: <a href="IntOps.html" class="extype" name="basis.util.IntOps">IntOps</a></span>
       </span>
       </h4>
-      <p class="comment cmt">Contains a straightforward implementation of Austin Appleby's MurmurHash 3 algorithm.</p>
+      
+    </li><li name="basis.util#RangeOps" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="RangeOps(range:basis.util.Range):basis.util.RangeOps"></a>
+      <a id="RangeOps(Range):RangeOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RangeOps</span><span class="params">(<span name="range">range: <a href="Range.html" class="extype" name="basis.util.Range">Range</a></span>)</span><span class="result">: <a href="RangeOps.html" class="extype" name="basis.util.RangeOps">RangeOps</a></span>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
+
+        
 
         
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from AnyRef</h3>
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <span class="extype" name="scala.Any">scala.Any</span></h3>
             </div>
         
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="No Group">
+              <h3>No Group</h3>
+              
+            </div>
         </div>
 
       </div>

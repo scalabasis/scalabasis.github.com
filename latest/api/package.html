@@ -8,10 +8,23 @@
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <script type="text/javascript" src="lib/jquery.js"></script>
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="lib/jquery-ui.js"></script>
       <script type="text/javascript" src="lib/template.js"></script>
       <script type="text/javascript" src="lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="lib/modernizr.custom.js"></script><script type="text/javascript" src="lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = 'index.html';
+            var hash = 'package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
         <body class="value">
@@ -54,7 +67,8 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="_root_.basis" visbl="pub" data-isabs="false" fullComment="no">
+              <ol><li name="_root_.basis" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="basis"></a>
       <a id="basis:basis"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -70,11 +84,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
         
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="No Group">
+              <h3>No Group</h3>
+              
+            </div>
         </div>
 
       </div>
