@@ -44,13 +44,14 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Extension methods to efficiently access compound values in memory objects.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master-data/src/main/scala/basis/data/MemOps.scala" target="_blank">MemOps.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Memory extensions to efficiently load and store composite values.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/basis-data/src/main/scala/basis/data/MemOps.scala" target="_blank">MemOps.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">scala.Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph42" viewBox="0.00 0.00 305.00 128.00" height="128pt" width="305pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 124)" class="graph" id="graph1"><polygon points="-4,5 -4,-124 302,-124 302,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="cluster" id="graph4"></g><!-- node0 --><g class="node this class" id="graph42_0"><a xlink:title="basis.data.MemOps (this class)" xlink:href="#inheritance-diagram"><polygon points="272.25,-50 187.75,-50 187.75,-24 272.25,-24 272.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="198" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33" x="220" text-anchor="start">MemOps</text></a></g><!-- node2 --><g class="node implicit-incoming" id="graph42_2"><a xlink:title="MemLE, MemBuf, MemBE, Mem8LE, Mem8BE, Mem8, Mem4LE, Mem4BE, Mem4, Mem2LE, Mem2BE, Mem2, Mem1LE, Mem1BE, Mem1, Mem"><polygon points="116,-47.5 24,-47.5 24,-26.5 116,-26.5 116,-47.5" stroke="#ababab" fill="#e1e1e1"></polygon><text fill="#7d7d7d" font-size="10.00" font-family="Arial" y="-32.5" x="34.5" text-anchor="start">16 classes/traits</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge implicit-incoming" id="2_0"><a xlink:title="16 classes/traits can be implicitly converted to MemOps"><path d="M123.623,-37C139.882,-37 157.778,-37 174.178,-37" stroke="#d4d4d4" fill="none"></path><polygon points="174.456,-38.7501 179.456,-37 174.456,-35.2501 174.456,-38.7501" stroke="#d4d4d4" fill="#d4d4d4"></polygon></a><text fill="#aaaaaa" font-size="10.00" font-family="Arial" y="-41.499" x="151.75" text-anchor="middle">implicitly</text></g><!-- node1 --><g class="node class" id="graph42_1"><a xlink:title="scala.AnyRef"><polygon points="268.25,-120 191.75,-120 191.75,-94 268.25,-94 268.25,-120" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-115" x="202" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-103" x="224" text-anchor="start">AnyRef</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph42_1_0"><a xlink:title="MemOps is a subtype of AnyRef"><path d="M230,-88.5884C230,-76.5177 230,-60.7522 230,-50.0518" stroke="#d4d4d4" fill="none"></path><polygon points="228.25,-88.8429 230,-93.843 231.75,-88.843 228.25,-88.8429" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph108" viewBox="0.00 0.00 305.00 128.00" height="128pt" width="305pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 124)" class="graph" id="graph1"><polygon points="-4,5 -4,-124 302,-124 302,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="cluster" id="graph4"></g><!-- node0 --><g class="node this class" id="graph108_0"><a xlink:title="basis.data.MemOps (this class)" xlink:href="#inheritance-diagram"><polygon points="272.25,-50 187.75,-50 187.75,-24 272.25,-24 272.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="198" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33" x="220" text-anchor="start">MemOps</text></a></g><!-- node2 --><g class="node implicit-incoming" id="graph108_2"><a xlink:title="MemLE, MemBuf, MemBE, Mem8LE, Mem8BE, Mem8, Mem4LE, Mem4BE, Mem4, Mem2LE, Mem2BE, Mem2, Mem1LE, Mem1BE, Mem1, Mem"><polygon points="116,-47.5 24,-47.5 24,-26.5 116,-26.5 116,-47.5" stroke="#ababab" fill="#e1e1e1"></polygon><text fill="#7d7d7d" font-size="10.00" font-family="Arial" y="-32.5" x="34.5" text-anchor="start">16 classes/traits</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge implicit-incoming" id="2_0"><a xlink:title="16 classes/traits can be implicitly converted to MemOps"><path d="M123.623,-37C139.882,-37 157.778,-37 174.178,-37" stroke="#d4d4d4" fill="none"></path><polygon points="174.456,-38.7501 179.456,-37 174.456,-35.2501 174.456,-38.7501" stroke="#d4d4d4" fill="#d4d4d4"></polygon></a><text fill="#aaaaaa" font-size="10.00" font-family="Arial" y="-41.499" x="151.75" text-anchor="middle">implicitly</text></g><!-- node1 --><g class="node class" id="graph108_1"><a xlink:title="scala.AnyRef"><polygon points="268.25,-120 191.75,-120 191.75,-94 268.25,-94 268.25,-120" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-115" x="202" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-103" x="224" text-anchor="start">AnyRef</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph108_1_0"><a xlink:title="MemOps is a subtype of AnyRef"><path d="M230,-88.5884C230,-76.5177 230,-60.7522 230,-50.0518" stroke="#d4d4d4" fill="none"></path><polygon points="228.25,-88.8429 230,-93.843 231.75,-88.843 228.25,-88.8429" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
               </div></div>
         
 
@@ -59,7 +60,7 @@
         <div id="order">
               <span class="filtertype">Ordering</span>
               <ol>
-                
+                <li class="group out"><span>Grouped</span></li>
                 <li class="alpha in"><span>Alphabetic</span></li>
                 <li class="inherit out"><span>By inheritance</span></li>
               </ol>
@@ -88,7 +89,7 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="basis.data.MemOps#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+              <ol><li name="basis.data.MemOps#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(self:basis.data.Mem):basis.data.MemOps"></a>
       <a id="&lt;init&gt;:MemOps"></a>
       <h4 class="signature">
@@ -110,72 +111,72 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):scala.Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
-      <a id="!=(scala.Any):scala.Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">scala.Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
-      <a id="##():scala.Int"></a>
+      <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">scala.Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):scala.Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
-      <a id="==(scala.Any):scala.Boolean"></a>
+      <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">scala.Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -188,7 +189,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -204,64 +205,63 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#copyToArray" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#copyToArray" visbl="pub" data-isabs="false" fullComment="yes" group="array">
       <a id="copyToArray[T](address:Long,array:Array[T],start:Int,count:Int)(implicitfield:basis.data.ValType[T]):Unit"></a>
-      <a id="copyToArray[T](scala.Long,scala.Array[T],scala.Int,scala.Int)(ValType[T]):scala.Unit"></a>
+      <a id="copyToArray[T](Long,Array[T],Int,Int)(ValType[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyToArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>, <span name="array">array: <span class="extype" name="scala.Array">scala.Array</span>[<span class="extype" name="basis.data.MemOps.copyToArray.T">T</span>]</span>, <span name="start">start: <span class="extype" name="scala.Int">scala.Int</span></span>, <span name="count">count: <span class="extype" name="scala.Int">scala.Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.copyToArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">copyToArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="basis.data.MemOps.copyToArray.T">T</span>]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.copyToArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Copies a sequence of memory values to an instance array slice.</p><div class="fullcomment"><div class="comment cmt"><p>Copies a sequence of memory values to an instance array slice.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">array</dt><dd class="cmt"><p>the array to copy to.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the lower bound of the array slice to copy to.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to copy.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.
-</p></dd></dl></div>
-    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+      <p class="shortcomment cmt">Copies a sequence of memory values to an array slice.</p><div class="fullcomment"><div class="comment cmt"><p>Copies a sequence of memory values to an array slice.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">array</dt><dd class="cmt"><p>the array to copy to.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the lower bound of the array slice to copy to.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to copy.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.</p></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
-      <a id="eq(AnyRef):scala.Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(scala.Any):scala.Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">scala.Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
-      <a id="finalize():scala.Unit"></a>
+      <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
       <h4 class="signature">
@@ -274,234 +274,230 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
-      <a id="hashCode():scala.Int"></a>
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">scala.Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
-      <a id="isInstanceOf[T0]:scala.Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.data.MemOps#load" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#load" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="load[T](address:Long)(implicitfield:basis.data.ValType[T]):T"></a>
-      <a id="load[T](scala.Long)(ValType[T]):T"></a>
+      <a id="load[T](Long)(ValType[T]):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">load</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load.T">T</span></span>
+        <span class="name">load</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Loads an instance of a memory value.</p><div class="fullcomment"><div class="comment cmt"><p>Loads an instance of a memory value.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.
-</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded instance.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#load2" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#load2" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="load2[T1,T2,R](address:Long)(f:(T1,T2)=&gt;R)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2]):R"></a>
-      <a id="load2[T1,T2,R](scala.Long)((T1,T2)⇒R)(ValType[T1],ValType[T2]):R"></a>
+      <a id="load2[T1,T2,R](Long)((T1,T2)⇒R)(ValType[T1],ValType[T2]):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">load2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load2.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load2.T2">T2</span>) ⇒ <span class="extype" name="basis.data.MemOps.load2.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load2.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load2.T2">T2</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load2.R">R</span></span>
+        <span class="name">load2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load2.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load2.T2">T2</span>) ⇒ <span class="extype" name="basis.data.MemOps.load2.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load2.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load2.T2">T2</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load2.R">R</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Loads and unpacks a struct as two values.</p><div class="fullcomment"><div class="comment cmt"><p>Loads and unpacks a struct as two values.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#load3" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#load3" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="load3[T1,T2,T3,R](address:Long)(f:(T1,T2,T3)=&gt;R)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2],implicitfield3:basis.data.ValType[T3]):R"></a>
-      <a id="load3[T1,T2,T3,R](scala.Long)((T1,T2,T3)⇒R)(ValType[T1],ValType[T2],ValType[T3]):R"></a>
+      <a id="load3[T1,T2,T3,R](Long)((T1,T2,T3)⇒R)(ValType[T1],ValType[T2],ValType[T3]):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">load3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load3.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load3.T2">T2</span>, <span class="extype" name="basis.data.MemOps.load3.T3">T3</span>) ⇒ <span class="extype" name="basis.data.MemOps.load3.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T3">T3</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load3.R">R</span></span>
+        <span class="name">load3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load3.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load3.T2">T2</span>, <span class="extype" name="basis.data.MemOps.load3.T3">T3</span>) ⇒ <span class="extype" name="basis.data.MemOps.load3.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load3.T3">T3</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load3.R">R</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Loads and unpacks a struct as three values.</p><div class="fullcomment"><div class="comment cmt"><p>Loads and unpacks a struct as three values.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#load4" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#load4" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="load4[T1,T2,T3,T4,R](address:Long)(f:(T1,T2,T3,T4)=&gt;R)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2],implicitfield3:basis.data.ValType[T3],implicitfield4:basis.data.ValType[T4]):R"></a>
-      <a id="load4[T1,T2,T3,T4,R](scala.Long)((T1,T2,T3,T4)⇒R)(ValType[T1],ValType[T2],ValType[T3],ValType[T4]):R"></a>
+      <a id="load4[T1,T2,T3,T4,R](Long)((T1,T2,T3,T4)⇒R)(ValType[T1],ValType[T2],ValType[T3],ValType[T4]):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">load4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load4.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load4.T2">T2</span>, <span class="extype" name="basis.data.MemOps.load4.T3">T3</span>, <span class="extype" name="basis.data.MemOps.load4.T4">T4</span>) ⇒ <span class="extype" name="basis.data.MemOps.load4.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T3">T3</span>]</span>, <span name="field4">field4: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T4">T4</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load4.R">R</span></span>
+        <span class="name">load4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="R">R</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="basis.data.MemOps.load4.T1">T1</span>, <span class="extype" name="basis.data.MemOps.load4.T2">T2</span>, <span class="extype" name="basis.data.MemOps.load4.T3">T3</span>, <span class="extype" name="basis.data.MemOps.load4.T4">T4</span>) ⇒ <span class="extype" name="basis.data.MemOps.load4.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T3">T3</span>]</span>, <span name="field4">field4: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.load4.T4">T4</span>]</span>)</span><span class="result">: <span class="extype" name="basis.data.MemOps.load4.R">R</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Loads and unpacks a struct as four values.</p><div class="fullcomment"><div class="comment cmt"><p>Loads and unpacks a struct as four values.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#loadArray" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#loadArray" visbl="pub" data-isabs="false" fullComment="yes" group="array">
       <a id="loadArray[T](address:Long,count:Int)(implicitfield:basis.data.ValType[T],implicittag:scala.reflect.ClassTag[T]):Array[T]"></a>
-      <a id="loadArray[T](scala.Long,scala.Int)(ValType[T],ClassTag[T]):scala.Array[T]"></a>
+      <a id="loadArray[T](Long,Int)(ValType[T],ClassTag[T]):Array[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">scala.Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>, <span name="tag">tag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Array">scala.Array</span>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>
+        <span class="name">loadArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>, <span name="tag">tag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="basis.data.MemOps.loadArray.T">T</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Loads a sequence of memory values as a new instance array.</p><div class="fullcomment"><div class="comment cmt"><p>Loads a sequence of memory values as a new instance array.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.</p></dd><dt class="param">tag</dt><dd class="cmt"><p>the reflective type of the array to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of instance values.
-</p></dd></dl></div>
-    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+      <p class="shortcomment cmt">Loads a sequence of memory values as a new array.</p><div class="fullcomment"><div class="comment cmt"><p>Loads a sequence of memory values as a new array.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to load.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned address to load.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to load.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to load.</p></dd><dt class="param">tag</dt><dd class="cmt"><p>the reflective type of the array to load.</p></dd><dt>returns</dt><dd class="cmt"><p>the loaded array of instance values.</p></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
-      <a id="ne(AnyRef):scala.Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">scala.Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
-      <a id="notify():scala.Unit"></a>
+      <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
-      <a id="notifyAll():scala.Unit"></a>
+      <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.data.MemOps#store" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#store" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="store[T](address:Long,value:T)(implicitfield:basis.data.ValType[T]):Unit"></a>
-      <a id="store[T](scala.Long,T)(ValType[T]):scala.Unit"></a>
+      <a id="store[T](Long,T)(ValType[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">store</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>, <span name="value">value: <span class="extype" name="basis.data.MemOps.store.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">store</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="value">value: <span class="extype" name="basis.data.MemOps.store.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Stores an instance as a memory value.</p><div class="fullcomment"><div class="comment cmt"><p>Stores an instance as a memory value.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to store.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned storage address.</p></dd><dt class="param">value</dt><dd class="cmt"><p>the instance to store.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to store.
-</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to store.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned storage address.</p></dd><dt class="param">value</dt><dd class="cmt"><p>the instance to store.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to store.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#store2" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#store2" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="store2[T1,T2](address:Long)(value1:T1,value2:T2)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2]):Unit"></a>
-      <a id="store2[T1,T2](scala.Long)(T1,T2)(ValType[T1],ValType[T2]):scala.Unit"></a>
+      <a id="store2[T1,T2](Long)(T1,T2)(ValType[T1],ValType[T2]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">store2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store2.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store2.T2">T2</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store2.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store2.T2">T2</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">store2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store2.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store2.T2">T2</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store2.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store2.T2">T2</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Packs and stores two values as a struct.</p><div class="fullcomment"><div class="comment cmt"><p>Packs and stores two values as a struct.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#store3" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#store3" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="store3[T1,T2,T3](address:Long)(value1:T1,value2:T2,value3:T3)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2],implicitfield3:basis.data.ValType[T3]):Unit"></a>
-      <a id="store3[T1,T2,T3](scala.Long)(T1,T2,T3)(ValType[T1],ValType[T2],ValType[T3]):scala.Unit"></a>
+      <a id="store3[T1,T2,T3](Long)(T1,T2,T3)(ValType[T1],ValType[T2],ValType[T3]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">store3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store3.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store3.T2">T2</span></span>, <span name="value3">value3: <span class="extype" name="basis.data.MemOps.store3.T3">T3</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T3">T3</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">store3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store3.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store3.T2">T2</span></span>, <span name="value3">value3: <span class="extype" name="basis.data.MemOps.store3.T3">T3</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store3.T3">T3</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Packs and stores three values as a struct.</p><div class="fullcomment"><div class="comment cmt"><p>Packs and stores three values as a struct.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#store4" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#store4" visbl="pub" data-isabs="false" fullComment="yes" group="composite">
       <a id="store4[T1,T2,T3,T4](address:Long)(value1:T1,value2:T2,value3:T3,value4:T4)(implicitfield1:basis.data.ValType[T1],implicitfield2:basis.data.ValType[T2],implicitfield3:basis.data.ValType[T3],implicitfield4:basis.data.ValType[T4]):Unit"></a>
-      <a id="store4[T1,T2,T3,T4](scala.Long)(T1,T2,T3,T4)(ValType[T1],ValType[T2],ValType[T3],ValType[T4]):scala.Unit"></a>
+      <a id="store4[T1,T2,T3,T4](Long)(T1,T2,T3,T4)(ValType[T1],ValType[T2],ValType[T3],ValType[T4]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">store4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store4.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store4.T2">T2</span></span>, <span name="value3">value3: <span class="extype" name="basis.data.MemOps.store4.T3">T3</span></span>, <span name="value4">value4: <span class="extype" name="basis.data.MemOps.store4.T4">T4</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T3">T3</span>]</span>, <span name="field4">field4: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T4">T4</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">store4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="value1">value1: <span class="extype" name="basis.data.MemOps.store4.T1">T1</span></span>, <span name="value2">value2: <span class="extype" name="basis.data.MemOps.store4.T2">T2</span></span>, <span name="value3">value3: <span class="extype" name="basis.data.MemOps.store4.T3">T3</span></span>, <span name="value4">value4: <span class="extype" name="basis.data.MemOps.store4.T4">T4</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field1">field1: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T1">T1</span>]</span>, <span name="field2">field2: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T2">T2</span>]</span>, <span name="field3">field3: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T3">T3</span>]</span>, <span name="field4">field4: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.store4.T4">T4</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Packs and stores four values as a struct.</p><div class="fullcomment"><div class="comment cmt"><p>Packs and stores four values as a struct.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="basis.data.MemOps#storeArray" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="basis.data.MemOps#storeArray" visbl="pub" data-isabs="false" fullComment="yes" group="array">
       <a id="storeArray[T](address:Long,array:Array[T],start:Int,count:Int)(implicitfield:basis.data.ValType[T]):Unit"></a>
-      <a id="storeArray[T](scala.Long,scala.Array[T],scala.Int,scala.Int)(ValType[T]):scala.Unit"></a>
+      <a id="storeArray[T](Long,Array[T],Int,Int)(ValType[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">storeArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">scala.Long</span></span>, <span name="array">array: <span class="extype" name="scala.Array">scala.Array</span>[<span class="extype" name="basis.data.MemOps.storeArray.T">T</span>]</span>, <span name="start">start: <span class="extype" name="scala.Int">scala.Int</span></span>, <span name="count">count: <span class="extype" name="scala.Int">scala.Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.storeArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">storeArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Long">Long</span></span>, <span name="array">array: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="basis.data.MemOps.storeArray.T">T</span>]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="field">field: <a href="ValType.html" class="extype" name="basis.data.ValType">ValType</a>[<span class="extype" name="basis.data.MemOps.storeArray.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Stores an instance array slice as a sequence of memory values.</p><div class="fullcomment"><div class="comment cmt"><p>Stores an instance array slice as a sequence of memory values.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to store.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned storage address.</p></dd><dt class="param">array</dt><dd class="cmt"><p>the array to store from.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the lower bound of the array slice to store from.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to store.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to store.
-</p></dd></dl></div>
-    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+      <p class="shortcomment cmt">Stores an array slice as a sequence of memory values.</p><div class="fullcomment"><div class="comment cmt"><p>Stores an array slice as a sequence of memory values.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the instance type to store.</p></dd><dt class="param">address</dt><dd class="cmt"><p>the aligned storage address.</p></dd><dt class="param">array</dt><dd class="cmt"><p>the array to store from.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the lower bound of the array slice to store from.</p></dd><dt class="param">count</dt><dd class="cmt"><p>the number of values to store.</p></dd><dt class="param">field</dt><dd class="cmt"><p>the implicit value type to store.</p></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
@@ -514,61 +510,61 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
-      <a id="toString():java.lang.String"></a>
+      <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">java.lang.String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
-      <a id="wait():scala.Unit"></a>
+      <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a>
-      <a id="wait(scala.Long,scala.Int):scala.Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">scala.Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">scala.Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="No Group">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a>
-      <a id="wait(scala.Long):scala.Unit"></a>
+      <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">scala.Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">scala.Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -587,14 +583,20 @@
         <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">scala.Any</span></h3>
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>
         
         </div>
 
         <div id="groupedMembers">
-        <div class="group" name="No Group">
-              <h3>No Group</h3>
+        <div class="group" name="composite">
+              <h3>Loading and storing composite values</h3>
+              
+            </div><div class="group" name="array">
+              <h3>Loading and storing arrays of values</h3>
+              
+            </div><div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
               
             </div>
         </div>
