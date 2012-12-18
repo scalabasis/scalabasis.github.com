@@ -84,23 +84,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="basis.containers.HashMap.Builder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Builder[A,T]extendsBuffer[Any,(A,T)]"></a>
-      <a id="Builder[A,T]:Builder[A,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="HashMap$$Builder.html"><span class="name">Builder</span></a><span class="tparams">[<span name="A">A</span>, <span name="T">T</span>]</span><span class="result"> extends <a href="../collections/Buffer.html" class="extype" name="basis.collections.Buffer">Buffer</a>[<span class="extype" name="scala.Any">Any</span>, (<span class="extype" name="basis.containers.HashMap.Builder.A">A</span>, <span class="extype" name="basis.containers.HashMap.Builder.T">T</span>)]</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -171,42 +155,29 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.containers.HashMap#Builder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Builder[A,T]:basis.containers.HashMap.Builder[A,T]"></a>
-      <a id="Builder[A,T]:Builder[A,T]"></a>
+    </li><li name="basis.containers.HashMap#Builder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Builder[A,T](implicitevidence$1:scala.reflect.ClassTag[A],implicitevidence$2:scala.reflect.ClassTag[T]):basis.collections.Builder[Any,(A,T)]{typeState=basis.containers.HashMap[A,T]}"></a>
+      <a id="Builder[A,T](ClassTag[A],ClassTag[T]):Builder[Any,(A,T)]{typeState=basis.containers.HashMap[A,T]}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Builder</span><span class="tparams">[<span name="A">A</span>, <span name="T">T</span>]</span><span class="result">: <a href="HashMap$$Builder.html" class="extype" name="basis.containers.HashMap.Builder">Builder</a>[<span class="extype" name="basis.containers.HashMap.Builder.A">A</span>, <span class="extype" name="basis.containers.HashMap.Builder.T">T</span>]</span>
+        <span class="name">Builder</span><span class="tparams">[<span name="A">A</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="basis.containers.HashMap.Builder.A">A</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="basis.containers.HashMap.Builder.T">T</span>]</span>)</span><span class="result">: <a href="../collections/Builder.html" class="extype" name="basis.collections.Builder">Builder</a>[<span class="extype" name="scala.Any">Any</span>, (<span class="extype" name="basis.containers.HashMap.Builder.A">A</span>, <span class="extype" name="basis.containers.HashMap.Builder.T">T</span>)] { type State = basis.containers.HashMap[A,T] }</span>
       </span>
       </h4>
-      
-    </li><li name="basis.containers.HashMap#Empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Empty:basis.containers.HashMap[Nothing,Nothing]"></a>
-      <a id="Empty:HashMap[Nothing,Nothing]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Empty</span><span class="result">: <a href="HashMap.html" class="extype" name="basis.containers.HashMap">HashMap</a>[<span class="extype" name="scala.Nothing">Nothing</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
-      </span>
-      </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.HashMap">HashMap</a> → <a href="../collections/MapFactory.html" class="extype" name="basis.collections.MapFactory">MapFactory</a></dd></dl></div>
     </li><li name="basis.collections.MapFactory#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[A,T](xs:(A,T)*)(implicitbuffer:basis.collections.Buffer[CC[_,_],(A,T)]):buffer.State"></a>
-      <a id="apply[A,T]((A,T)*)(Buffer[HashMap[_,_],(A,T)]):State"></a>
+      <a id="apply[A,T](xs:(A,T)*):CC[A,T]"></a>
+      <a id="apply[A,T]((A,T)*):HashMap[A,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="T">T</span>]</span><span class="params">(<span name="xs">xs: (<span class="extype" name="basis.collections.MapFactory.apply.A">A</span>, <span class="extype" name="basis.collections.MapFactory.apply.T">T</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="buffer">buffer: <a href="../collections/Buffer.html" class="extype" name="basis.collections.Buffer">Buffer</a>[<a href="HashMap.html" class="extype" name="basis.containers.HashMap">HashMap</a>[_, _], (<span class="extype" name="basis.collections.MapFactory.apply.A">A</span>, <span class="extype" name="basis.collections.MapFactory.apply.T">T</span>)]</span>)</span><span class="result">: <a href="../collections/Buffer.html#State" class="extmbr" name="basis.collections.Buffer.State">State</a></span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>, <span name="T">T</span>]</span><span class="params">(<span name="xs">xs: (<span class="extype" name="basis.collections.MapFactory.apply.A">A</span>, <span class="extype" name="basis.collections.MapFactory.apply.T">T</span>)*</span>)</span><span class="result">: <a href="HashMap.html" class="extype" name="basis.containers.HashMap">HashMap</a>[<span class="extype" name="basis.collections.MapFactory.apply.A">A</span>, <span class="extype" name="basis.collections.MapFactory.apply.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/MapFactory.html" class="extype" name="basis.collections.MapFactory">MapFactory</a></dd><dt>Annotations</dt><dd>
@@ -242,6 +213,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="basis.containers.HashMap#empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="empty:basis.containers.HashMap[Nothing,Nothing]"></a>
+      <a id="empty:HashMap[Nothing,Nothing]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="result">: <a href="HashMap.html" class="extype" name="basis.containers.HashMap">HashMap</a>[<span class="extype" name="scala.Nothing">Nothing</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -375,7 +359,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="basis.containers.HashMap#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -387,7 +371,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.HashMap">HashMap</a> → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

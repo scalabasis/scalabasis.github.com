@@ -46,7 +46,7 @@
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/basis-containers/src/main/scala/basis/containers/HashSet.scala" target="_blank">HashSet.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../collections/SetFactory.html" class="extype" name="basis.collections.SetFactory">SetFactory</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../collections/SetFactory.html" class="extype" name="basis.collections.SetFactory">SetFactory</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>], <a href="../collections/BuilderFactory.html" class="extype" name="basis.collections.BuilderFactory">BuilderFactory</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.containers.HashSet"><span>HashSet</span></li><li class="in" name="basis.collections.SetFactory"><span>SetFactory</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.containers.HashSet"><span>HashSet</span></li><li class="in" name="basis.collections.SetFactory"><span>SetFactory</span></li><li class="in" name="basis.collections.BuilderFactory"><span>BuilderFactory</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -84,23 +84,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="basis.containers.HashSet.Builder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Builder[A]extendsBuffer[Any,A]"></a>
-      <a id="Builder[A]:Builder[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="HashSet$$Builder.html"><span class="name">Builder</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="../collections/Buffer.html" class="extype" name="basis.collections.Buffer">Buffer</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="basis.containers.HashSet.Builder.A">A</span>]</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -171,45 +155,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.containers.HashSet#Builder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Builder[A]:basis.containers.HashSet.Builder[A]"></a>
-      <a id="Builder[A]:Builder[A]"></a>
+    </li><li name="basis.containers.HashSet#Builder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Builder[A](implicitevidence$1:scala.reflect.ClassTag[A]):basis.collections.Builder[Any,A]{typeState=basis.containers.HashSet[A]}"></a>
+      <a id="Builder[A](ClassTag[A]):Builder[Any,A]{typeState=basis.containers.HashSet[A]}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Builder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result">: <a href="HashSet$$Builder.html" class="extype" name="basis.containers.HashSet.Builder">Builder</a>[<span class="extype" name="basis.containers.HashSet.Builder.A">A</span>]</span>
+        <span class="name">Builder</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="basis.containers.HashSet.Builder.A">A</span>]</span>)</span><span class="result">: <a href="../collections/Builder.html" class="extype" name="basis.collections.Builder">Builder</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="basis.containers.HashSet.Builder.A">A</span>] { type State = basis.containers.HashSet[A] }</span>
       </span>
       </h4>
-      
-    </li><li name="basis.containers.HashSet#Empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Empty:basis.containers.HashSet[Nothing]"></a>
-      <a id="Empty:HashSet[Nothing]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Empty</span><span class="result">: <a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="basis.collections.SetFactory#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[A](xs:A*)(implicitbuffer:basis.collections.Buffer[CC[_],A]):buffer.State"></a>
-      <a id="apply[A](A*)(Buffer[HashSet[_],A]):State"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.HashSet">HashSet</a> → <a href="../collections/BuilderFactory.html" class="extype" name="basis.collections.BuilderFactory">BuilderFactory</a></dd></dl></div>
+    </li><li name="basis.collections.BuilderFactory#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[A](xs:A*):CC[A]"></a>
+      <a id="apply[A](A*):HashSet[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="xs">xs: <span class="extype" name="basis.collections.SetFactory.apply.A">A</span>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="buffer">buffer: <a href="../collections/Buffer.html" class="extype" name="basis.collections.Buffer">Buffer</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>[_], <span class="extype" name="basis.collections.SetFactory.apply.A">A</span>]</span>)</span><span class="result">: <a href="../collections/Buffer.html#State" class="extmbr" name="basis.collections.Buffer.State">State</a></span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="xs">xs: <span class="extype" name="basis.collections.BuilderFactory.apply.A">A</span>*</span>)</span><span class="result">: <a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>[<span class="extype" name="basis.collections.BuilderFactory.apply.A">A</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/SetFactory.html" class="extype" name="basis.collections.SetFactory">SetFactory</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/BuilderFactory.html" class="extype" name="basis.collections.BuilderFactory">BuilderFactory</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@macroImpl</span><span class="args">()</span>
               
         </dd></dl></div>
@@ -242,6 +213,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="basis.containers.HashSet#empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="empty:basis.containers.HashSet[Nothing]"></a>
+      <a id="empty:HashSet[Nothing]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="result">: <a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -375,7 +359,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="basis.containers.HashSet#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -387,7 +371,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.HashSet">HashSet</a> → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -447,6 +431,8 @@
         <div id="inheritedMembers">
         <div class="parent" name="basis.collections.SetFactory">
               <h3>Inherited from <a href="../collections/SetFactory.html" class="extype" name="basis.collections.SetFactory">SetFactory</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>]</h3>
+            </div><div class="parent" name="basis.collections.BuilderFactory">
+              <h3>Inherited from <a href="../collections/BuilderFactory.html" class="extype" name="basis.collections.BuilderFactory">BuilderFactory</a>[<a href="HashSet.html" class="extype" name="basis.containers.HashSet">HashSet</a>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

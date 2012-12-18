@@ -40,21 +40,21 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">List</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
+        <span class="name">List</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.Equals">Equals</span> with <a href="../collections/Family.html" class="extype" name="basis.collections.Family">Family</a>[<a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]] with <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a>[<span class="extype" name="basis.containers.List.A">A</span>] with <a href="ListLike.html" class="extype" name="basis.containers.ListLike">ListLike</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A singly linked list of elements.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A singly linked list.
 </p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/basis-containers/src/main/scala/basis/containers/List.scala" target="_blank">List.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.containers.List.A">A</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="ListLike.html" class="extype" name="basis.containers.ListLike">ListLike</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.containers.List.A">A</span>], <a href="../collections/Family.html" class="extype" name="basis.collections.Family">collections.Family</a>[<a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]], <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
           <div class="subClasses hiddenContent"><a href="$colon$colon.html" class="extype" name="basis.containers.::">::</a>, <a href="Nil$.html" class="extype" name="basis.containers.Nil">Nil</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph81" viewBox="0.00 0.00 144.00 158.00" height="158pt" width="144pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 141,-154 141,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph81_0"><a xlink:title="basis.containers.List (this class)" xlink:href="#inheritance-diagram"><polygon points="105,-88 33,-88 33,-62 105,-62 105,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="43" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="65" text-anchor="start">List[A]</text></a></g><!-- node1 --><g class="node class" id="graph81_1"><a xlink:title="basis.containers.::" xlink:href="$colon$colon.html#inheritance-diagram"><polygon points="62,-26 0,-26 0,-0 62,-0 62,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="32" text-anchor="start">::[A]</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph81_0_1"><a xlink:title="::[A] is a subtype of List[A]"><path d="M58.5455,-57.4929C52.2578,-47.5649 44.3928,-35.1465 38.6784,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="57.1564,-58.5704 61.3101,-61.8581 60.1133,-56.6976 57.1564,-58.5704" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node object" id="graph81_2"><a xlink:title="basis.containers.Nil" xlink:href="Nil$.html#inheritance-diagram"><polygon points="136,-26 80,-26 80,-0 136,-0 136,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-21" x="90" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="112" text-anchor="start">Nil</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph81_0_2"><a xlink:title="Nil is a subtype of List[A]"><path d="M79.7296,-57.4929C86.1828,-47.5649 94.2548,-35.1465 100.12,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="78.1499,-56.7121 76.8922,-61.8581 81.0845,-58.6196 78.1499,-56.7121" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node trait" id="graph81_3"><a xlink:title="basis.collections.LinearSeq" xlink:href="../collections/LinearSeq.html#inheritance-diagram"><polygon points="120,-150 18,-150 18,-124 120,-124 120,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="28" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="50" text-anchor="start">LinearSeq[A]</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph81_3_0"><a xlink:title="List[A] is a subtype of LinearSeq[A]"><path d="M69,-118.683C69,-108.896 69,-96.9026 69,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="67.2501,-118.858 69,-123.858 70.7501,-118.858 67.2501,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph113" viewBox="0.00 0.00 416.00 158.00" height="158pt" width="416pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 413,-154 413,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph113_0"><a xlink:title="basis.containers.List (this class)" xlink:href="#inheritance-diagram"><polygon points="238,-88 166,-88 166,-62 238,-62 238,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="176" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="198" text-anchor="start">List[A]</text></a></g><!-- node1 --><g class="node class" id="graph113_1"><a xlink:title="basis.containers.::" xlink:href="$colon$colon.html#inheritance-diagram"><polygon points="195,-26 133,-26 133,-0 195,-0 195,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="143" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="165" text-anchor="start">::[A]</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph113_0_1"><a xlink:title="::[A] is a subtype of List[A]"><path d="M191.546,-57.4929C185.258,-47.5649 177.393,-35.1465 171.678,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="190.156,-58.5704 194.31,-61.8581 193.113,-56.6976 190.156,-58.5704" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node object" id="graph113_2"><a xlink:title="basis.containers.Nil" xlink:href="Nil$.html#inheritance-diagram"><polygon points="269,-26 213,-26 213,-0 269,-0 269,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-21" x="223" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="245" text-anchor="start">Nil</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph113_0_2"><a xlink:title="Nil is a subtype of List[A]"><path d="M212.73,-57.4929C219.183,-47.5649 227.255,-35.1465 233.12,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="211.15,-56.7121 209.892,-61.8581 214.084,-58.6196 211.15,-56.7121" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node trait" id="graph113_3"><a xlink:title="scala.Equals"><polygon points="74.25,-150 -0.25,-150 -0.25,-124 74.25,-124 74.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="32" text-anchor="start">Equals</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph113_3_0"><a xlink:title="List[A] is a subtype of Equals"><path d="M75.2102,-122.105C103.58,-111.789 141.883,-97.8609 168.941,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="74.4911,-120.505 70.3902,-123.858 75.6873,-123.794 74.4911,-120.505" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node trait" id="graph113_4"><a xlink:title="basis.collections.Family" xlink:href="../collections/Family.html#inheritance-diagram"><polygon points="199.25,-150 92.75,-150 92.75,-124 199.25,-124 199.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="103" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="125" text-anchor="start">Family[List[A]]</text></a></g><!-- node4&#45;&gt;node0 --><g class="edge inheritance" id="graph113_4_0"><a xlink:title="List[A] is a subtype of Family[List[A]]"><path d="M160.908,-120.027C170.254,-110.014 182.112,-97.3091 190.684,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="159.465,-119.009 157.332,-123.858 162.023,-121.397 159.465,-119.009" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node trait" id="graph113_5"><a xlink:title="basis.collections.Stack" xlink:href="../collections/Stack.html#inheritance-diagram"><polygon points="300,-150 218,-150 218,-124 300,-124 300,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="228" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="250" text-anchor="start">Stack[A]</text></a></g><!-- node5&#45;&gt;node0 --><g class="edge inheritance" id="graph113_5_0"><a xlink:title="List[A] is a subtype of Stack[A]"><path d="M243.826,-120.027C234.313,-110.014 222.244,-97.3091 213.518,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="242.753,-121.438 247.465,-123.858 245.29,-119.028 242.753,-121.438" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node trait" id="graph113_6"><a xlink:title="basis.containers.ListLike" xlink:href="ListLike.html#inheritance-diagram"><polygon points="408,-150 318,-150 318,-124 408,-124 408,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="328" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="350" text-anchor="start">ListLike[A]</text></a></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph113_6_0"><a xlink:title="List[A] is a subtype of ListLike[A]"><path d="M325.716,-122.105C298.034,-111.789 260.66,-97.8609 234.257,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="325.123,-123.752 330.419,-123.858 326.345,-120.472 325.123,-123.752" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
               </div></div>
         
 
@@ -72,7 +72,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.containers.List"><span>List</span></li><li class="in" name="basis.collections.LinearSeq"><span>LinearSeq</span></li><li class="in" name="basis.collections.Seq"><span>Seq</span></li><li class="in" name="basis.collections.Container"><span>Container</span></li><li class="in" name="basis.collections.Collection"><span>Collection</span></li><li class="in" name="basis.collections.Enumerator"><span>Enumerator</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.containers.List"><span>List</span></li><li class="in" name="basis.containers.ListLike"><span>ListLike</span></li><li class="in" name="basis.collections.Stack"><span>Stack</span></li><li class="in" name="basis.collections.Seq"><span>Seq</span></li><li class="in" name="basis.collections.Container"><span>Container</span></li><li class="in" name="basis.collections.Collection"><span>Collection</span></li><li class="in" name="basis.collections.Enumerator"><span>Enumerator</span></li><li class="in" name="basis.collections.Family"><span>Family</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -110,25 +110,25 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.containers.List.Self" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
-      <a id="Self&lt;:basis.containers.List[A]"></a>
-      <a id="Self:Self"></a>
+              <ol><li name="basis.collections.Family.Family" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
+      <a id="Family=Type"></a>
+      <a id="Family:Family"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
+        <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Self</span><span class="result"> &lt;: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
+        <span class="name">Family</span><span class="result"> = <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The family to which this list belongs.</p><div class="fullcomment"><div class="comment cmt"><p>The family to which this list belongs.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a> → <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a> → <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a> → <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a> → <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd></dl></div>
+      <p class="shortcomment cmt">The base type of this collection's family.</p><div class="fullcomment"><div class="comment cmt"><p>The base type of this collection's family.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Family.html" class="extype" name="basis.collections.Family">Family</a></dd></dl></div>
     </li></ol>
             </div>
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="basis.collections.LinearSeq#head" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
+              <ol><li name="basis.containers.List#head" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
       <a id="head:A"></a>
       <a id="head:A"></a>
       <h4 class="signature">
@@ -140,20 +140,7 @@
         <span class="name">head</span><span class="result">: <span class="extype" name="basis.containers.List.A">A</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns the first element of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the first element of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a></dd></dl></div>
-    </li><li name="basis.collections.Seq#isEmpty" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
-      <a id="isEmpty:Boolean"></a>
-      <a id="isEmpty:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns <code>true</code> if this list doesn't contain any elements.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this list doesn't contain any elements.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns the first element of this non-empty list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the first element of this non-empty list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a></dd></dl></div>
     </li><li name="basis.containers.List#tail" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
       <a id="tail:basis.containers.List[A]"></a>
       <a id="tail:List[A]"></a>
@@ -166,7 +153,7 @@
         <span class="name">tail</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns all except the first element of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all except the first element of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns all elements except the first of this non-empty list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all elements except the first of this non-empty list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -211,19 +198,22 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="basis.containers.List#::" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="::[B&gt;:A](x:B):basis.containers.List[B]"></a>
+    </li><li name="basis.containers.List#::" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="::[B&gt;:A](elem:B):basis.containers.List[B]"></a>
       <a id="::[B&gt;:A](B):List[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $colon$colon" class="name">::</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="basis.containers.List.A">A</span></span>]</span><span class="params">(<span name="x">x: <span class="extype" name="basis.containers.List.::.B">B</span></span>)</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.::.B">B</span>]</span>
+        <span title="gt4s: $colon$colon" class="name">::</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="basis.containers.List.A">A</span></span>]</span><span class="params">(<span name="elem">elem: <span class="extype" name="basis.containers.List.::.B">B</span></span>)</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.::.B">B</span>]</span>
       </span>
       </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
@@ -263,6 +253,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="basis.collections.Seq#canEqual" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
+      <a id="canEqual(other:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns <code>true</code> if this list might equal another object, otherwise <code>false</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this list might equal another object, otherwise <code>false</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a> → Equals</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -284,7 +287,7 @@
       <a id="drop(Int):List[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
@@ -292,7 +295,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@tailrec</span><span class="args">()</span>
+                <span class="name">@unspecialized</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -308,7 +311,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.containers.List#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="basis.collections.Seq#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
       <a id="equals(other:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
@@ -320,7 +323,7 @@
         <span class="name">equals</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → AnyRef → Any</dd></dl></div>
+      <p class="shortcomment cmt">Returns <code>true</code> if this list equals another object, otherwise <code>false</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this list equals another object, otherwise <code>false</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a> → Equals → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -342,7 +345,7 @@
       <a id="foreach[U]((A)⇒U):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
@@ -351,10 +354,10 @@
       </h4>
       <p class="shortcomment cmt">Applies a function to each element of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a function to each element of this list. The protected
 status of <code>foreach</code> allows optimized static implementations to shadow
-the virtual method. To force a virtual <code>foreach</code> call, invoke
+this virtual method. To force a virtual <code>foreach</code> call, invoke
 <a href="../collections/package.html#traverse[A,U](xs:basis.collections.Enumerator[A])(f:A=&gt;U):Unit" class="extmbr" name="basis.collections#traverse">traverse</a>.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a> → <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a> → <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd><dt>Annotations</dt><dd>
-                <span class="name">@tailrec</span><span class="args">()</span>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a> → <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a> → <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -370,7 +373,7 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="basis.containers.List#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="basis.collections.Seq#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
@@ -382,7 +385,20 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → AnyRef → Any</dd></dl></div>
+      <p class="shortcomment cmt">Returns a hash of the elements in this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a hash of the elements in this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a> → Any</dd></dl></div>
+    </li><li name="basis.collections.Seq#isEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Examining">
+      <a id="isEmpty:Boolean"></a>
+      <a id="isEmpty:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns <code>true</code> if this list doesn't contain any elements.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this list doesn't contain any elements.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -396,7 +412,7 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="basis.collections.LinearSeq#iterator" visbl="pub" data-isabs="false" fullComment="yes" group="Iterating">
+    </li><li name="basis.containers.List#iterator" visbl="pub" data-isabs="false" fullComment="yes" group="Iterating">
       <a id="iterator:basis.collections.Iterator[A]"></a>
       <a id="iterator:Iterator[A]"></a>
       <h4 class="signature">
@@ -408,20 +424,23 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
         <span class="name">iterator</span><span class="result">: <a href="../collections/Iterator.html" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns a new iterator over the elements of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new iterator over the elements of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a> → <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns a new iterator over the elements of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new iterator over the elements of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a> → <a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="basis.containers.List#length" visbl="pub" data-isabs="false" fullComment="yes" group="Examining">
       <a id="length:Int"></a>
       <a id="length:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">length</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns the number of elements in this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the number of elements in this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a> → <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns the number of elements in this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the number of elements in this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a> → <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -461,32 +480,51 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.containers.List#reverse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="basis.containers.List#reverse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="reverse:basis.containers.List[A]"></a>
       <a id="reverse:List[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">reverse</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="basis.containers.List#slice" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="basis.containers.List#slice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="slice(lower:Int,upper:Int):basis.containers.List[A]"></a>
       <a id="slice(Int,Int):List[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">slice</span><span class="params">(<span name="lower">lower: <span class="extype" name="scala.Int">Int</span></span>, <span name="upper">upper: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="basis.containers.List#stringPrefix" visbl="prt" data-isabs="false" fullComment="yes" group="Classifying">
+      <a id="stringPrefix:String"></a>
+      <a id="stringPrefix:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a string that identifies this type of list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a string that identifies this type of list.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -500,20 +538,36 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="basis.containers.List#take" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="basis.containers.List#take" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="take(upper:Int):basis.containers.List[A]"></a>
       <a id="take(Int):List[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">take</span><span class="params">(<span name="upper">upper: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="basis.containers.List#toList" visbl="pub" data-isabs="false" fullComment="yes" group="Converting">
+      <a id="toList:List.this.type"></a>
+      <a id="toList:List.this.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toList</span><span class="result">: <a href="" class="extype" name="basis.containers.List">List</a>.this.type</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a list containing the elements of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list containing the elements of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.containers.List">List</a> → <a href="ListLike.html" class="extype" name="basis.containers.ListLike">ListLike</a></dd></dl></div>
+    </li><li name="basis.collections.Container#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -525,7 +579,7 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <p class="shortcomment cmt">Returns a string representation of this list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of this list.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../collections/Container.html" class="extype" name="basis.collections.Container">Container</a> → <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a> → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -583,8 +637,10 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="basis.collections.LinearSeq">
-              <h3>Inherited from <a href="../collections/LinearSeq.html" class="extype" name="basis.collections.LinearSeq">LinearSeq</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
+        <div class="parent" name="basis.containers.ListLike">
+              <h3>Inherited from <a href="ListLike.html" class="extype" name="basis.containers.ListLike">ListLike</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
+            </div><div class="parent" name="basis.collections.Stack">
+              <h3>Inherited from <a href="../collections/Stack.html" class="extype" name="basis.collections.Stack">Stack</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
             </div><div class="parent" name="basis.collections.Seq">
               <h3>Inherited from <a href="../collections/Seq.html" class="extype" name="basis.collections.Seq">Seq</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
             </div><div class="parent" name="basis.collections.Container">
@@ -593,6 +649,10 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
               <h3>Inherited from <a href="../collections/Collection.html" class="extype" name="basis.collections.Collection">Collection</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
             </div><div class="parent" name="basis.collections.Enumerator">
               <h3>Inherited from <a href="../collections/Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.containers.List.A">A</span>]</h3>
+            </div><div class="parent" name="basis.collections.Family">
+              <h3>Inherited from <a href="../collections/Family.html" class="extype" name="basis.collections.Family">collections.Family</a>[<a href="" class="extype" name="basis.containers.List">List</a>[<span class="extype" name="basis.containers.List.A">A</span>]]</h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
@@ -610,6 +670,12 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
               
             </div><div class="group" name="Traversing">
               <h3>Traversing</h3>
+              
+            </div><div class="group" name="Converting">
+              <h3>Converting</h3>
+              
+            </div><div class="group" name="Classifying">
+              <h3>Classifying</h3>
               
             </div><div class="group" name="Ungrouped">
               <h3>Ungrouped</h3>

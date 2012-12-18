@@ -29,9 +29,9 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="Iterator$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
+        <img src="../../lib/trait_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="basis">basis</a>.<a href="package.html" class="extype" name="basis.collections">collections</a></p>
-        <h1><a href="Iterator$.html" title="Go to companion">Iterator</a></h1>
+        <h1>Iterator</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,14 +40,14 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Iterator</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</span>
+        <span class="name">Iterator</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <a href="Family.html" class="extype" name="basis.collections.Family">Family</a>[<a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]] with <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A stateful traverser of elements. An iterator steps through each element
-of a collection, one element per <code>step()</code> until <code>isEmpty</code> returns <code>true</code>.
+of a collection, one element per <code>step()</code>, until <code>isEmpty</code> returns <code>true</code>.
 Backtracking algorithms can <code>dup</code> an iterator's state and resume it after
-mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> forwards the iterator into one of three states:
+mutating the original iterator.</p><h4> Iterator states </h4><p>Each <code>step()</code> forwards the iterator into one of three states:
 <i>buffered</i>, <i>empty</i>, or <i>done</i>.</p><ul><li>In the <i>buffered</i> state, <code>head</code> returns the current element,
    and both <code>isEmpty</code> and <code>isDone</code> return <code>false</code>.</li><li>In the <i>empty</i> state, <code>head</code> is undefined, <code>isEmpty</code> returns <code>true</code>,
    and <code>isDone</code> returns <code>false</code>.</li><li>In the <i>done</i> state, like the <i>empty</i> state, <code>head</code> is undefined,
@@ -55,14 +55,11 @@ mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> 
 &quot;chunked&quot; iterator applications such as iteratees.
 </p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalabasis/basis/tree/master/basis-collections/src/main/scala/basis/collections/Iterator.scala" target="_blank">Iterator.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>], <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="Iterator$$Empty$.html" class="extype" name="basis.collections.Iterator.Empty">Empty</a>, <a href="../text/Reader.html" class="extype" name="basis.text.Reader">Reader</a>, <a href="../text/Reader$$done$.html" class="extype" name="basis.text.Reader.done">done</a>, <a href="../text/Reader$$empty$.html" class="extype" name="basis.text.Reader.empty">empty</a></div>
+          <div class="superTypes hiddenContent"><a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>], <a href="Family.html" class="extype" name="basis.collections.Family">collections.Family</a>[<a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]], <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph166" viewBox="0.00 0.00 175.00 158.00" height="158pt" width="175pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 172,-154 172,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph166_0"><a xlink:title="basis.collections.Iterator (this trait)" xlink:href="#inheritance-diagram"><polygon points="126,-88 38,-88 38,-62 126,-62 126,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-83" x="48" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="70" text-anchor="start">Iterator[A]</text></a></g><!-- node1 --><g class="node object" id="graph166_1"><a xlink:title="basis.collections.Iterator.Empty" xlink:href="Iterator$$Empty$.html#inheritance-diagram"><polygon points="72.25,-26 -0.25,-26 -0.25,-0 72.25,-0 72.25,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="32" text-anchor="start">Empty</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph166_0_1"><a xlink:title="Empty is a subtype of Iterator[A]"><path d="M69.5498,-57.7607C61.9048,-47.7889 52.2746,-35.2278 45.2949,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="68.2602,-58.9548 72.6912,-61.8581 71.0378,-56.8253 68.2602,-58.9548" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node trait" id="graph166_2"><a xlink:title="basis.text.Reader" xlink:href="../text/Reader.html#inheritance-diagram"><polygon points="167.25,-26 90.75,-26 90.75,-0 167.25,-0 167.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-21" x="101" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="123" text-anchor="start">Reader</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph166_0_2"><a xlink:title="Reader is a subtype of Iterator[A]"><path d="M94.7208,-57.7607C102.532,-47.7889 112.372,-35.2278 119.503,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="93.2168,-56.8428 91.5112,-61.8581 95.9722,-59.0011 93.2168,-56.8428" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node trait" id="graph166_3"><a xlink:title="basis.collections.Enumerator" xlink:href="Enumerator.html#inheritance-diagram"><polygon points="136.25,-150 27.75,-150 27.75,-124 136.25,-124 136.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="38" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="60" text-anchor="start">Enumerator[A]</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph166_3_0"><a xlink:title="Iterator[A] is a subtype of Enumerator[A]"><path d="M82,-118.683C82,-108.896 82,-96.9026 82,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="80.2501,-118.858 82,-123.858 83.7501,-118.858 80.2501,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph131" viewBox="0.00 0.00 257.00 120.00" height="120pt" width="257pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph1"><polygon points="-4,5 -4,-116 254,-116 254,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph131_0"><a xlink:title="basis.collections.Iterator (this trait)" xlink:href="#inheritance-diagram"><polygon points="172,-50 84,-50 84,-24 172,-24 172,-50" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-45" x="94" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33" x="116" text-anchor="start">Iterator[A]</text></a></g><!-- node1 --><g class="node trait" id="graph131_1"><a xlink:title="basis.collections.Family" xlink:href="Family.html#inheritance-diagram"><polygon points="122.25,-112 -0.25,-112 -0.25,-86 122.25,-86 122.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-95" x="32" text-anchor="start">Family[Iterator[A]]</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph131_1_0"><a xlink:title="Iterator[A] is a subtype of Family[Iterator[A]]"><path d="M78.5402,-82.2924C89.7669,-72.2386 104.114,-59.3904 114.462,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="77.1158,-81.2188 74.5584,-85.8581 79.4507,-83.8261 77.1158,-81.2188" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node trait" id="graph131_2"><a xlink:title="basis.collections.Enumerator" xlink:href="Enumerator.html#inheritance-diagram"><polygon points="249.25,-112 140.75,-112 140.75,-86 249.25,-86 249.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="151" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-95" x="173" text-anchor="start">Enumerator[A]</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph131_2_0"><a xlink:title="Iterator[A] is a subtype of Enumerator[A]"><path d="M177.46,-82.2924C166.233,-72.2386 151.886,-59.3904 141.538,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="176.549,-83.8261 181.442,-85.8581 178.884,-81.2188 176.549,-83.8261" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
               </div></div>
         
 
@@ -80,7 +77,7 @@ mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> 
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="basis.collections.Iterator"><span>Iterator</span></li><li class="in" name="basis.collections.Enumerator"><span>Enumerator</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="basis.collections.Iterator"><span>Iterator</span></li><li class="in" name="basis.collections.Enumerator"><span>Enumerator</span></li><li class="in" name="basis.collections.Family"><span>Family</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -102,25 +99,25 @@ mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> 
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="basis.collections.Iterator.Self" visbl="pub" data-isabs="true" fullComment="yes" group="Examining">
-      <a id="Self&lt;:basis.collections.Iterator[A]"></a>
-      <a id="Self:Self"></a>
+              <ol><li name="basis.collections.Family.Family" visbl="pub" data-isabs="false" fullComment="yes" group="Classifying">
+      <a id="Family=Type"></a>
+      <a id="Family:Family"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
+        <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Self</span><span class="result"> &lt;: <a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</span>
+        <span class="name">Family</span><span class="result"> = <a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">The family to which this iterator belongs.</p><div class="fullcomment"><div class="comment cmt"><p>The family to which this iterator belongs.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.collections.Iterator">Iterator</a> → <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd></dl></div>
+      <p class="shortcomment cmt">The base type of this collection's family.</p><div class="fullcomment"><div class="comment cmt"><p>The base type of this collection's family.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Family.html" class="extype" name="basis.collections.Family">Family</a></dd></dl></div>
     </li></ol>
             </div>
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="basis.collections.Iterator#dup" visbl="pub" data-isabs="true" fullComment="no" group="Iterating">
+              <ol><li name="basis.collections.Iterator#dup" visbl="pub" data-isabs="true" fullComment="yes" group="Iterating">
       <a id="dup:basis.collections.Iterator[A]"></a>
       <a id="dup:Iterator[A]"></a>
       <h4 class="signature">
@@ -132,7 +129,10 @@ mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> 
         <span class="name">dup</span><span class="result">: <a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Returns a duplicate iterator with identical but independent state.</p>
+      <p class="shortcomment cmt">Returns a duplicate iterator with identical but independent state.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a duplicate iterator with identical but independent state.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.Any#getClass" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -269,9 +269,12 @@ mutating the original.</p><h4> Iterator states </h4><p>Each <code>step()</code> 
       </h4>
       <p class="shortcomment cmt">Applies a function to each element of this iterator.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a function to each element of this iterator. The protected
 status of <code>foreach</code> allows optimized static implementations to shadow
-the virtual method. To force a virtual <code>foreach</code> call, invoke
+this virtual method. To force a virtual <code>foreach</code> call, invoke
 <a href="package.html#traverse[A,U](xs:basis.collections.Enumerator[A])(f:A=&gt;U):Unit" class="extmbr" name="basis.collections#traverse">traverse</a>.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.collections.Iterator">Iterator</a> → <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="basis.collections.Iterator">Iterator</a> → <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@unspecialized</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.Any#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -335,6 +338,8 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
         <div id="inheritedMembers">
         <div class="parent" name="basis.collections.Enumerator">
               <h3>Inherited from <a href="Enumerator.html" class="extype" name="basis.collections.Enumerator">Enumerator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]</h3>
+            </div><div class="parent" name="basis.collections.Family">
+              <h3>Inherited from <a href="Family.html" class="extype" name="basis.collections.Family">collections.Family</a>[<a href="" class="extype" name="basis.collections.Iterator">Iterator</a>[<span class="extype" name="basis.collections.Iterator.A">A</span>]]</h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>
@@ -350,6 +355,9 @@ the virtual method. To force a virtual <code>foreach</code> call, invoke
               
             </div><div class="group" name="Traversing">
               <h3>Traversing</h3>
+              
+            </div><div class="group" name="Classifying">
+              <h3>Classifying</h3>
               
             </div><div class="group" name="Ungrouped">
               <h3>Ungrouped</h3>
